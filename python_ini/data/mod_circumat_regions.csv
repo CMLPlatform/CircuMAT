@@ -1,0 +1,311 @@
+name	code	global_id	parent_id	local_id	level	identifier	leaf_children_global	leaf_children_local
+EU NUTS2	ALL_EU_NUTS2	1	0	1	1	AGG	30#31#32#33#34#35#36#37#38#39#40#41#42#43#44#45#46#47#48#49#50#51#52#53#54#55#56#57#58#59#60#61#62#63#64#65#66#67#68#69#70#71#72#73#74#75#76#77#78#79#80#81#82#83#84#85#86#87#88#89#90#91#92#93#94#95#96#97#98#99#100#101#102#103#104#105#106#107#108#109#110#111#112#113#114#115#116#117#118#119#120#121#122#123#124#125#126#127#128#129#130#131#132#133#134#135#136#137#138#139#140#141#142#143#144#145#146#147#148#149#150#151#152#153#154#155#156#157#158#159#160#161#162#163#164#165#166#167#168#169#170#171#172#173#174#175#176#177#178#179#180#181#182#183#184#185#186#187#188#189#190#191#192#193#194#195#196#197#198#199#200#201#202#203#204#205#206#207#208#209#210#211#212#213#214#215#216#217#218#219#220#221#222#223#224#225#226#227#228#229#230#231#232#233#234#235#236#237#238#239#240#241#242#243#244#245#246#247#248#249#250#251#252#253#254#255#256#257#258#259#260#261#262#263#264#265#266#267#268#269#270#271#272#273#274#275#276#277#278#279#280#281#282#283#284#285#286#287#288#289#290#291#292#293#294#295#296#297#298#299#300#301#302#303#304#305#306#307#308#309#310	49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49
+Austria	AT	2	1	1	2	AGG	30#31#32#33#34#35#36#37#38	49#49#49#49#49#49#49#49#49
+Belgium	BE	3	1	2	2	AGG	39#40#41#42#43#44#45#46#47#48#49	49#49#49#49#49#49#49#49#49#49#49
+Bulgaria	BG	4	1	3	2	AGG	50#51#52#53#54#55	49#49#49#49#49#49
+Cyprus	CY	5	1	4	2	AGG	56	49
+Czech Republic	CZ	6	1	5	2	AGG	57#58#59#60#61#62#63#64	49#49#49#49#49#49#49#49
+Germany	DE	7	1	6	2	AGG	65#66#67#68#69#70#71#72#73#74#75#76#77#78#79#80#81#82#83#84#85#86#87#88#89#90#91#92#93#94#95#96#97#98#99#100#101#102	49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49
+Denmark	DK	8	1	7	2	AGG	103#104#105#106#107	49#49#49#49#49
+Estonia	EE	9	1	8	2	AGG	108	49
+Spain	ES	10	1	9	2	AGG	109#110#111#112#113#114#115#116#117#118#119#120#121#122#123#124#125#126#127	49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49
+Finland	FI	11	1	10	2	AGG	128#129#130#131#132	49#49#49#49#49
+France	FR	12	1	11	2	AGG	133#134#135#136#137#138#139#140#141#142#143#144#145#146#147#148#149#150#151#152#153#154#155#156#157#158#159	49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49
+Greece	EL	13	1	12	2	AGG	160#161#162#163#164#165#166#167#168#169#170#171#172	49#49#49#49#49#49#49#49#49#49#49#49#49
+Croatia	HR	14	1	13	2	AGG	173#174	49#49
+Hungary	HU	15	1	14	2	AGG	175#176#177#178#179#180#181#182	49#49#49#49#49#49#49#49
+Ireland	IE	16	1	15	2	AGG	183#184#185	49#49#49
+Italy	IT	17	1	16	2	AGG	186#187#188#189#190#191#192#193#194#195#196#197#198#199#200#201#202#203#204#205#206	49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49
+Lithuania	LT	18	1	17	2	AGG	207#208	49#49
+Luxembourg	LU	19	1	18	2	AGG	209	49
+Latvia	LV	20	1	19	2	AGG	210	49
+Malta	MT	21	1	20	2	AGG	211	49
+Netherlands	NL	22	1	21	2	AGG	212#213#214#215#216#217#218#219#220#221#222#223	49#49#49#49#49#49#49#49#49#49#49#49
+Poland	PL	23	1	22	2	AGG	224#225#226#227#228#229#230#231#232#233#234#235#236#237#238#239#240	49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49
+Portugal	PT	24	1	23	2	AGG	241#242#243#244#245#246#247	49#49#49#49#49#49#49
+Romania	RO	25	1	24	2	AGG	248#249#250#251#252#253#254#255	49#49#49#49#49#49#49#49
+Sweden	SE	26	1	25	2	AGG	256#257#258#259#260#261#262#263	49#49#49#49#49#49#49#49
+Slovenia	SI	27	1	26	2	AGG	264#265	49#49
+Slovakia	SK	28	1	27	2	AGG	266#267#268#269	49#49#49#49
+United Kingdom	UK	29	1	28	2	AGG	270#271#272#273#274#275#276#277#278#279#280#281#282#283#284#285#286#287#288#289#290#291#292#293#294#295#296#297#298#299#300#301#302#303#304#305#306#307#308#309#310	49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49#49
+Burgenland	AT11	30	2	50	3	LEAF	None	None
+Niederösterreich	AT12	31	2	50	3	LEAF	None	None
+Wien	AT13	32	2	50	3	LEAF	None	None
+Kärnten	AT21	33	2	50	3	LEAF	None	None
+Steiermark	AT22	34	2	50	3	LEAF	None	None
+Oberösterreich	AT31	35	2	50	3	LEAF	None	None
+Salzburg	AT32	36	2	50	3	LEAF	None	None
+Tirol	AT33	37	2	50	3	LEAF	None	None
+Vorarlberg	AT34	38	2	50	3	LEAF	None	None
+Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest	BE10	39	3	50	3	LEAF	None	None
+Prov. Antwerpen	BE21	40	3	50	3	LEAF	None	None
+Prov. Limburg (BE)	BE22	41	3	50	3	LEAF	None	None
+Prov. Oost-Vlaanderen	BE23	42	3	50	3	LEAF	None	None
+Prov. Vlaams-Brabant	BE24	43	3	50	3	LEAF	None	None
+Prov. West-Vlaanderen	BE25	44	3	50	3	LEAF	None	None
+Prov. Brabant Wallon	BE31	45	3	50	3	LEAF	None	None
+Prov. Hainaut	BE32	46	3	50	3	LEAF	None	None
+Prov. Liège	BE33	47	3	50	3	LEAF	None	None
+Prov. Luxembourg (BE)	BE34	48	3	50	3	LEAF	None	None
+Prov. Namur	BE35	49	3	50	3	LEAF	None	None
+Северозападен (Severozapaden)	BG31	50	4	50	3	LEAF	None	None
+Северен централен (Severen tsentralen)	BG32	51	4	50	3	LEAF	None	None
+Североизточен (Severoiztochen)	BG33	52	4	50	3	LEAF	None	None
+Югоизточен (Yugoiztochen)	BG34	53	4	50	3	LEAF	None	None
+Югозападен (Yugozapaden)	BG41	54	4	50	3	LEAF	None	None
+Южен централен (Yuzhen tsentralen)	BG42	55	4	50	3	LEAF	None	None
+Κύπρος (Kypros)	CY00	56	5	50	3	LEAF	None	None
+Praha	CZ01	57	6	50	3	LEAF	None	None
+Střední Čechy	CZ02	58	6	50	3	LEAF	None	None
+Jihozápad	CZ03	59	6	50	3	LEAF	None	None
+Severozápad	CZ04	60	6	50	3	LEAF	None	None
+Severovýchod	CZ05	61	6	50	3	LEAF	None	None
+Jihovýchod	CZ06	62	6	50	3	LEAF	None	None
+Střední Morava	CZ07	63	6	50	3	LEAF	None	None
+Moravskoslezsko	CZ08	64	6	50	3	LEAF	None	None
+Stuttgart	DE11	65	7	50	3	LEAF	None	None
+Karlsruhe	DE12	66	7	50	3	LEAF	None	None
+Freiburg	DE13	67	7	50	3	LEAF	None	None
+Tübingen	DE14	68	7	50	3	LEAF	None	None
+Oberbayern	DE21	69	7	50	3	LEAF	None	None
+Niederbayern	DE22	70	7	50	3	LEAF	None	None
+Oberpfalz	DE23	71	7	50	3	LEAF	None	None
+Oberfranken	DE24	72	7	50	3	LEAF	None	None
+Mittelfranken	DE25	73	7	50	3	LEAF	None	None
+Unterfranken	DE26	74	7	50	3	LEAF	None	None
+Schwaben	DE27	75	7	50	3	LEAF	None	None
+Berlin	DE30	76	7	50	3	LEAF	None	None
+Brandenburg	DE40	77	7	50	3	LEAF	None	None
+Bremen	DE50	78	7	50	3	LEAF	None	None
+Hamburg	DE60	79	7	50	3	LEAF	None	None
+Darmstadt	DE71	80	7	50	3	LEAF	None	None
+Gießen	DE72	81	7	50	3	LEAF	None	None
+Kassel	DE73	82	7	50	3	LEAF	None	None
+Mecklenburg-Vorpommern	DE80	83	7	50	3	LEAF	None	None
+Braunschweig	DE91	84	7	50	3	LEAF	None	None
+Hannover	DE92	85	7	50	3	LEAF	None	None
+Lüneburg	DE93	86	7	50	3	LEAF	None	None
+Weser-Ems	DE94	87	7	50	3	LEAF	None	None
+Düsseldorf	DEA1	88	7	50	3	LEAF	None	None
+Köln	DEA2	89	7	50	3	LEAF	None	None
+Münster	DEA3	90	7	50	3	LEAF	None	None
+Detmold	DEA4	91	7	50	3	LEAF	None	None
+Arnsberg	DEA5	92	7	50	3	LEAF	None	None
+Koblenz	DEB1	93	7	50	3	LEAF	None	None
+Trier	DEB2	94	7	50	3	LEAF	None	None
+Rheinhessen-Pfalz	DEB3	95	7	50	3	LEAF	None	None
+Saarland	DEC0	96	7	50	3	LEAF	None	None
+Dresden	DED2	97	7	50	3	LEAF	None	None
+Chemnitz	DED4	98	7	50	3	LEAF	None	None
+Leipzig	DED5	99	7	50	3	LEAF	None	None
+Sachsen-Anhalt	DEE0	100	7	50	3	LEAF	None	None
+Schleswig-Holstein	DEF0	101	7	50	3	LEAF	None	None
+Thüringen	DEG0	102	7	50	3	LEAF	None	None
+Hovedstaden	DK01	103	8	50	3	LEAF	None	None
+Sjælland	DK02	104	8	50	3	LEAF	None	None
+Syddanmark	DK03	105	8	50	3	LEAF	None	None
+Midtjylland	DK04	106	8	50	3	LEAF	None	None
+Nordjylland	DK05	107	8	50	3	LEAF	None	None
+Eesti	EE00	108	9	50	3	LEAF	None	None
+Galicia	ES11	109	10	50	3	LEAF	None	None
+Principado de Asturias	ES12	110	10	50	3	LEAF	None	None
+Cantabria	ES13	111	10	50	3	LEAF	None	None
+País Vasco	ES21	112	10	50	3	LEAF	None	None
+Comunidad Foral de Navarra	ES22	113	10	50	3	LEAF	None	None
+La Rioja	ES23	114	10	50	3	LEAF	None	None
+Aragón	ES24	115	10	50	3	LEAF	None	None
+Comunidad de Madrid	ES30	116	10	50	3	LEAF	None	None
+Castilla y León	ES41	117	10	50	3	LEAF	None	None
+Castilla-La Mancha	ES42	118	10	50	3	LEAF	None	None
+Extremadura	ES43	119	10	50	3	LEAF	None	None
+Cataluña	ES51	120	10	50	3	LEAF	None	None
+Comunidad Valenciana	ES52	121	10	50	3	LEAF	None	None
+Illes Balears	ES53	122	10	50	3	LEAF	None	None
+Andalucía	ES61	123	10	50	3	LEAF	None	None
+Región de Murcia	ES62	124	10	50	3	LEAF	None	None
+Ciudad Autónoma de Ceuta	ES63	125	10	50	3	LEAF	None	None
+Ciudad Autónoma de Melilla	ES64	126	10	50	3	LEAF	None	None
+Canarias	ES70	127	10	50	3	LEAF	None	None
+Länsi-Suomi	FI19	128	11	50	3	LEAF	None	None
+Helsinki-Uusimaa	FI1B	129	11	50	3	LEAF	None	None
+Etelä-Suomi	FI1C	130	11	50	3	LEAF	None	None
+Pohjois- ja Itä-Suomi	FI1D	131	11	50	3	LEAF	None	None
+Åland	FI20	132	11	50	3	LEAF	None	None
+Ile-de-France	FR10	133	12	50	3	LEAF	None	None
+Centre — Val de Loire	FRB0	134	12	50	3	LEAF	None	None
+Bourgogne	FRC1	135	12	50	3	LEAF	None	None
+Franche-Comté	FRC2	136	12	50	3	LEAF	None	None
+Basse-Normandie	FRD1	137	12	50	3	LEAF	None	None
+Haute-Normandie	FRD2	138	12	50	3	LEAF	None	None
+Nord-Pas de Calais	FRE1	139	12	50	3	LEAF	None	None
+Picardie	FRE2	140	12	50	3	LEAF	None	None
+Alsace	FRF1	141	12	50	3	LEAF	None	None
+Champagne-Ardenne	FRF2	142	12	50	3	LEAF	None	None
+Lorraine	FRF3	143	12	50	3	LEAF	None	None
+Pays de la Loire	FRG0	144	12	50	3	LEAF	None	None
+Bretagne	FRH0	145	12	50	3	LEAF	None	None
+Aquitaine	FRI1	146	12	50	3	LEAF	None	None
+Limousin	FRI2	147	12	50	3	LEAF	None	None
+Poitou-Charentes	FRI3	148	12	50	3	LEAF	None	None
+Languedoc-Roussillon	FRJ1	149	12	50	3	LEAF	None	None
+Midi-Pyrénées	FRJ2	150	12	50	3	LEAF	None	None
+Auvergne	FRK1	151	12	50	3	LEAF	None	None
+Rhône-Alpes	FRK2	152	12	50	3	LEAF	None	None
+Provence-Alpes-Côte d’Azur	FRL0	153	12	50	3	LEAF	None	None
+Corse	FRM0	154	12	50	3	LEAF	None	None
+Guadeloupe	FRY1	155	12	50	3	LEAF	None	None
+Martinique	FRY2	156	12	50	3	LEAF	None	None
+Guyane	FRY3	157	12	50	3	LEAF	None	None
+La Réunion	FRY4	158	12	50	3	LEAF	None	None
+Mayotte	FRY5	159	12	50	3	LEAF	None	None
+Aττική (Attiki)	EL30	160	13	50	3	LEAF	None	None
+Βόρειο Αιγαίο (Voreio Aigaio)	EL41	161	13	50	3	LEAF	None	None
+Νότιο Αιγαίο (Notio Aigaio)	EL42	162	13	50	3	LEAF	None	None
+Κρήτη (Kriti)	EL43	163	13	50	3	LEAF	None	None
+Aνατολική Μακεδονία, Θράκη (Anatoliki Makedonia, Thraki)	EL51	164	13	50	3	LEAF	None	None
+Κεντρική Μακεδονία (Kentriki Makedonia)	EL52	165	13	50	3	LEAF	None	None
+Δυτική Μακεδονία (Dytiki Makedonia)	EL53	166	13	50	3	LEAF	None	None
+Ήπειρος (Ipeiros)	EL54	167	13	50	3	LEAF	None	None
+Θεσσαλία (Thessalia)	EL61	168	13	50	3	LEAF	None	None
+Ιόνια Νησιά (Ionia Nisia)	EL62	169	13	50	3	LEAF	None	None
+Δυτική Ελλάδα (Dytiki Ellada)	EL63	170	13	50	3	LEAF	None	None
+Στερεά Ελλάδα (Sterea Ellada)	EL64	171	13	50	3	LEAF	None	None
+Πελοπόννησος (Peloponnisos)	EL65	172	13	50	3	LEAF	None	None
+Jadranska Hrvatska	HR03	173	14	50	3	LEAF	None	None
+Kontinentalna Hrvatska	HR04	174	14	50	3	LEAF	None	None
+Budapest	HU11	175	15	50	3	LEAF	None	None
+Pest	HU12	176	15	50	3	LEAF	None	None
+Közép-Dunántúl	HU21	177	15	50	3	LEAF	None	None
+Nyugat-Dunántúl	HU22	178	15	50	3	LEAF	None	None
+Dél-Dunántúl	HU23	179	15	50	3	LEAF	None	None
+Észak-Magyarország	HU31	180	15	50	3	LEAF	None	None
+Észak-Alföld	HU32	181	15	50	3	LEAF	None	None
+Dél-Alföld	HU33	182	15	50	3	LEAF	None	None
+Northern and Western	IE04	183	16	50	3	LEAF	None	None
+Southern	IE05	184	16	50	3	LEAF	None	None
+Eastern and Midland	IE06	185	16	50	3	LEAF	None	None
+Piemonte	ITC1	186	17	50	3	LEAF	None	None
+Valle d’Aosta/Vallée d’Aoste	ITC2	187	17	50	3	LEAF	None	None
+Liguria	ITC3	188	17	50	3	LEAF	None	None
+Lombardia	ITC4	189	17	50	3	LEAF	None	None
+Abruzzo	ITF1	190	17	50	3	LEAF	None	None
+Molise	ITF2	191	17	50	3	LEAF	None	None
+Campania	ITF3	192	17	50	3	LEAF	None	None
+Puglia	ITF4	193	17	50	3	LEAF	None	None
+Basilicata	ITF5	194	17	50	3	LEAF	None	None
+Calabria	ITF6	195	17	50	3	LEAF	None	None
+Sicilia	ITG1	196	17	50	3	LEAF	None	None
+Sardegna	ITG2	197	17	50	3	LEAF	None	None
+Provincia Autonoma di Bolzano/Bozen	ITH1	198	17	50	3	LEAF	None	None
+Provincia Autonoma di Trento	ITH2	199	17	50	3	LEAF	None	None
+Veneto	ITH3	200	17	50	3	LEAF	None	None
+Friuli-Venezia Giulia	ITH4	201	17	50	3	LEAF	None	None
+Emilia-Romagna	ITH5	202	17	50	3	LEAF	None	None
+Toscana	ITI1	203	17	50	3	LEAF	None	None
+Umbria	ITI2	204	17	50	3	LEAF	None	None
+Marche	ITI3	205	17	50	3	LEAF	None	None
+Lazio	ITI4	206	17	50	3	LEAF	None	None
+Sostinės regionas	LT01	207	18	50	3	LEAF	None	None
+Vidurio ir vakarų Lietuvos regionas	LT02	208	18	50	3	LEAF	None	None
+Luxembourg	LU00	209	19	50	3	LEAF	None	None
+Latvija	LV00	210	20	50	3	LEAF	None	None
+Malta	MT00	211	21	50	3	LEAF	None	None
+Groningen	NL11	212	22	50	3	LEAF	None	None
+Friesland (NL)	NL12	213	22	50	3	LEAF	None	None
+Drenthe	NL13	214	22	50	3	LEAF	None	None
+Overijssel	NL21	215	22	50	3	LEAF	None	None
+Gelderland	NL22	216	22	50	3	LEAF	None	None
+Flevoland	NL23	217	22	50	3	LEAF	None	None
+Utrecht	NL31	218	22	50	3	LEAF	None	None
+Noord-Holland	NL32	219	22	50	3	LEAF	None	None
+Zuid-Holland	NL33	220	22	50	3	LEAF	None	None
+Zeeland	NL34	221	22	50	3	LEAF	None	None
+Noord-Brabant	NL41	222	22	50	3	LEAF	None	None
+Limburg (NL)	NL42	223	22	50	3	LEAF	None	None
+Małopolskie	PL21	224	23	50	3	LEAF	None	None
+Śląskie	PL22	225	23	50	3	LEAF	None	None
+Wielkopolskie	PL41	226	23	50	3	LEAF	None	None
+Zachodniopomorskie	PL42	227	23	50	3	LEAF	None	None
+Lubuskie	PL43	228	23	50	3	LEAF	None	None
+Dolnośląskie	PL51	229	23	50	3	LEAF	None	None
+Opolskie	PL52	230	23	50	3	LEAF	None	None
+Kujawsko-pomorskie	PL61	231	23	50	3	LEAF	None	None
+Warmińsko-mazurskie	PL62	232	23	50	3	LEAF	None	None
+Pomorskie	PL63	233	23	50	3	LEAF	None	None
+Łódzkie	PL71	234	23	50	3	LEAF	None	None
+Świętokrzyskie	PL72	235	23	50	3	LEAF	None	None
+Lubelskie	PL81	236	23	50	3	LEAF	None	None
+Podkarpackie	PL82	237	23	50	3	LEAF	None	None
+Podlaskie	PL84	238	23	50	3	LEAF	None	None
+Warszawski stołeczny	PL91	239	23	50	3	LEAF	None	None
+Mazowiecki regionalny	PL92	240	23	50	3	LEAF	None	None
+Norte	PT11	241	24	50	3	LEAF	None	None
+Algarve	PT15	242	24	50	3	LEAF	None	None
+Centro (PT)	PT16	243	24	50	3	LEAF	None	None
+Área Metropolitana de Lisboa	PT17	244	24	50	3	LEAF	None	None
+Alentejo	PT18	245	24	50	3	LEAF	None	None
+Região Autónoma dos Açores	PT20	246	24	50	3	LEAF	None	None
+Região Autónoma da Madeira	PT30	247	24	50	3	LEAF	None	None
+Nord-Vest	RO11	248	25	50	3	LEAF	None	None
+Centru	RO12	249	25	50	3	LEAF	None	None
+Nord-Est	RO21	250	25	50	3	LEAF	None	None
+Sud-Est	RO22	251	25	50	3	LEAF	None	None
+Sud - Muntenia	RO31	252	25	50	3	LEAF	None	None
+Bucureşti - Ilfov	RO32	253	25	50	3	LEAF	None	None
+Sud-Vest Oltenia	RO41	254	25	50	3	LEAF	None	None
+Vest	RO42	255	25	50	3	LEAF	None	None
+Stockholm	SE11	256	26	50	3	LEAF	None	None
+Östra Mellansverige	SE12	257	26	50	3	LEAF	None	None
+Småland med öarna	SE21	258	26	50	3	LEAF	None	None
+Sydsverige	SE22	259	26	50	3	LEAF	None	None
+Västsverige	SE23	260	26	50	3	LEAF	None	None
+Norra Mellansverige	SE31	261	26	50	3	LEAF	None	None
+Mellersta Norrland	SE32	262	26	50	3	LEAF	None	None
+Övre Norrland	SE33	263	26	50	3	LEAF	None	None
+Vzhodna Slovenija	SI03	264	27	50	3	LEAF	None	None
+Zahodna Slovenija	SI04	265	27	50	3	LEAF	None	None
+Bratislavský kraj	SK01	266	28	50	3	LEAF	None	None
+Západné Slovensko	SK02	267	28	50	3	LEAF	None	None
+Stredné Slovensko	SK03	268	28	50	3	LEAF	None	None
+Východné Slovensko	SK04	269	28	50	3	LEAF	None	None
+Tees Valley and Durham	UKC1	270	29	50	3	LEAF	None	None
+Northumberland and Tyne and Wear	UKC2	271	29	50	3	LEAF	None	None
+Cumbria	UKD1	272	29	50	3	LEAF	None	None
+Greater Manchester	UKD3	273	29	50	3	LEAF	None	None
+Lancashire	UKD4	274	29	50	3	LEAF	None	None
+Cheshire	UKD6	275	29	50	3	LEAF	None	None
+Merseyside	UKD7	276	29	50	3	LEAF	None	None
+East Yorkshire and Northern Lincolnshire	UKE1	277	29	50	3	LEAF	None	None
+North Yorkshire	UKE2	278	29	50	3	LEAF	None	None
+South Yorkshire	UKE3	279	29	50	3	LEAF	None	None
+West Yorkshire	UKE4	280	29	50	3	LEAF	None	None
+Derbyshire and Nottinghamshire	UKF1	281	29	50	3	LEAF	None	None
+Leicestershire, Rutland and Northamptonshire	UKF2	282	29	50	3	LEAF	None	None
+Lincolnshire	UKF3	283	29	50	3	LEAF	None	None
+Herefordshire, Worcestershire and Warwickshire	UKG1	284	29	50	3	LEAF	None	None
+Shropshire and Staffordshire	UKG2	285	29	50	3	LEAF	None	None
+West Midlands	UKG3	286	29	50	3	LEAF	None	None
+East Anglia	UKH1	287	29	50	3	LEAF	None	None
+Bedfordshire and Hertfordshire	UKH2	288	29	50	3	LEAF	None	None
+Essex	UKH3	289	29	50	3	LEAF	None	None
+Inner London — West	UKI3	290	29	50	3	LEAF	None	None
+Inner London — East	UKI4	291	29	50	3	LEAF	None	None
+Outer London — East and North East	UKI5	292	29	50	3	LEAF	None	None
+Outer London — South	UKI6	293	29	50	3	LEAF	None	None
+Outer London — West and North West	UKI7	294	29	50	3	LEAF	None	None
+Berkshire, Buckinghamshire and Oxfordshire	UKJ1	295	29	50	3	LEAF	None	None
+Surrey, East and West Sussex	UKJ2	296	29	50	3	LEAF	None	None
+Hampshire and Isle of Wight	UKJ3	297	29	50	3	LEAF	None	None
+Kent	UKJ4	298	29	50	3	LEAF	None	None
+Gloucestershire, Wiltshire and Bristol/Bath area	UKK1	299	29	50	3	LEAF	None	None
+Dorset and Somerset	UKK2	300	29	50	3	LEAF	None	None
+Cornwall and Isles of Scilly	UKK3	301	29	50	3	LEAF	None	None
+Devon	UKK4	302	29	50	3	LEAF	None	None
+West Wales and The Valleys	UKL1	303	29	50	3	LEAF	None	None
+East Wales	UKL2	304	29	50	3	LEAF	None	None
+North Eastern Scotland	UKM5	305	29	50	3	LEAF	None	None
+Highlands and Islands	UKM6	306	29	50	3	LEAF	None	None
+Eastern Scotland	UKM7	307	29	50	3	LEAF	None	None
+West Central Scotland	UKM8	308	29	50	3	LEAF	None	None
+Southern Scotland	UKM9	309	29	50	3	LEAF	None	None
+Northern Ireland	UKN0	310	29	50	3	LEAF	None	None

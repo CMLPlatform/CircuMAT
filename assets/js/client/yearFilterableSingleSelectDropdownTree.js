@@ -9,7 +9,7 @@ class YearFilterableSingleSelectDropdownTree extends FilterableSingleSelectDropd
 
     componentWillMount() {
         var data = [];
-        var years = [1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011];
+        var years = [2011];
         for (var year of years) {
             data.push({id: year, pId: 0, value: year.toString(), label: year.toString()});
         }

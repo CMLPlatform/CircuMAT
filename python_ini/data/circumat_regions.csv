@@ -1,0 +1,311 @@
+name	code	global_id	parent_id	local_id	level
+EU NUTS2	ALL_EU_NUTS2	1	0	1	1
+Austria	AT	3	1	1	2
+Belgium	BE	4	1	2	2
+Bulgaria	BG	5	1	3	2
+Cyprus	CY	6	1	4	2
+Czech Republic	CZ	7	1	5	2
+Germany	DE	8	1	6	2
+Denmark	DK	9	1	7	2
+Estonia	EE	10	1	8	2
+Spain	ES	11	1	9	2
+Finland	FI	12	1	10	2
+France	FR	13	1	11	2
+Greece	EL	14	1	12	2
+Croatia	HR	15	1	13	2
+Hungary	HU	16	1	14	2
+Ireland	IE	17	1	15	2
+Italy	IT	18	1	16	2
+Lithuania	LT	19	1	17	2
+Luxembourg	LU	20	1	18	2
+Latvia	LV	21	1	19	2
+Malta	MT	22	1	20	2
+Netherlands	NL	23	1	21	2
+Poland	PL	24	1	22	2
+Portugal	PT	25	1	23	2
+Romania	RO	26	1	24	2
+Sweden	SE	27	1	25	2
+Slovenia	SI	28	1	26	2
+Slovakia	SK	29	1	27	2
+United Kingdom	UK	30	1	28	2
+Burgenland	AT11	31	3	50	3
+Niederösterreich	AT12	32	3	50	3
+Wien	AT13	33	3	50	3
+Kärnten	AT21	34	3	50	3
+Steiermark	AT22	35	3	50	3
+Oberösterreich	AT31	36	3	50	3
+Salzburg	AT32	37	3	50	3
+Tirol	AT33	38	3	50	3
+Vorarlberg	AT34	39	3	50	3
+Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest	BE10	40	4	50	3
+Prov. Antwerpen	BE21	41	4	50	3
+Prov. Limburg (BE)	BE22	42	4	50	3
+Prov. Oost-Vlaanderen	BE23	43	4	50	3
+Prov. Vlaams-Brabant	BE24	44	4	50	3
+Prov. West-Vlaanderen	BE25	45	4	50	3
+Prov. Brabant Wallon	BE31	46	4	50	3
+Prov. Hainaut	BE32	47	4	50	3
+Prov. Liège	BE33	48	4	50	3
+Prov. Luxembourg (BE)	BE34	49	4	50	3
+Prov. Namur	BE35	50	4	50	3
+Северозападен (Severozapaden)	BG31	51	5	50	3
+Северен централен (Severen tsentralen)	BG32	52	5	50	3
+Североизточен (Severoiztochen)	BG33	53	5	50	3
+Югоизточен (Yugoiztochen)	BG34	54	5	50	3
+Югозападен (Yugozapaden)	BG41	55	5	50	3
+Южен централен (Yuzhen tsentralen)	BG42	56	5	50	3
+Κύπρος (Kypros)	CY00	57	6	50	3
+Praha	CZ01	58	7	50	3
+Střední Čechy	CZ02	59	7	50	3
+Jihozápad	CZ03	60	7	50	3
+Severozápad	CZ04	61	7	50	3
+Severovýchod	CZ05	62	7	50	3
+Jihovýchod	CZ06	63	7	50	3
+Střední Morava	CZ07	64	7	50	3
+Moravskoslezsko	CZ08	65	7	50	3
+Stuttgart	DE11	66	8	50	3
+Karlsruhe	DE12	67	8	50	3
+Freiburg	DE13	68	8	50	3
+Tübingen	DE14	69	8	50	3
+Oberbayern	DE21	70	8	50	3
+Niederbayern	DE22	71	8	50	3
+Oberpfalz	DE23	72	8	50	3
+Oberfranken	DE24	73	8	50	3
+Mittelfranken	DE25	74	8	50	3
+Unterfranken	DE26	75	8	50	3
+Schwaben	DE27	76	8	50	3
+Berlin	DE30	77	8	50	3
+Brandenburg	DE40	78	8	50	3
+Bremen	DE50	79	8	50	3
+Hamburg	DE60	80	8	50	3
+Darmstadt	DE71	81	8	50	3
+Gießen	DE72	82	8	50	3
+Kassel	DE73	83	8	50	3
+Mecklenburg-Vorpommern	DE80	84	8	50	3
+Braunschweig	DE91	85	8	50	3
+Hannover	DE92	86	8	50	3
+Lüneburg	DE93	87	8	50	3
+Weser-Ems	DE94	88	8	50	3
+Düsseldorf	DEA1	89	8	50	3
+Köln	DEA2	90	8	50	3
+Münster	DEA3	91	8	50	3
+Detmold	DEA4	92	8	50	3
+Arnsberg	DEA5	93	8	50	3
+Koblenz	DEB1	94	8	50	3
+Trier	DEB2	95	8	50	3
+Rheinhessen-Pfalz	DEB3	96	8	50	3
+Saarland	DEC0	97	8	50	3
+Dresden	DED2	98	8	50	3
+Chemnitz	DED4	99	8	50	3
+Leipzig	DED5	100	8	50	3
+Sachsen-Anhalt	DEE0	101	8	50	3
+Schleswig-Holstein	DEF0	102	8	50	3
+Thüringen	DEG0	103	8	50	3
+Hovedstaden	DK01	104	9	50	3
+Sjælland	DK02	105	9	50	3
+Syddanmark	DK03	106	9	50	3
+Midtjylland	DK04	107	9	50	3
+Nordjylland	DK05	108	9	50	3
+Eesti	EE00	109	10	50	3
+Galicia	ES11	110	11	50	3
+Principado de Asturias	ES12	111	11	50	3
+Cantabria	ES13	112	11	50	3
+País Vasco	ES21	113	11	50	3
+Comunidad Foral de Navarra	ES22	114	11	50	3
+La Rioja	ES23	115	11	50	3
+Aragón	ES24	116	11	50	3
+Comunidad de Madrid	ES30	117	11	50	3
+Castilla y León	ES41	118	11	50	3
+Castilla-La Mancha	ES42	119	11	50	3
+Extremadura	ES43	120	11	50	3
+Cataluña	ES51	121	11	50	3
+Comunidad Valenciana	ES52	122	11	50	3
+Illes Balears	ES53	123	11	50	3
+Andalucía	ES61	124	11	50	3
+Región de Murcia	ES62	125	11	50	3
+Ciudad Autónoma de Ceuta	ES63	126	11	50	3
+Ciudad Autónoma de Melilla	ES64	127	11	50	3
+Canarias	ES70	128	11	50	3
+Länsi-Suomi	FI19	129	12	50	3
+Helsinki-Uusimaa	FI1B	130	12	50	3
+Etelä-Suomi	FI1C	131	12	50	3
+Pohjois- ja Itä-Suomi	FI1D	132	12	50	3
+Åland	FI20	133	12	50	3
+Ile-de-France	FR10	134	13	50	3
+Centre — Val de Loire	FRB0	135	13	50	3
+Bourgogne	FRC1	136	13	50	3
+Franche-Comté	FRC2	137	13	50	3
+Basse-Normandie	FRD1	138	13	50	3
+Haute-Normandie	FRD2	139	13	50	3
+Nord-Pas de Calais	FRE1	140	13	50	3
+Picardie	FRE2	141	13	50	3
+Alsace	FRF1	142	13	50	3
+Champagne-Ardenne	FRF2	143	13	50	3
+Lorraine	FRF3	144	13	50	3
+Pays de la Loire	FRG0	145	13	50	3
+Bretagne	FRH0	146	13	50	3
+Aquitaine	FRI1	147	13	50	3
+Limousin	FRI2	148	13	50	3
+Poitou-Charentes	FRI3	149	13	50	3
+Languedoc-Roussillon	FRJ1	150	13	50	3
+Midi-Pyrénées	FRJ2	151	13	50	3
+Auvergne	FRK1	152	13	50	3
+Rhône-Alpes	FRK2	153	13	50	3
+Provence-Alpes-Côte d’Azur	FRL0	154	13	50	3
+Corse	FRM0	155	13	50	3
+Guadeloupe	FRY1	156	13	50	3
+Martinique	FRY2	157	13	50	3
+Guyane	FRY3	158	13	50	3
+La Réunion	FRY4	159	13	50	3
+Mayotte	FRY5	160	13	50	3
+Aττική (Attiki)	EL30	161	14	50	3
+Βόρειο Αιγαίο (Voreio Aigaio)	EL41	162	14	50	3
+Νότιο Αιγαίο (Notio Aigaio)	EL42	163	14	50	3
+Κρήτη (Kriti)	EL43	164	14	50	3
+Aνατολική Μακεδονία, Θράκη (Anatoliki Makedonia, Thraki)	EL51	165	14	50	3
+Κεντρική Μακεδονία (Kentriki Makedonia)	EL52	166	14	50	3
+Δυτική Μακεδονία (Dytiki Makedonia)	EL53	167	14	50	3
+Ήπειρος (Ipeiros)	EL54	168	14	50	3
+Θεσσαλία (Thessalia)	EL61	169	14	50	3
+Ιόνια Νησιά (Ionia Nisia)	EL62	170	14	50	3
+Δυτική Ελλάδα (Dytiki Ellada)	EL63	171	14	50	3
+Στερεά Ελλάδα (Sterea Ellada)	EL64	172	14	50	3
+Πελοπόννησος (Peloponnisos)	EL65	173	14	50	3
+Jadranska Hrvatska	HR03	174	15	50	3
+Kontinentalna Hrvatska	HR04	175	15	50	3
+Budapest	HU11	176	16	50	3
+Pest	HU12	177	16	50	3
+Közép-Dunántúl	HU21	178	16	50	3
+Nyugat-Dunántúl	HU22	179	16	50	3
+Dél-Dunántúl	HU23	180	16	50	3
+Észak-Magyarország	HU31	181	16	50	3
+Észak-Alföld	HU32	182	16	50	3
+Dél-Alföld	HU33	183	16	50	3
+Northern and Western	IE04	184	17	50	3
+Southern	IE05	185	17	50	3
+Eastern and Midland	IE06	186	17	50	3
+Piemonte	ITC1	187	18	50	3
+Valle d’Aosta/Vallée d’Aoste	ITC2	188	18	50	3
+Liguria	ITC3	189	18	50	3
+Lombardia	ITC4	190	18	50	3
+Abruzzo	ITF1	191	18	50	3
+Molise	ITF2	192	18	50	3
+Campania	ITF3	193	18	50	3
+Puglia	ITF4	194	18	50	3
+Basilicata	ITF5	195	18	50	3
+Calabria	ITF6	196	18	50	3
+Sicilia	ITG1	197	18	50	3
+Sardegna	ITG2	198	18	50	3
+Provincia Autonoma di Bolzano/Bozen	ITH1	199	18	50	3
+Provincia Autonoma di Trento	ITH2	200	18	50	3
+Veneto	ITH3	201	18	50	3
+Friuli-Venezia Giulia	ITH4	202	18	50	3
+Emilia-Romagna	ITH5	203	18	50	3
+Toscana	ITI1	204	18	50	3
+Umbria	ITI2	205	18	50	3
+Marche	ITI3	206	18	50	3
+Lazio	ITI4	207	18	50	3
+Sostinės regionas	LT01	208	19	50	3
+Vidurio ir vakarų Lietuvos regionas	LT02	209	19	50	3
+Luxembourg	LU00	210	20	50	3
+Latvija	LV00	211	21	50	3
+Malta	MT00	212	22	50	3
+Groningen	NL11	213	23	50	3
+Friesland (NL)	NL12	214	23	50	3
+Drenthe	NL13	215	23	50	3
+Overijssel	NL21	216	23	50	3
+Gelderland	NL22	217	23	50	3
+Flevoland	NL23	218	23	50	3
+Utrecht	NL31	219	23	50	3
+Noord-Holland	NL32	220	23	50	3
+Zuid-Holland	NL33	221	23	50	3
+Zeeland	NL34	222	23	50	3
+Noord-Brabant	NL41	223	23	50	3
+Limburg (NL)	NL42	224	23	50	3
+Małopolskie	PL21	225	24	50	3
+Śląskie	PL22	226	24	50	3
+Wielkopolskie	PL41	227	24	50	3
+Zachodniopomorskie	PL42	228	24	50	3
+Lubuskie	PL43	229	24	50	3
+Dolnośląskie	PL51	230	24	50	3
+Opolskie	PL52	231	24	50	3
+Kujawsko-pomorskie	PL61	232	24	50	3
+Warmińsko-mazurskie	PL62	233	24	50	3
+Pomorskie	PL63	234	24	50	3
+Łódzkie	PL71	235	24	50	3
+Świętokrzyskie	PL72	236	24	50	3
+Lubelskie	PL81	237	24	50	3
+Podkarpackie	PL82	238	24	50	3
+Podlaskie	PL84	239	24	50	3
+Warszawski stołeczny	PL91	240	24	50	3
+Mazowiecki regionalny	PL92	241	24	50	3
+Norte	PT11	242	25	50	3
+Algarve	PT15	243	25	50	3
+Centro (PT)	PT16	244	25	50	3
+Área Metropolitana de Lisboa	PT17	245	25	50	3
+Alentejo	PT18	246	25	50	3
+Região Autónoma dos Açores	PT20	247	25	50	3
+Região Autónoma da Madeira	PT30	248	25	50	3
+Nord-Vest	RO11	249	26	50	3
+Centru	RO12	250	26	50	3
+Nord-Est	RO21	251	26	50	3
+Sud-Est	RO22	252	26	50	3
+Sud - Muntenia	RO31	253	26	50	3
+Bucureşti - Ilfov	RO32	254	26	50	3
+Sud-Vest Oltenia	RO41	255	26	50	3
+Vest	RO42	256	26	50	3
+Stockholm	SE11	257	27	50	3
+Östra Mellansverige	SE12	258	27	50	3
+Småland med öarna	SE21	259	27	50	3
+Sydsverige	SE22	260	27	50	3
+Västsverige	SE23	261	27	50	3
+Norra Mellansverige	SE31	262	27	50	3
+Mellersta Norrland	SE32	263	27	50	3
+Övre Norrland	SE33	264	27	50	3
+Vzhodna Slovenija	SI03	265	28	50	3
+Zahodna Slovenija	SI04	266	28	50	3
+Bratislavský kraj	SK01	267	29	50	3
+Západné Slovensko	SK02	268	29	50	3
+Stredné Slovensko	SK03	269	29	50	3
+Východné Slovensko	SK04	270	29	50	3
+Tees Valley and Durham	UKC1	271	30	50	3
+Northumberland and Tyne and Wear	UKC2	272	30	50	3
+Cumbria	UKD1	273	30	50	3
+Greater Manchester	UKD3	274	30	50	3
+Lancashire	UKD4	275	30	50	3
+Cheshire	UKD6	276	30	50	3
+Merseyside	UKD7	277	30	50	3
+East Yorkshire and Northern Lincolnshire	UKE1	278	30	50	3
+North Yorkshire	UKE2	279	30	50	3
+South Yorkshire	UKE3	280	30	50	3
+West Yorkshire	UKE4	281	30	50	3
+Derbyshire and Nottinghamshire	UKF1	282	30	50	3
+Leicestershire, Rutland and Northamptonshire	UKF2	283	30	50	3
+Lincolnshire	UKF3	284	30	50	3
+Herefordshire, Worcestershire and Warwickshire	UKG1	285	30	50	3
+Shropshire and Staffordshire	UKG2	286	30	50	3
+West Midlands	UKG3	287	30	50	3
+East Anglia	UKH1	288	30	50	3
+Bedfordshire and Hertfordshire	UKH2	289	30	50	3
+Essex	UKH3	290	30	50	3
+Inner London — West	UKI3	291	30	50	3
+Inner London — East	UKI4	292	30	50	3
+Outer London — East and North East	UKI5	293	30	50	3
+Outer London — South	UKI6	294	30	50	3
+Outer London — West and North West	UKI7	295	30	50	3
+Berkshire, Buckinghamshire and Oxfordshire	UKJ1	296	30	50	3
+Surrey, East and West Sussex	UKJ2	297	30	50	3
+Hampshire and Isle of Wight	UKJ3	298	30	50	3
+Kent	UKJ4	299	30	50	3
+Gloucestershire, Wiltshire and Bristol/Bath area	UKK1	300	30	50	3
+Dorset and Somerset	UKK2	301	30	50	3
+Cornwall and Isles of Scilly	UKK3	302	30	50	3
+Devon	UKK4	303	30	50	3
+West Wales and The Valleys	UKL1	304	30	50	3
+East Wales	UKL2	305	30	50	3
+North Eastern Scotland	UKM5	306	30	50	3
+Highlands and Islands	UKM6	307	30	50	3
+Eastern Scotland	UKM7	308	30	50	3
+West Central Scotland	UKM8	309	30	50	3
+Southern Scotland	UKM9	310	30	50	3
+Northern Ireland	UKN0	311	30	50	3

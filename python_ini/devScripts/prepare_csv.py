@@ -18,7 +18,7 @@ import os, sys
 from collections import defaultdict
 import itertools
 
-MY_TREE_FILE = '../data/final_countryTree_exiovisuals.csv'
+MY_TREE_FILE = '../output_data/circumat_regions.csv'
 BINS = {}
 MYDATA = []
 
@@ -156,25 +156,25 @@ def constructFinalCSV(data, dictOfChildren):
                 # for each key
                 for aggregation_id in dictOfChildren:
                     if aggregation_id == parent_id:
-                        # now we can use the global_id to fetch the correct values
-                        resultChildrenofAgg = dictOfChildren[global_id]
-                        prepareChildren = list(resultChildrenofAgg)
+                            # now we can use the global_id to fetch the correct values
+                            resultChildrenofAgg = dictOfChildren[global_id]
+                            prepareChildren = list(resultChildrenofAgg)
 
-                        myChildrenGlobal, myChildrenLocal = getLowestChildren(level, maxLvl, prepareChildren, global_id,
-                                                                              data)
-                        # we are not there yet, as when an Aggregate has children that are Aggregates themselves
-                        # we need to dive even deeper
-                        # thus the number of levels would be needed to traverse to the lowest level
-                        # print(resultChildrenofAgg)
+                            myChildrenGlobal, myChildrenLocal = getLowestChildren(level, maxLvl, prepareChildren, global_id,
+                                                                                  data)
+                            # we are not there yet, as when an Aggregate has children that are Aggregates themselves
+                            # we need to dive even deeper
+                            # thus the number of levels would be needed to traverse to the lowest level
+                            # print(resultChildrenofAgg)
 
 
-                        # prepare for output
-                        # prepareChildren = list(resultChildrenofAgg)
-                        # myChildren = "#".join(prepareChildren)
-                        # print("writing modified row for: " + name)
-                        writer.writerow(
-                            [name, code, global_id, parent_id, local_id, level, identifier, myChildrenGlobal,
-                             myChildrenLocal])
+                            # prepare for output
+                            # prepareChildren = list(resultChildrenofAgg)
+                            # myChildren = "#".join(prepareChildren)
+                            # print("writing modified row for: " + name)
+                            writer.writerow(
+                                [name, code, global_id, parent_id, local_id, level, identifier, myChildrenGlobal,
+                                 myChildrenLocal])
             print("Row :" + name + " added.")
 
 

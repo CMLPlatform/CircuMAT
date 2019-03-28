@@ -1,0 +1,1818 @@
+CNTR_CODE	NUTS_ID	Description
+BE	BE1	RÉGION DE BRUXELLES-CAPITALE/BRUSSELS HOOFDSTEDELIJK GEWEST
+BE	BE2	VLAAMS GEWEST
+BE	BE3	RÉGION WALLONNE
+BE	BEZ	EXTRA-REGIO NUTS 1
+BG	BG3	СЕВЕРНА И ЮГОИЗТОЧНА БЪЛГАРИЯ (SEVERNA I YUGOIZTOCHNA BULGARIA)
+BG	BG4	ЮГОЗАПАДНА И ЮЖНА ЦЕНТРАЛНА БЪЛГАРИЯ (YUGOZAPADNA I YUZHNA TSENTRALNA BULGARIA)
+BG	BGZ	EXTRA-REGIO NUTS 1
+CZ	CZ0	ČESKÁ REPUBLIKA
+CZ	CZZ	EXTRA-REGIO NUTS 1
+DK	DK0	DANMARK
+DK	DKZ	EXTRA-REGIO NUTS 1
+DE	DE1	BADEN-WÜRTTEMBERG
+DE	DE2	BAYERN
+DE	DE3	BERLIN
+DE	DE4	BRANDENBURG
+DE	DE5	BREMEN
+DE	DE6	HAMBURG
+DE	DE7	HESSEN
+DE	DE8	MECKLENBURG-VORPOMMERN
+DE	DE9	NIEDERSACHSEN
+DE	DEA	NORDRHEIN-WESTFALEN
+DE	DEB	RHEINLAND-PFALZ
+DE	DEC	SAARLAND
+DE	DED	SACHSEN
+DE	DEE	SACHSEN-ANHALT
+DE	DEF	SCHLESWIG-HOLSTEIN
+DE	DEG	THÜRINGEN
+DE	DEZ	EXTRA-REGIO NUTS 1
+EE	EE0	EESTI
+EE	EEZ	EXTRA-REGIO NUTS 1
+IE	IE0	IRELAND
+IE	IEZ	EXTRA-REGIO NUTS 1
+EL	EL3	ATTIKΗ (ATTIKI)
+EL	EL4	NΗΣΙΑ ΑΙΓΑΙΟΥ, KΡΗΤΗ (NISIA AIGAIOU, KRITI)
+EL	EL5	ΒΟΡΕΙΑ ΕΛΛΑΔΑ (VOREIA ELLADA)
+EL	EL6	ΚΕΝΤΡΙΚΗ ΕΛΛΑΔΑ (KENTRIKI ELLADA)
+EL	ELZ	EXTRA-REGIO NUTS 1
+ES	ES1	NOROESTE
+ES	ES2	NORESTE
+ES	ES3	COMUNIDAD DE MADRID
+ES	ES4	CENTRO (ES)
+ES	ES5	ESTE
+ES	ES6	SUR
+ES	ES7	CANARIAS
+ES	ESZ	EXTRA-REGIO NUTS 1
+FR	FR1	ILE-DE-FRANCE
+FR	FRB	CENTRE — VAL DE LOIRE
+FR	FRC	BOURGOGNE-FRANCHE-COMTÉ
+FR	FRD	NORMANDIE
+FR	FRE	NORD-PAS DE CALAIS-PICARDIE
+FR	FRF	ALSACE-CHAMPAGNE-ARDENNE-LORRAINE
+FR	FRG	PAYS DE LA LOIRE
+FR	FRH	BRETAGNE
+FR	FRI	AQUITAINE-LIMOUSIN-POITOU-CHARENTES
+FR	FRJ	LANGUEDOC-ROUSSILLON-MIDI-PYRÉNÉES
+FR	FRK	AUVERGNE-RHÔNE-ALPES
+FR	FRL	PROVENCE-ALPES-CÔTE D’AZUR
+FR	FRM	CORSE
+FR	FRY	RUP FR — RÉGIONS ULTRAPÉRIPHÉRIQUES FRANÇAISES
+FR	FRZ	EXTRA-REGIO NUTS 1
+HR	HR0	HRVATSKA
+HR	HRZ	EXTRA-REGIO NUTS 1
+IT	ITC	NORD-OVEST
+IT	ITF	SUD
+IT	ITG	ISOLE
+IT	ITH	NORD-EST
+IT	ITI	CENTRO (IT)
+IT	ITZ	EXTRA-REGIO NUTS 1
+CY	CY0	ΚΥΠΡΟΣ (Kypros)
+CY	CYZ	EXTRA-REGIO NUTS 1
+LV	LV0	LATVIJA
+LV	LVZ	EXTRA-REGIO NUTS 1
+LT	LT0	LIETUVA
+LT	LTZ	EXTRA-REGIO NUTS 1
+LU	LU0	LUXEMBOURG
+LU	LUZ	EXTRA-REGIO NUTS 1
+HU	HU1	KÖZÉP-MAGYARORSZÁG
+HU	HU2	DUNÁNTÚL
+HU	HU3	ALFÖLD ÉS ÉSZAK
+HU	HUZ	EXTRA-REGIO NUTS 1
+MT	MT0	MALTA
+MT	MTZ	EXTRA-REGIO NUTS 1
+NL	NL1	NOORD-NEDERLAND
+NL	NL2	OOST-NEDERLAND
+NL	NL3	WEST-NEDERLAND
+NL	NL4	ZUID-NEDERLAND
+NL	NLZ	EXTRA-REGIO NUTS 1
+AT	AT1	OSTÖSTERREICH
+AT	AT2	SÜDÖSTERREICH
+AT	AT3	WESTÖSTERREICH
+AT	ATZ	EXTRA-REGIO NUTS 1
+PL	PL2	MAKROREGION POŁUDNIOWY
+PL	PL4	MAKROREGION PÓŁNOCNO-ZACHODNI
+PL	PL5	MAKROREGION POŁUDNIOWO-ZACHODNI
+PL	PL6	MAKROREGION PÓŁNOCNY
+PL	PL7	MAKROREGION CENTRALNY
+PL	PL8	MAKROREGION WSCHODNI
+PL	PL9	MAKROREGION WOJEWÓDZTWO MAZOWIECKIE
+PL	PLZ	EXTRA-REGIO NUTS 1
+PT	PT1	CONTINENTE
+PT	PT2	REGIÃO AUTÓNOMA DOS AÇORES
+PT	PT3	REGIÃO AUTÓNOMA DA MADEIRA
+PT	PTZ	EXTRA-REGIO NUTS 1
+RO	RO1	MACROREGIUNEA UNU
+RO	RO2	MACROREGIUNEA DOI
+RO	RO3	MACROREGIUNEA TREI
+RO	RO4	MACROREGIUNEA PATRU
+RO	ROZ	EXTRA-REGIO NUTS 1
+SI	SI0	SLOVENIJA
+SI	SIZ	EXTRA-REGIO NUTS 1
+SK	SK0	SLOVENSKO
+SK	SKZ	EXTRA-REGIO NUTS 1
+FI	FI1	MANNER-SUOMI
+FI	FI2	ÅLAND
+FI	FIZ	EXTRA-REGIO NUTS 1
+SE	SE1	ÖSTRA SVERIGE
+SE	SE2	SÖDRA SVERIGE
+SE	SE3	NORRA SVERIGE
+SE	SEZ	EXTRA-REGIO NUTS 1
+UK	UKC	NORTH EAST (ENGLAND)
+UK	UKD	NORTH WEST (ENGLAND)
+UK	UKE	YORKSHIRE AND THE HUMBER
+UK	UKF	EAST MIDLANDS (ENGLAND)
+UK	UKG	WEST MIDLANDS (ENGLAND)
+UK	UKH	EAST OF ENGLAND
+UK	UKI	LONDON
+UK	UKJ	SOUTH EAST (ENGLAND)
+UK	UKK	SOUTH WEST (ENGLAND)
+UK	UKL	WALES
+UK	UKM	SCOTLAND
+UK	UKN	NORTHERN IRELAND
+UK	UKZ	EXTRA-REGIO NUTS 1
+BE	BE10	Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest
+BE	BE21	Prov. Antwerpen
+BE	BE22	Prov. Limburg (BE)
+BE	BE23	Prov. Oost-Vlaanderen
+BE	BE24	Prov. Vlaams-Brabant
+BE	BE25	Prov. West-Vlaanderen
+BE	BE31	Prov. Brabant Wallon
+BE	BE32	Prov. Hainaut
+BE	BE33	Prov. Liège
+BE	BE34	Prov. Luxembourg (BE)
+BE	BE35	Prov. Namur
+BE	BEZZ	Extra-Regio NUTS 2
+BG	BG31	Северозападен (Severozapaden)
+BG	BG32	Северен централен (Severen tsentralen)
+BG	BG33	Североизточен (Severoiztochen)
+BG	BG34	Югоизточен (Yugoiztochen)
+BG	BG41	Югозападен (Yugozapaden)
+BG	BG42	Южен централен (Yuzhen tsentralen)
+BG	BGZZ	Extra-Regio NUTS 2
+CZ	CZ01	Praha
+CZ	CZ02	Střední Čechy
+CZ	CZ03	Jihozápad
+CZ	CZ04	Severozápad
+CZ	CZ05	Severovýchod
+CZ	CZ06	Jihovýchod
+CZ	CZ07	Střední Morava
+CZ	CZ08	Moravskoslezsko
+CZ	CZZZ	Extra-Regio NUTS 2
+DK	DK01	Hovedstaden
+DK	DK02	Sjælland
+DK	DK03	Syddanmark
+DK	DK04	Midtjylland
+DK	DK05	Nordjylland
+DK	DKZZ	Extra-Regio NUTS 2
+DE	DE11	Stuttgart
+DE	DE12	Karlsruhe
+DE	DE13	Freiburg
+DE	DE14	Tübingen
+DE	DE21	Oberbayern
+DE	DE22	Niederbayern
+DE	DE23	Oberpfalz
+DE	DE24	Oberfranken
+DE	DE25	Mittelfranken
+DE	DE26	Unterfranken
+DE	DE27	Schwaben
+DE	DE30	Berlin
+DE	DE40	Brandenburg
+DE	DE50	Bremen
+DE	DE60	Hamburg
+DE	DE71	Darmstadt
+DE	DE72	Gießen
+DE	DE73	Kassel
+DE	DE80	Mecklenburg-Vorpommern
+DE	DE91	Braunschweig
+DE	DE92	Hannover
+DE	DE93	Lüneburg
+DE	DE94	Weser-Ems
+DE	DEA1	Düsseldorf
+DE	DEA2	Köln
+DE	DEA3	Münster
+DE	DEA4	Detmold
+DE	DEA5	Arnsberg
+DE	DEB1	Koblenz
+DE	DEB2	Trier
+DE	DEB3	Rheinhessen-Pfalz
+DE	DEC0	Saarland
+DE	DED2	Dresden
+DE	DED4	Chemnitz
+DE	DED5	Leipzig
+DE	DEE0	Sachsen-Anhalt
+DE	DEF0	Schleswig-Holstein
+DE	DEG0	Thüringen
+DE	DEZZ	Extra-Regio NUTS 2
+EE	EE00	Eesti
+EE	EEZZ	Extra-Regio NUTS 2
+IE	IE04	Northern and Western
+IE	IE05	Southern
+IE	IE06	Eastern and Midland
+IE	IEZZ	Extra-Regio NUTS 2
+EL	EL30	Aττική (Attiki)
+EL	EL41	Βόρειο Αιγαίο (Voreio Aigaio)
+EL	EL42	Νότιο Αιγαίο (Notio Aigaio)
+EL	EL43	Κρήτη (Kriti)
+EL	EL51	Aνατολική Μακεδονία, Θράκη (Anatoliki Makedonia, Thraki)
+EL	EL52	Κεντρική Μακεδονία (Kentriki Makedonia)
+EL	EL53	Δυτική Μακεδονία (Dytiki Makedonia)
+EL	EL54	Ήπειρος (Ipeiros)
+EL	EL61	Θεσσαλία (Thessalia)
+EL	EL62	Ιόνια Νησιά (Ionia Nisia)
+EL	EL63	Δυτική Ελλάδα (Dytiki Ellada)
+EL	EL64	Στερεά Ελλάδα (Sterea Ellada)
+EL	EL65	Πελοπόννησος (Peloponnisos)
+EL	ELZZ	Extra-Regio NUTS 2
+ES	ES11	Galicia
+ES	ES12	Principado de Asturias
+ES	ES13	Cantabria
+ES	ES21	País Vasco
+ES	ES22	Comunidad Foral de Navarra
+ES	ES23	La Rioja
+ES	ES24	Aragón
+ES	ES30	Comunidad de Madrid
+ES	ES41	Castilla y León
+ES	ES42	Castilla-La Mancha
+ES	ES43	Extremadura
+ES	ES51	Cataluña
+ES	ES52	Comunidad Valenciana
+ES	ES53	Illes Balears
+ES	ES61	Andalucía
+ES	ES62	Región de Murcia
+ES	ES63	Ciudad Autónoma de Ceuta
+ES	ES64	Ciudad Autónoma de Melilla
+ES	ES70	Canarias
+ES	ESZZ	Extra-Regio NUTS 2
+FR	FR10	Ile-de-France
+FR	FRB0	Centre — Val de Loire
+FR	FRC1	Bourgogne
+FR	FRC2	Franche-Comté
+FR	FRD1	Basse-Normandie
+FR	FRD2	Haute-Normandie
+FR	FRE1	Nord-Pas de Calais
+FR	FRE2	Picardie
+FR	FRF1	Alsace
+FR	FRF2	Champagne-Ardenne
+FR	FRF3	Lorraine
+FR	FRG0	Pays de la Loire
+FR	FRH0	Bretagne
+FR	FRI1	Aquitaine
+FR	FRI2	Limousin
+FR	FRI3	Poitou-Charentes
+FR	FRJ1	Languedoc-Roussillon
+FR	FRJ2	Midi-Pyrénées
+FR	FRK1	Auvergne
+FR	FRK2	Rhône-Alpes
+FR	FRL0	Provence-Alpes-Côte d’Azur
+FR	FRM0	Corse
+FR	FRY1	Guadeloupe
+FR	FRY2	Martinique
+FR	FRY3	Guyane
+FR	FRY4	La Réunion
+FR	FRY5	Mayotte
+FR	FRZZ	Extra-Regio NUTS 2
+HR	HR03	Jadranska Hrvatska
+HR	HR04	Kontinentalna Hrvatska
+HR	HRZZ	Extra-Regio NUTS 2
+IT	ITC1	Piemonte
+IT	ITC2	Valle d’Aosta/Vallée d’Aoste
+IT	ITC3	Liguria
+IT	ITC4	Lombardia
+IT	ITF1	Abruzzo
+IT	ITF2	Molise
+IT	ITF3	Campania
+IT	ITF4	Puglia
+IT	ITF5	Basilicata
+IT	ITF6	Calabria
+IT	ITG1	Sicilia
+IT	ITG2	Sardegna
+IT	ITH1	Provincia Autonoma di Bolzano/Bozen
+IT	ITH2	Provincia Autonoma di Trento
+IT	ITH3	Veneto
+IT	ITH4	Friuli-Venezia Giulia
+IT	ITH5	Emilia-Romagna
+IT	ITI1	Toscana
+IT	ITI2	Umbria
+IT	ITI3	Marche
+IT	ITI4	Lazio
+IT	ITZZ	Extra-Regio NUTS 2
+CY	CY00	Κύπρος (Kypros)
+CY	CYZZ	Extra-Regio NUTS 2
+LV	LV00	Latvija
+LV	LVZZ	Extra-Regio NUTS 2
+LT	LT01	Sostinės regionas
+LT	LT02	Vidurio ir vakarų Lietuvos regionas
+LT	LTZZ	Extra-Regio NUTS 2
+LU	LU00	Luxembourg
+LU	LUZZ	Extra-Regio NUTS 2
+HU	HU11	Budapest
+HU	HU12	Pest
+HU	HU21	Közép-Dunántúl
+HU	HU22	Nyugat-Dunántúl
+HU	HU23	Dél-Dunántúl
+HU	HU31	Észak-Magyarország
+HU	HU32	Észak-Alföld
+HU	HU33	Dél-Alföld
+HU	HUZZ	Extra-Regio NUTS 2
+MT	MT00	Malta
+MT	MTZZ	Extra-Regio NUTS 2
+NL	NL11	Groningen
+NL	NL12	Friesland (NL)
+NL	NL13	Drenthe
+NL	NL21	Overijssel
+NL	NL22	Gelderland
+NL	NL23	Flevoland
+NL	NL31	Utrecht
+NL	NL32	Noord-Holland
+NL	NL33	Zuid-Holland
+NL	NL34	Zeeland
+NL	NL41	Noord-Brabant
+NL	NL42	Limburg (NL)
+NL	NLZZ	Extra-Regio NUTS 2
+AT	AT11	Burgenland
+AT	AT12	Niederösterreich
+AT	AT13	Wien
+AT	AT21	Kärnten
+AT	AT22	Steiermark
+AT	AT31	Oberösterreich
+AT	AT32	Salzburg
+AT	AT33	Tirol
+AT	AT34	Vorarlberg
+AT	ATZZ	Extra-Regio NUTS 2
+PL	PL21	Małopolskie
+PL	PL22	Śląskie
+PL	PL41	Wielkopolskie
+PL	PL42	Zachodniopomorskie
+PL	PL43	Lubuskie
+PL	PL51	Dolnośląskie
+PL	PL52	Opolskie
+PL	PL61	Kujawsko-pomorskie
+PL	PL62	Warmińsko-mazurskie
+PL	PL63	Pomorskie
+PL	PL71	Łódzkie
+PL	PL72	Świętokrzyskie
+PL	PL81	Lubelskie
+PL	PL82	Podkarpackie
+PL	PL84	Podlaskie
+PL	PL91	Warszawski stołeczny
+PL	PL92	Mazowiecki regionalny
+PL	PLZZ	Extra-Regio NUTS 2
+PT	PT11	Norte
+PT	PT15	Algarve
+PT	PT16	Centro (PT)
+PT	PT17	Área Metropolitana de Lisboa
+PT	PT18	Alentejo
+PT	PT20	Região Autónoma dos Açores
+PT	PT30	Região Autónoma da Madeira
+PT	PTZZ	Extra-Regio NUTS 2
+RO	RO11	Nord-Vest
+RO	RO12	Centru
+RO	RO21	Nord-Est
+RO	RO22	Sud-Est
+RO	RO31	Sud - Muntenia
+RO	RO32	Bucureşti - Ilfov
+RO	RO41	Sud-Vest Oltenia
+RO	RO42	Vest
+RO	ROZZ	Extra-Regio NUTS 2
+SI	SI03	Vzhodna Slovenija
+SI	SI04	Zahodna Slovenija
+SI	SIZZ	Extra-Regio NUTS 2
+SK	SK01	Bratislavský kraj
+SK	SK02	Západné Slovensko
+SK	SK03	Stredné Slovensko
+SK	SK04	Východné Slovensko
+SK	SKZZ	Extra-Regio NUTS 2
+FI	FI19	Länsi-Suomi
+FI	FI1B	Helsinki-Uusimaa
+FI	FI1C	Etelä-Suomi
+FI	FI1D	Pohjois- ja Itä-Suomi
+FI	FI20	Åland
+FI	FIZZ	Extra-Regio NUTS 2
+SE	SE11	Stockholm
+SE	SE12	Östra Mellansverige
+SE	SE21	Småland med öarna
+SE	SE22	Sydsverige
+SE	SE23	Västsverige
+SE	SE31	Norra Mellansverige
+SE	SE32	Mellersta Norrland
+SE	SE33	Övre Norrland
+SE	SEZZ	Extra-Regio NUTS 2
+UK	UKC1	Tees Valley and Durham
+UK	UKC2	Northumberland and Tyne and Wear
+UK	UKD1	Cumbria
+UK	UKD3	Greater Manchester
+UK	UKD4	Lancashire
+UK	UKD6	Cheshire
+UK	UKD7	Merseyside
+UK	UKE1	East Yorkshire and Northern Lincolnshire
+UK	UKE2	North Yorkshire
+UK	UKE3	South Yorkshire
+UK	UKE4	West Yorkshire
+UK	UKF1	Derbyshire and Nottinghamshire
+UK	UKF2	Leicestershire, Rutland and Northamptonshire
+UK	UKF3	Lincolnshire
+UK	UKG1	Herefordshire, Worcestershire and Warwickshire
+UK	UKG2	Shropshire and Staffordshire
+UK	UKG3	West Midlands
+UK	UKH1	East Anglia
+UK	UKH2	Bedfordshire and Hertfordshire
+UK	UKH3	Essex
+UK	UKI3	Inner London — West
+UK	UKI4	Inner London — East
+UK	UKI5	Outer London — East and North East
+UK	UKI6	Outer London — South
+UK	UKI7	Outer London — West and North West
+UK	UKJ1	Berkshire, Buckinghamshire and Oxfordshire
+UK	UKJ2	Surrey, East and West Sussex
+UK	UKJ3	Hampshire and Isle of Wight
+UK	UKJ4	Kent
+UK	UKK1	Gloucestershire, Wiltshire and Bristol/Bath area
+UK	UKK2	Dorset and Somerset
+UK	UKK3	Cornwall and Isles of Scilly
+UK	UKK4	Devon
+UK	UKL1	West Wales and The Valleys
+UK	UKL2	East Wales
+UK	UKM5	North Eastern Scotland
+UK	UKM6	Highlands and Islands
+UK	UKM7	Eastern Scotland
+UK	UKM8	West Central Scotland
+UK	UKM9	Southern Scotland
+UK	UKN0	Northern Ireland
+UK	UKZZ	Extra-Regio NUTS 2
+BE	BE100	Arr. de Bruxelles-Capitale/Arr. van Brussel-Hoofdstad
+BE	BE211	Arr. Antwerpen
+BE	BE212	Arr. Mechelen
+BE	BE213	Arr. Turnhout
+BE	BE221	Arr. Hasselt
+BE	BE222	Arr. Maaseik
+BE	BE223	Arr. Tongeren
+BE	BE231	Arr. Aalst
+BE	BE232	Arr. Dendermonde
+BE	BE233	Arr. Eeklo
+BE	BE234	Arr. Gent
+BE	BE235	Arr. Oudenaarde
+BE	BE236	Arr. Sint-Niklaas
+BE	BE241	Arr. Halle-Vilvoorde
+BE	BE242	Arr. Leuven
+BE	BE251	Arr. Brugge
+BE	BE252	Arr. Diksmuide
+BE	BE253	Arr. Ieper
+BE	BE254	Arr. Kortrijk
+BE	BE255	Arr. Oostende
+BE	BE256	Arr. Roeselare
+BE	BE257	Arr. Tielt
+BE	BE258	Arr. Veurne
+BE	BE310	Arr. Nivelles
+BE	BE321	Arr. Ath
+BE	BE322	Arr. Charleroi
+BE	BE323	Arr. Mons
+BE	BE324	Arr. Mouscron
+BE	BE325	Arr. Soignies
+BE	BE326	Arr. Thuin
+BE	BE327	Arr. Tournai
+BE	BE331	Arr. Huy
+BE	BE332	Arr. Liège
+BE	BE334	Arr. Waremme
+BE	BE335	Arr. Verviers — communes francophones
+BE	BE336	Bezirk Verviers — Deutschsprachige Gemeinschaft
+BE	BE341	Arr. Arlon
+BE	BE342	Arr. Bastogne
+BE	BE343	Arr. Marche-en-Famenne
+BE	BE344	Arr. Neufchâteau
+BE	BE345	Arr. Virton
+BE	BE351	Arr. Dinant
+BE	BE352	Arr. Namur
+BE	BE353	Arr. Philippeville
+BE	BEZZZ	Extra-Regio NUTS 3
+BG	BG311	Видин (Vidin)
+BG	BG312	Монтана (Montana)
+BG	BG313	Враца (Vratsa)
+BG	BG314	Плевен (Pleven)
+BG	BG315	Ловеч (Lovech)
+BG	BG321	Велико Търново (Veliko Tarnovo)
+BG	BG322	Габрово (Gabrovo)
+BG	BG323	Русе (Ruse)
+BG	BG324	Разград (Razgrad)
+BG	BG325	Силистра (Silistra)
+BG	BG331	Варна (Varna)
+BG	BG332	Добрич (Dobrich)
+BG	BG333	Шумен (Shumen)
+BG	BG334	Търговище (Targovishte)
+BG	BG341	Бургас (Burgas)
+BG	BG342	Сливен (Sliven)
+BG	BG343	Ямбол (Yambol)
+BG	BG344	Стара Загора (Stara Zagora)
+BG	BG411	София (столица) (Sofia (stolitsa))
+BG	BG412	София (Sofia)
+BG	BG413	Благоевград (Blagoevgrad)
+BG	BG414	Перник (Pernik)
+BG	BG415	Кюстендил (Kyustendil)
+BG	BG421	Пловдив (Plovdiv)
+BG	BG422	Хасково (Haskovo)
+BG	BG423	Пазарджик (Pazardzhik)
+BG	BG424	Смолян (Smolyan)
+BG	BG425	Кърджали (Kardzhali)
+BG	BGZZZ	Extra-Regio NUTS 3
+CZ	CZ010	Hlavní město Praha
+CZ	CZ020	Středočeský kraj
+CZ	CZ031	Jihočeský kraj
+CZ	CZ032	Plzeňský kraj
+CZ	CZ041	Karlovarský kraj
+CZ	CZ042	Ústecký kraj
+CZ	CZ051	Liberecký kraj
+CZ	CZ052	Královéhradecký kraj
+CZ	CZ053	Pardubický kraj
+CZ	CZ063	Kraj Vysočina
+CZ	CZ064	Jihomoravský kraj
+CZ	CZ071	Olomoucký kraj
+CZ	CZ072	Zlínský kraj
+CZ	CZ080	Moravskoslezský kraj
+CZ	CZZZZ	Extra-Regio NUTS 3
+DK	DK011	Byen København
+DK	DK012	Københavns omegn
+DK	DK013	Nordsjælland
+DK	DK014	Bornholm
+DK	DK021	Østsjælland
+DK	DK022	Vest- og Sydsjælland
+DK	DK031	Fyn
+DK	DK032	Sydjylland
+DK	DK041	Vestjylland
+DK	DK042	Østjylland
+DK	DK050	Nordjylland
+DK	DKZZZ	Extra-Regio NUTS 3
+DE	DE111	Stuttgart, Stadtkreis
+DE	DE112	Böblingen
+DE	DE113	Esslingen
+DE	DE114	Göppingen
+DE	DE115	Ludwigsburg
+DE	DE116	Rems-Murr-Kreis
+DE	DE117	Heilbronn, Stadtkreis
+DE	DE118	Heilbronn, Landkreis
+DE	DE119	Hohenlohekreis
+DE	DE11A	Schwäbisch Hall
+DE	DE11B	Main-Tauber-Kreis
+DE	DE11C	Heidenheim
+DE	DE11D	Ostalbkreis
+DE	DE121	Baden-Baden, Stadtkreis
+DE	DE122	Karlsruhe, Stadtkreis
+DE	DE123	Karlsruhe, Landkreis
+DE	DE124	Rastatt
+DE	DE125	Heidelberg, Stadtkreis
+DE	DE126	Mannheim, Stadtkreis
+DE	DE127	Neckar-Odenwald-Kreis
+DE	DE128	Rhein-Neckar-Kreis
+DE	DE129	Pforzheim, Stadtkreis
+DE	DE12A	Calw
+DE	DE12B	Enzkreis
+DE	DE12C	Freudenstadt
+DE	DE131	Freiburg im Breisgau, Stadtkreis
+DE	DE132	Breisgau-Hochschwarzwald
+DE	DE133	Emmendingen
+DE	DE134	Ortenaukreis
+DE	DE135	Rottweil
+DE	DE136	Schwarzwald-Baar-Kreis
+DE	DE137	Tuttlingen
+DE	DE138	Konstanz
+DE	DE139	Lörrach
+DE	DE13A	Waldshut
+DE	DE141	Reutlingen
+DE	DE142	Tübingen, Landkreis
+DE	DE143	Zollernalbkreis
+DE	DE144	Ulm, Stadtkreis
+DE	DE145	Alb-Donau-Kreis
+DE	DE146	Biberach
+DE	DE147	Bodenseekreis
+DE	DE148	Ravensburg
+DE	DE149	Sigmaringen
+DE	DE211	Ingolstadt, Kreisfreie Stadt
+DE	DE212	München, Kreisfreie Stadt
+DE	DE213	Rosenheim, Kreisfreie Stadt
+DE	DE214	Altötting
+DE	DE215	Berchtesgadener Land
+DE	DE216	Bad Tölz-Wolfratshausen
+DE	DE217	Dachau
+DE	DE218	Ebersberg
+DE	DE219	Eichstätt
+DE	DE21A	Erding
+DE	DE21B	Freising
+DE	DE21C	Fürstenfeldbruck
+DE	DE21D	Garmisch-Partenkirchen
+DE	DE21E	Landsberg am Lech
+DE	DE21F	Miesbach
+DE	DE21G	Mühldorf a. Inn
+DE	DE21H	München, Landkreis
+DE	DE21I	Neuburg-Schrobenhausen
+DE	DE21J	Pfaffenhofen a. d. Ilm
+DE	DE21K	Rosenheim, Landkreis
+DE	DE21L	Starnberg
+DE	DE21M	Traunstein
+DE	DE21N	Weilheim-Schongau
+DE	DE221	Landshut, Kreisfreie Stadt
+DE	DE222	Passau, Kreisfreie Stadt
+DE	DE223	Straubing, Kreisfreie Stadt
+DE	DE224	Deggendorf
+DE	DE225	Freyung-Grafenau
+DE	DE226	Kelheim
+DE	DE227	Landshut, Landkreis
+DE	DE228	Passau, Landkreis
+DE	DE229	Regen
+DE	DE22A	Rottal-Inn
+DE	DE22B	Straubing-Bogen
+DE	DE22C	Dingolfing-Landau
+DE	DE231	Amberg, Kreisfreie Stadt
+DE	DE232	Regensburg, Kreisfreie Stadt
+DE	DE233	Weiden i. d. Opf, Kreisfreie Stadt
+DE	DE234	Amberg-Sulzbach
+DE	DE235	Cham
+DE	DE236	Neumarkt i. d. OPf.
+DE	DE237	Neustadt a. d. Waldnaab
+DE	DE238	Regensburg, Landkreis
+DE	DE239	Schwandorf
+DE	DE23A	Tirschenreuth
+DE	DE241	Bamberg, Kreisfreie Stadt
+DE	DE242	Bayreuth, Kreisfreie Stadt
+DE	DE243	Coburg, Kreisfreie Stadt
+DE	DE244	Hof, Kreisfreie Stadt
+DE	DE245	Bamberg, Landkreis
+DE	DE246	Bayreuth, Landkreis
+DE	DE247	Coburg, Landkreis
+DE	DE248	Forchheim
+DE	DE249	Hof, Landkreis
+DE	DE24A	Kronach
+DE	DE24B	Kulmbach
+DE	DE24C	Lichtenfels
+DE	DE24D	Wunsiedel i. Fichtelgebirge
+DE	DE251	Ansbach, Kreisfreie Stadt
+DE	DE252	Erlangen, Kreisfreie Stadt
+DE	DE253	Fürth, Kreisfreie Stadt
+DE	DE254	Nürnberg, Kreisfreie Stadt
+DE	DE255	Schwabach, Kreisfreie Stadt
+DE	DE256	Ansbach, Landkreis
+DE	DE257	Erlangen-Höchstadt
+DE	DE258	Fürth, Landkreis
+DE	DE259	Nürnberger Land
+DE	DE25A	Neustadt a. d. Aisch-Bad Windsheim
+DE	DE25B	Roth
+DE	DE25C	Weißenburg-Gunzenhausen
+DE	DE261	Aschaffenburg, Kreisfreie Stadt
+DE	DE262	Schweinfurt, Kreisfreie Stadt
+DE	DE263	Würzburg, Kreisfreie Stadt
+DE	DE264	Aschaffenburg, Landkreis
+DE	DE265	Bad Kissingen
+DE	DE266	Rhön-Grabfeld
+DE	DE267	Haßberge
+DE	DE268	Kitzingen
+DE	DE269	Miltenberg
+DE	DE26A	Main-Spessart
+DE	DE26B	Schweinfurt, Landkreis
+DE	DE26C	Würzburg, Landkreis
+DE	DE271	Augsburg, Kreisfreie Stadt
+DE	DE272	Kaufbeuren, Kreisfreie Stadt
+DE	DE273	Kempten (Allgäu), Kreisfreie Stadt
+DE	DE274	Memmingen, Kreisfreie Stadt
+DE	DE275	Aichach-Friedberg
+DE	DE276	Augsburg, Landkreis
+DE	DE277	Dillingen a.d. Donau
+DE	DE278	Günzburg
+DE	DE279	Neu-Ulm
+DE	DE27A	Lindau (Bodensee)
+DE	DE27B	Ostallgäu
+DE	DE27C	Unterallgäu
+DE	DE27D	Donau-Ries
+DE	DE27E	Oberallgäu
+DE	DE300	Berlin
+DE	DE401	Brandenburg an der Havel, Kreisfreie Stadt
+DE	DE402	Cottbus, Kreisfreie Stadt
+DE	DE403	Frankfurt (Oder), Kreisfreie Stadt
+DE	DE404	Potsdam, Kreisfreie Stadt
+DE	DE405	Barnim
+DE	DE406	Dahme-Spreewald
+DE	DE407	Elbe-Elster
+DE	DE408	Havelland
+DE	DE409	Märkisch-Oderland
+DE	DE40A	Oberhavel
+DE	DE40B	Oberspreewald-Lausitz
+DE	DE40C	Oder-Spree
+DE	DE40D	Ostprignitz-Ruppin
+DE	DE40E	Potsdam-Mittelmark
+DE	DE40F	Prignitz
+DE	DE40G	Spree-Neiße
+DE	DE40H	Teltow-Fläming
+DE	DE40I	Uckermark
+DE	DE501	Bremen, Kreisfreie Stadt
+DE	DE502	Bremerhaven, Kreisfreie Stadt
+DE	DE600	Hamburg
+DE	DE711	Darmstadt, Kreisfreie Stadt
+DE	DE712	Frankfurt am Main, Kreisfreie Stadt
+DE	DE713	Offenbach am Main, Kreisfreie Stadt
+DE	DE714	Wiesbaden, Kreisfreie Stadt
+DE	DE715	Bergstraße
+DE	DE716	Darmstadt-Dieburg
+DE	DE717	Groß-Gerau
+DE	DE718	Hochtaunuskreis
+DE	DE719	Main-Kinzig-Kreis
+DE	DE71A	Main-Taunus-Kreis
+DE	DE71B	Odenwaldkreis
+DE	DE71C	Offenbach, Landkreis
+DE	DE71D	Rheingau-Taunus-Kreis
+DE	DE71E	Wetteraukreis
+DE	DE721	Gießen, Landkreis
+DE	DE722	Lahn-Dill-Kreis
+DE	DE723	Limburg-Weilburg
+DE	DE724	Marburg-Biedenkopf
+DE	DE725	Vogelsbergkreis
+DE	DE731	Kassel, Kreisfreie Stadt
+DE	DE732	Fulda
+DE	DE733	Hersfeld-Rotenburg
+DE	DE734	Kassel, Landkreis
+DE	DE735	Schwalm-Eder-Kreis
+DE	DE736	Waldeck-Frankenberg
+DE	DE737	Werra-Meißner-Kreis
+DE	DE803	Rostock, Kreisfreie Stadt
+DE	DE804	Schwerin, Kreisfreie Stadt
+DE	DE80J	Mecklenburgische Seenplatte
+DE	DE80N	Vorpommern-Greifswald
+DE	DE80K	Landkreis Rostock
+DE	DE80L	Vorpommern-Rügen
+DE	DE80M	Nordwestmecklenburg
+DE	DE80O	Ludwigslust-Parchim
+DE	DE911	Braunschweig, Kreisfreie Stadt
+DE	DE912	Salzgitter, Kreisfreie Stadt
+DE	DE913	Wolfsburg, Kreisfreie Stadt
+DE	DE914	Gifhorn
+DE	DE916	Goslar
+DE	DE917	Helmstedt
+DE	DE918	Northeim
+DE	DE91A	Peine
+DE	DE91B	Wolfenbüttel
+DE	DE91C	Göttingen
+DE	DE922	Diepholz
+DE	DE923	Hameln-Pyrmont
+DE	DE925	Hildesheim
+DE	DE926	Holzminden
+DE	DE927	Nienburg (Weser)
+DE	DE928	Schaumburg
+DE	DE929	Region Hannover
+DE	DE931	Celle
+DE	DE932	Cuxhaven
+DE	DE933	Harburg
+DE	DE934	Lüchow-Dannenberg
+DE	DE935	Lüneburg, Landkreis
+DE	DE936	Osterholz
+DE	DE937	Rotenburg (Wümme)
+DE	DE938	Heidekreis
+DE	DE939	Stade
+DE	DE93A	Uelzen
+DE	DE93B	Verden
+DE	DE941	Delmenhorst, Kreisfreie Stadt
+DE	DE942	Emden, Kreisfreie Stadt
+DE	DE943	Oldenburg (Oldenburg), Kreisfreie Stadt
+DE	DE944	Osnabrück, Kreisfreie Stadt
+DE	DE945	Wilhelmshaven, Kreisfreie Stadt
+DE	DE946	Ammerland
+DE	DE947	Aurich
+DE	DE948	Cloppenburg
+DE	DE949	Emsland
+DE	DE94A	Friesland (DE)
+DE	DE94B	Grafschaft Bentheim
+DE	DE94C	Leer
+DE	DE94D	Oldenburg, Landkreis
+DE	DE94E	Osnabrück, Landkreis
+DE	DE94F	Vechta
+DE	DE94G	Wesermarsch
+DE	DE94H	Wittmund
+DE	DEA11	Düsseldorf, Kreisfreie Stadt
+DE	DEA12	Duisburg, Kreisfreie Stadt
+DE	DEA13	Essen, Kreisfreie Stadt
+DE	DEA14	Krefeld, Kreisfreie Stadt
+DE	DEA15	Mönchengladbach, Kreisfreie Stadt
+DE	DEA16	Mülheim an der Ruhr, Kreisfreie Stadt
+DE	DEA17	Oberhausen, Kreisfreie Stadt
+DE	DEA18	Remscheid, Kreisfreie Stadt
+DE	DEA19	Solingen, Kreisfreie Stadt
+DE	DEA1A	Wuppertal, Kreisfreie Stadt
+DE	DEA1B	Kleve
+DE	DEA1C	Mettmann
+DE	DEA1D	Rhein-Kreis Neuss
+DE	DEA1E	Viersen
+DE	DEA1F	Wesel
+DE	DEA22	Bonn, Kreisfreie Stadt
+DE	DEA23	Köln, Kreisfreie Stadt
+DE	DEA24	Leverkusen, Kreisfreie Stadt
+DE	DEA26	Düren
+DE	DEA27	Rhein-Erft-Kreis
+DE	DEA28	Euskirchen
+DE	DEA29	Heinsberg
+DE	DEA2A	Oberbergischer Kreis
+DE	DEA2B	Rheinisch-Bergischer Kreis
+DE	DEA2C	Rhein-Sieg-Kreis
+DE	DEA2D	Städteregion Aachen
+DE	DEA31	Bottrop, Kreisfreie Stadt
+DE	DEA32	Gelsenkirchen, Kreisfreie Stadt
+DE	DEA33	Münster, Kreisfreie Stadt
+DE	DEA34	Borken
+DE	DEA35	Coesfeld
+DE	DEA36	Recklinghausen
+DE	DEA37	Steinfurt
+DE	DEA38	Warendorf
+DE	DEA41	Bielefeld, Kreisfreie Stadt
+DE	DEA42	Gütersloh
+DE	DEA43	Herford
+DE	DEA44	Höxter
+DE	DEA45	Lippe
+DE	DEA46	Minden-Lübbecke
+DE	DEA47	Paderborn
+DE	DEA51	Bochum, Kreisfreie Stadt
+DE	DEA52	Dortmund, Kreisfreie Stadt
+DE	DEA53	Hagen, Kreisfreie Stadt
+DE	DEA54	Hamm, Kreisfreie Stadt
+DE	DEA55	Herne, Kreisfreie Stadt
+DE	DEA56	Ennepe-Ruhr-Kreis
+DE	DEA57	Hochsauerlandkreis
+DE	DEA58	Märkischer Kreis
+DE	DEA59	Olpe
+DE	DEA5A	Siegen-Wittgenstein
+DE	DEA5B	Soest
+DE	DEA5C	Unna
+DE	DEB11	Koblenz, Kreisfreie Stadt
+DE	DEB12	Ahrweiler
+DE	DEB13	Altenkirchen (Westerwald)
+DE	DEB14	Bad Kreuznach
+DE	DEB15	Birkenfeld
+DE	DEB17	Mayen-Koblenz
+DE	DEB18	Neuwied
+DE	DEB1A	Rhein-Lahn-Kreis
+DE	DEB1B	Westerwaldkreis
+DE	DEB1C	Cochem-Zell
+DE	DEB1D	Rhein-Hunsrück-Kreis
+DE	DEB21	Trier, Kreisfreie Stadt
+DE	DEB22	Bernkastel-Wittlich
+DE	DEB23	Eifelkreis Bitburg-Prüm
+DE	DEB24	Vulkaneifel
+DE	DEB25	Trier-Saarburg
+DE	DEB31	Frankenthal (Pfalz), Kreisfreie Stadt
+DE	DEB32	Kaiserslautern, Kreisfreie Stadt
+DE	DEB33	Landau in der Pfalz, Kreisfreie Stadt
+DE	DEB34	Ludwigshafen am Rhein, Kreisfreie Stadt
+DE	DEB35	Mainz, Kreisfreie Stadt
+DE	DEB36	Neustadt an der Weinstraße, Kreisfreie Stadt
+DE	DEB37	Pirmasens, Kreisfreie Stadt
+DE	DEB38	Speyer, Kreisfreie Stadt
+DE	DEB39	Worms, Kreisfreie Stadt
+DE	DEB3A	Zweibrücken, Kreisfreie Stadt
+DE	DEB3B	Alzey-Worms
+DE	DEB3C	Bad Dürkheim
+DE	DEB3D	Donnersbergkreis
+DE	DEB3E	Germersheim
+DE	DEB3F	Kaiserslautern, Landkreis
+DE	DEB3G	Kusel
+DE	DEB3H	Südliche Weinstraße
+DE	DEB3I	Rhein-Pfalz-Kreis
+DE	DEB3J	Mainz-Bingen
+DE	DEB3K	Südwestpfalz
+DE	DEC01	Regionalverband Saarbrücken
+DE	DEC02	Merzig-Wadern
+DE	DEC03	Neunkirchen
+DE	DEC04	Saarlouis
+DE	DEC05	Saarpfalz-Kreis
+DE	DEC06	St. Wendel
+DE	DED21	Dresden, Kreisfreie Stadt
+DE	DED2C	Bautzen
+DE	DED2D	Görlitz
+DE	DED2E	Meißen
+DE	DED2F	Sächsische Schweiz-Osterzgebirge
+DE	DED41	Chemnitz, Kreisfreie Stadt
+DE	DED42	Erzgebirgskreis
+DE	DED43	Mittelsachsen
+DE	DED44	Vogtlandkreis
+DE	DED45	Zwickau
+DE	DED51	Leipzig, Kreisfreie Stadt
+DE	DED52	Leipzig
+DE	DED53	Nordsachsen
+DE	DEE01	Dessau-Roßlau, Kreisfreie Stadt
+DE	DEE02	Halle (Saale), Kreisfreie Stadt
+DE	DEE03	Magdeburg, Kreisfreie Stadt
+DE	DEE04	Altmarkkreis Salzwedel
+DE	DEE05	Anhalt-Bitterfeld
+DE	DEE06	Jerichower Land
+DE	DEE07	Börde
+DE	DEE08	Burgenlandkreis
+DE	DEE09	Harz
+DE	DEE0A	Mansfeld-Südharz
+DE	DEE0B	Saalekreis
+DE	DEE0C	Salzlandkreis
+DE	DEE0D	Stendal
+DE	DEE0E	Wittenberg
+DE	DEF01	Flensburg, Kreisfreie Stadt
+DE	DEF02	Kiel, Kreisfreie Stadt
+DE	DEF03	Lübeck, Kreisfreie Stadt
+DE	DEF04	Neumünster, Kreisfreie Stadt
+DE	DEF05	Dithmarschen
+DE	DEF06	Herzogtum Lauenburg
+DE	DEF07	Nordfriesland
+DE	DEF08	Ostholstein
+DE	DEF09	Pinneberg
+DE	DEF0A	Plön
+DE	DEF0B	Rendsburg-Eckernförde
+DE	DEF0C	Schleswig-Flensburg
+DE	DEF0D	Segeberg
+DE	DEF0E	Steinburg
+DE	DEF0F	Stormarn
+DE	DEG01	Erfurt, Kreisfreie Stadt
+DE	DEG02	Gera, Kreisfreie Stadt
+DE	DEG03	Jena, Kreisfreie Stadt
+DE	DEG04	Suhl, Kreisfreie Stadt
+DE	DEG05	Weimar, Kreisfreie Stadt
+DE	DEG06	Eichsfeld
+DE	DEG07	Nordhausen
+DE	DEG09	Unstrut-Hainich-Kreis
+DE	DEG0A	Kyffhäuserkreis
+DE	DEG0B	Schmalkalden-Meiningen
+DE	DEG0C	Gotha
+DE	DEG0D	Sömmerda
+DE	DEG0E	Hildburghausen
+DE	DEG0F	Ilm-Kreis
+DE	DEG0G	Weimarer Land
+DE	DEG0H	Sonneberg
+DE	DEG0I	Saalfeld-Rudolstadt
+DE	DEG0J	Saale-Holzland-Kreis
+DE	DEG0K	Saale-Orla-Kreis
+DE	DEG0L	Greiz
+DE	DEG0M	Altenburger Land
+DE	DEG0N	Eisenach, Kreisfreie Stadt
+DE	DEG0P	Wartburgkreis
+DE	DEZZZ	Extra-Regio NUTS 3
+EE	EE001	Põhja-Eesti
+EE	EE004	Lääne-Eesti
+EE	EE006	Kesk-Eesti
+EE	EE007	Kirde-Eesti
+EE	EE008	Lõuna-Eesti
+EE	EEZZZ	Extra-Regio NUTS 3
+IE	IE041	Border
+IE	IE042	West
+IE	IE051	Mid-West
+IE	IE052	South-East
+IE	IE053	South-West
+IE	IE061	Dublin
+IE	IE062	Mid-East
+IE	IE063	Midland
+IE	IEZZZ	Extra-Regio NUTS 3
+EL	EL301	Βόρειος Τομέας Αθηνών (Voreios Tomeas Athinon)
+EL	EL302	Δυτικός Τομέας Αθηνών (Dytikos Tomeas Athinon)
+EL	EL303	Κεντρικός Τομέας Αθηνών (Kentrikos Tomeas Athinon)
+EL	EL304	Νότιος Τομέας Αθηνών (Notios Tomeas Athinon)
+EL	EL305	Ανατολική Αττική (Anatoliki Attiki)
+EL	EL306	Δυτική Αττική (Dytiki Attiki)
+EL	EL307	Πειραιάς, Νήσοι (Peiraias, Nisoi)
+EL	EL411	Λέσβος, Λήμνος (Lesvos, Limnos)
+EL	EL412	Ικαρία, Σάμος (Ikaria, Samos)
+EL	EL413	Χίος (Chios)
+EL	EL421	Κάλυμνος, Κάρπαθος, Κως, Ρόδος (Kalymnos, Karpathos, Kos, Rodos)
+EL	EL422	Άνδρος, Θήρα, Κέα, Μήλος, Μύκονος, Νάξος, Πάρος, Σύρος, Τήνος (Andros, Thira, Kea, Milos, Mykonos, Naxos, Paros,  Syros, Tinos)
+EL	EL431	Ηράκλειο (Irakleio)
+EL	EL432	Λασίθι (Lasithi)
+EL	EL433	Ρεθύμνη (Rethymni)
+EL	EL434	Χανιά (Chania)
+EL	EL511	Έβρος (Evros)
+EL	EL512	Ξάνθη (Xanthi)
+EL	EL513	Ροδόπη (Rodopi)
+EL	EL514	Δράμα (Drama)
+EL	EL515	Θάσος, Καβάλα (Thasos, Kavala)
+EL	EL521	Ημαθία (Imathia)
+EL	EL522	Θεσσαλονίκη (Thessaloniki)
+EL	EL523	Κιλκίς (Kilkis)
+EL	EL524	Πέλλα (Pella)
+EL	EL525	Πιερία (Pieria)
+EL	EL526	Σέρρες (Serres)
+EL	EL527	Χαλκιδική (Chalkidiki)
+EL	EL531	Γρεβενά, Κοζάνη (Grevena, Kozani)
+EL	EL532	Καστοριά (Kastoria)
+EL	EL533	Φλώρινα (Florina)
+EL	EL541	Άρτα, Πρέβεζα (Arta, Preveza)
+EL	EL542	Θεσπρωτία (Thesprotia)
+EL	EL543	Ιωάννινα (Ioannina)
+EL	EL611	Καρδίτσα, Τρίκαλα (Karditsa, Trikala)
+EL	EL612	Λάρισα (Larisa)
+EL	EL613	Μαγνησία, Σποράδες (Magnisia, Sporades)
+EL	EL621	Ζάκυνθος (Zakynthos)
+EL	EL622	Κέρκυρα (Kerkyra)
+EL	EL623	Ιθάκη, Κεφαλληνία (Ithaki, Kefallinia)
+EL	EL624	Λευκάδα (Lefkada)
+EL	EL631	Αιτωλοακαρνανία (Aitoloakarnania)
+EL	EL632	Αχαΐα (Achaia)
+EL	EL633	Ηλεία (Ileia)
+EL	EL641	Βοιωτία (Voiotia)
+EL	EL642	Εύβοια (Evvoia)
+EL	EL643	Ευρυτανία (Evrytania)
+EL	EL644	Φθιώτιδα (Fthiotida)
+EL	EL645	Φωκίδα (Fokida)
+EL	EL651	Αργολίδα, Αρκαδία (Argolida, Arkadia)
+EL	EL652	Κορινθία (Korinthia)
+EL	EL653	Λακωνία, Μεσσηνία (Lakonia, Messinia)
+EL	ELZZZ	Extra-Regio NUTS 3
+ES	ES111	A Coruña
+ES	ES112	Lugo
+ES	ES113	Ourense
+ES	ES114	Pontevedra
+ES	ES120	Asturias
+ES	ES130	Cantabria
+ES	ES211	Araba/Álava
+ES	ES212	Gipuzkoa
+ES	ES213	Bizkaia
+ES	ES220	Navarra
+ES	ES230	La Rioja
+ES	ES241	Huesca
+ES	ES242	Teruel
+ES	ES243	Zaragoza
+ES	ES300	Madrid
+ES	ES411	Ávila
+ES	ES412	Burgos
+ES	ES413	León
+ES	ES414	Palencia
+ES	ES415	Salamanca
+ES	ES416	Segovia
+ES	ES417	Soria
+ES	ES418	Valladolid
+ES	ES419	Zamora
+ES	ES421	Albacete
+ES	ES422	Ciudad Real
+ES	ES423	Cuenca
+ES	ES424	Guadalajara
+ES	ES425	Toledo
+ES	ES431	Badajoz
+ES	ES432	Cáceres
+ES	ES511	Barcelona
+ES	ES512	Girona
+ES	ES513	Lleida
+ES	ES514	Tarragona
+ES	ES521	Alicante / Alacant
+ES	ES522	Castellón / Castelló
+ES	ES523	Valencia / València
+ES	ES531	Eivissa y Formentera
+ES	ES532	Mallorca
+ES	ES533	Menorca
+ES	ES611	Almería
+ES	ES612	Cádiz
+ES	ES613	Córdoba
+ES	ES614	Granada
+ES	ES615	Huelva
+ES	ES616	Jaén
+ES	ES617	Málaga
+ES	ES618	Sevilla
+ES	ES620	Murcia
+ES	ES630	Ceuta
+ES	ES640	Melilla
+ES	ES703	El Hierro
+ES	ES704	Fuerteventura
+ES	ES705	Gran Canaria
+ES	ES706	La Gomera
+ES	ES707	La Palma
+ES	ES708	Lanzarote
+ES	ES709	Tenerife
+ES	ESZZZ	Extra-Regio NUTS 3
+FR	FR101	Paris
+FR	FR102	Seine-et-Marne
+FR	FR103	Yvelines
+FR	FR104	Essonne
+FR	FR105	Hauts-de-Seine
+FR	FR106	Seine-Saint-Denis
+FR	FR107	Val-de-Marne
+FR	FR108	Val-d’Oise
+FR	FRB01	Cher
+FR	FRB02	Eure-et-Loir
+FR	FRB03	Indre
+FR	FRB04	Indre-et-Loire
+FR	FRB05	Loir-et-Cher
+FR	FRB06	Loiret
+FR	FRC11	Côte-d’Or
+FR	FRC12	Nièvre
+FR	FRC13	Saône-et-Loire
+FR	FRC14	Yonne
+FR	FRC21	Doubs
+FR	FRC22	Jura
+FR	FRC23	Haute-Saône
+FR	FRC24	Territoire de Belfort
+FR	FRD11	Calvados
+FR	FRD12	Manche
+FR	FRD13	Orne
+FR	FRD21	Eure
+FR	FRD22	Seine-Maritime
+FR	FRE11	Nord
+FR	FRE12	Pas-de-Calais
+FR	FRE21	Aisne
+FR	FRE22	Oise
+FR	FRE23	Somme
+FR	FRF11	Bas-Rhin
+FR	FRF12	Haut-Rhin
+FR	FRF21	Ardennes
+FR	FRF22	Aube
+FR	FRF23	Marne
+FR	FRF24	Haute-Marne
+FR	FRF31	Meurthe-et-Moselle
+FR	FRF32	Meuse
+FR	FRF33	Moselle
+FR	FRF34	Vosges
+FR	FRG01	Loire-Atlantique
+FR	FRG02	Maine-et-Loire
+FR	FRG03	Mayenne
+FR	FRG04	Sarthe
+FR	FRG05	Vendée
+FR	FRH01	Côtes-d’Armor
+FR	FRH02	Finistère
+FR	FRH03	Ille-et-Vilaine
+FR	FRH04	Morbihan
+FR	FRI11	Dordogne
+FR	FRI12	Gironde
+FR	FRI13	Landes
+FR	FRI14	Lot-et-Garonne
+FR	FRI15	Pyrénées-Atlantiques
+FR	FRI21	Corrèze
+FR	FRI22	Creuse
+FR	FRI23	Haute-Vienne
+FR	FRI31	Charente
+FR	FRI32	Charente-Maritime
+FR	FRI33	Deux-Sèvres
+FR	FRI34	Vienne
+FR	FRJ11	Aude
+FR	FRJ12	Gard
+FR	FRJ13	Hérault
+FR	FRJ14	Lozère
+FR	FRJ15	Pyrénées-Orientales
+FR	FRJ21	Ariège
+FR	FRJ22	Aveyron
+FR	FRJ23	Haute-Garonne
+FR	FRJ24	Gers
+FR	FRJ25	Lot
+FR	FRJ26	Hautes-Pyrénées
+FR	FRJ27	Tarn
+FR	FRJ28	Tarn-et-Garonne
+FR	FRK11	Allier
+FR	FRK12	Cantal
+FR	FRK13	Haute-Loire
+FR	FRK14	Puy-de-Dôme
+FR	FRK21	Ain
+FR	FRK22	Ardèche
+FR	FRK23	Drôme
+FR	FRK24	Isère
+FR	FRK25	Loire
+FR	FRK26	Rhône
+FR	FRK27	Savoie
+FR	FRK28	Haute-Savoie
+FR	FRL01	Alpes-de-Haute-Provence
+FR	FRL02	Hautes-Alpes
+FR	FRL03	Alpes-Maritimes
+FR	FRL04	Bouches-du-Rhône
+FR	FRL05	Var
+FR	FRL06	Vaucluse
+FR	FRM01	Corse-du-Sud
+FR	FRM02	Haute-Corse
+FR	FRY10	Guadeloupe
+FR	FRY20	Martinique
+FR	FRY30	Guyane
+FR	FRY40	La Réunion
+FR	FRY50	Mayotte
+FR	FRZZZ	Extra-Regio NUTS 3
+HR	HR031	Primorsko-goranska županija
+HR	HR032	Ličko-senjska županija
+HR	HR033	Zadarska županija
+HR	HR034	Šibensko-kninska županija
+HR	HR035	Splitsko-dalmatinska županija
+HR	HR036	Istarska županija
+HR	HR037	Dubrovačko-neretvanska županija
+HR	HR041	Grad Zagreb
+HR	HR042	Zagrebačka županija
+HR	HR043	Krapinsko-zagorska županija
+HR	HR044	Varaždinska županija
+HR	HR045	Koprivničko-križevačka županija
+HR	HR046	Međimurska županija
+HR	HR047	Bjelovarsko-bilogorska županija
+HR	HR048	Virovitičko-podravska županija
+HR	HR049	Požeško-slavonska županija
+HR	HR04A	Brodsko-posavska županija
+HR	HR04B	Osječko-baranjska županija
+HR	HR04C	Vukovarsko-srijemska županija
+HR	HR04D	Karlovačka županija
+HR	HR04E	Sisačko-moslavačka županija
+HR	HRZZZ	Extra-Regio NUTS 3
+IT	ITC11	Torino
+IT	ITC12	Vercelli
+IT	ITC13	Biella
+IT	ITC14	Verbano-Cusio-Ossola
+IT	ITC15	Novara
+IT	ITC16	Cuneo
+IT	ITC17	Asti
+IT	ITC18	Alessandria
+IT	ITC20	Valle d’Aosta/Vallée d’Aoste
+IT	ITC31	Imperia
+IT	ITC32	Savona
+IT	ITC33	Genova
+IT	ITC34	La Spezia
+IT	ITC41	Varese
+IT	ITC42	Como
+IT	ITC43	Lecco
+IT	ITC44	Sondrio
+IT	ITC46	Bergamo
+IT	ITC47	Brescia
+IT	ITC48	Pavia
+IT	ITC49	Lodi
+IT	ITC4A	Cremona
+IT	ITC4B	Mantova
+IT	ITC4C	Milano
+IT	ITC4D	Monza e della Brianza
+IT	ITF11	L’Aquila
+IT	ITF12	Teramo
+IT	ITF13	Pescara
+IT	ITF14	Chieti
+IT	ITF21	Isernia
+IT	ITF22	Campobasso
+IT	ITF31	Caserta
+IT	ITF32	Benevento
+IT	ITF33	Napoli
+IT	ITF34	Avellino
+IT	ITF35	Salerno
+IT	ITF43	Taranto
+IT	ITF44	Brindisi
+IT	ITF45	Lecce
+IT	ITF46	Foggia
+IT	ITF47	Bari
+IT	ITF48	Barletta-Andria-Trani
+IT	ITF51	Potenza
+IT	ITF52	Matera
+IT	ITF61	Cosenza
+IT	ITF62	Crotone
+IT	ITF63	Catanzaro
+IT	ITF64	Vibo Valentia
+IT	ITF65	Reggio di Calabria
+IT	ITG11	Trapani
+IT	ITG12	Palermo
+IT	ITG13	Messina
+IT	ITG14	Agrigento
+IT	ITG15	Caltanissetta
+IT	ITG16	Enna
+IT	ITG17	Catania
+IT	ITG18	Ragusa
+IT	ITG19	Siracusa
+IT	ITG25	Sassari
+IT	ITG26	Nuoro
+IT	ITG27	Cagliari
+IT	ITG28	Oristano
+IT	ITG29	Olbia-Tempio
+IT	ITG2A	Ogliastra
+IT	ITG2B	Medio Campidano
+IT	ITG2C	Carbonia-Iglesias
+IT	ITH10	Bolzano-Bozen
+IT	ITH20	Trento
+IT	ITH31	Verona
+IT	ITH32	Vicenza
+IT	ITH33	Belluno
+IT	ITH34	Treviso
+IT	ITH35	Venezia
+IT	ITH36	Padova
+IT	ITH37	Rovigo
+IT	ITH41	Pordenone
+IT	ITH42	Udine
+IT	ITH43	Gorizia
+IT	ITH44	Trieste
+IT	ITH51	Piacenza
+IT	ITH52	Parma
+IT	ITH53	Reggio nell’Emilia
+IT	ITH54	Modena
+IT	ITH55	Bologna
+IT	ITH56	Ferrara
+IT	ITH57	Ravenna
+IT	ITH58	Forlì-Cesena
+IT	ITH59	Rimini
+IT	ITI11	Massa-Carrara
+IT	ITI12	Lucca
+IT	ITI13	Pistoia
+IT	ITI14	Firenze
+IT	ITI15	Prato
+IT	ITI16	Livorno
+IT	ITI17	Pisa
+IT	ITI18	Arezzo
+IT	ITI19	Siena
+IT	ITI1A	Grosseto
+IT	ITI21	Perugia
+IT	ITI22	Terni
+IT	ITI31	Pesaro e Urbino
+IT	ITI32	Ancona
+IT	ITI33	Macerata
+IT	ITI34	Ascoli Piceno
+IT	ITI35	Fermo
+IT	ITI41	Viterbo
+IT	ITI42	Rieti
+IT	ITI43	Roma
+IT	ITI44	Latina
+IT	ITI45	Frosinone
+IT	ITZZZ	Extra-Regio NUTS 3
+CY	CY000	Κύπρος (Kypros)
+CY	CYZZZ	Extra-Regio NUTS 3
+LV	LV003	Kurzeme
+LV	LV005	Latgale
+LV	LV006	Rīga
+LV	LV007	Pierīga
+LV	LV008	Vidzeme
+LV	LV009	Zemgale
+LV	LVZZZ	Extra-Regio NUTS 3
+LT	LT011	Vilniaus apskritis
+LT	LT021	Alytaus apskritis
+LT	LT022	Kauno apskritis
+LT	LT023	Klaipėdos apskritis
+LT	LT024	Marijampolės apskritis
+LT	LT025	Panevėžio apskritis
+LT	LT026	Šiaulių apskritis
+LT	LT027	Tauragės apskritis
+LT	LT028	Telšių apskritis
+LT	LT029	Utenos apskritis
+LT	LTZZZ	Extra-Regio NUTS 3
+LU	LU000	Luxembourg
+LU	LUZZZ	Extra-Regio NUTS 3
+HU	HU110	Budapest
+HU	HU120	Pest
+HU	HU211	Fejér
+HU	HU212	Komárom-Esztergom
+HU	HU213	Veszprém
+HU	HU221	Győr-Moson-Sopron
+HU	HU222	Vas
+HU	HU223	Zala
+HU	HU231	Baranya
+HU	HU232	Somogy
+HU	HU233	Tolna
+HU	HU311	Borsod-Abaúj-Zemplén
+HU	HU312	Heves
+HU	HU313	Nógrád
+HU	HU321	Hajdú-Bihar
+HU	HU322	Jász-Nagykun-Szolnok
+HU	HU323	Szabolcs-Szatmár-Bereg
+HU	HU331	Bács-Kiskun
+HU	HU332	Békés
+HU	HU333	Csongrád
+HU	HUZZZ	Extra-Regio NUTS 3
+MT	MT001	Malta
+MT	MT002	Gozo and Comino/Għawdex u Kemmuna
+MT	MTZZZ	Extra-Regio NUTS 3
+NL	NL111	Oost-Groningen
+NL	NL112	Delfzijl en omgeving
+NL	NL113	Overig Groningen
+NL	NL124	Noord-Friesland
+NL	NL125	Zuidwest-Friesland
+NL	NL126	Zuidoost-Friesland
+NL	NL131	Noord-Drenthe
+NL	NL132	Zuidoost-Drenthe
+NL	NL133	Zuidwest-Drenthe
+NL	NL211	Noord-Overijssel
+NL	NL212	Zuidwest-Overijssel
+NL	NL213	Twente
+NL	NL221	Veluwe
+NL	NL224	Zuidwest-Gelderland
+NL	NL225	Achterhoek
+NL	NL226	Arnhem/Nijmegen
+NL	NL230	Flevoland
+NL	NL310	Utrecht
+NL	NL321	Kop van Noord-Holland
+NL	NL323	IJmond
+NL	NL324	Agglomeratie Haarlem
+NL	NL325	Zaanstreek
+NL	NL327	Het Gooi en Vechtstreek
+NL	NL328	Alkmaar en omgeving
+NL	NL329	Groot-Amsterdam
+NL	NL332	Agglomeratie ’s-Gravenhage
+NL	NL333	Delft en Westland
+NL	NL337	Agglomeratie Leiden en Bollenstreek
+NL	NL33A	Zuidoost-Zuid-Holland
+NL	NL33B	Oost-Zuid-Holland
+NL	NL33C	Groot-Rijnmond
+NL	NL341	Zeeuwsch-Vlaanderen
+NL	NL342	Overig Zeeland
+NL	NL411	West-Noord-Brabant
+NL	NL412	Midden-Noord-Brabant
+NL	NL413	Noordoost-Noord-Brabant
+NL	NL414	Zuidoost-Noord-Brabant
+NL	NL421	Noord-Limburg
+NL	NL422	Midden-Limburg
+NL	NL423	Zuid-Limburg
+NL	NLZZZ	Extra-Regio NUTS 3
+AT	AT111	Mittelburgenland
+AT	AT112	Nordburgenland
+AT	AT113	Südburgenland
+AT	AT121	Mostviertel-Eisenwurzen
+AT	AT122	Niederösterreich-Süd
+AT	AT123	Sankt Pölten
+AT	AT124	Waldviertel
+AT	AT125	Weinviertel
+AT	AT126	Wiener Umland/Nordteil
+AT	AT127	Wiener Umland/Südteil
+AT	AT130	Wien
+AT	AT211	Klagenfurt-Villach
+AT	AT212	Oberkärnten
+AT	AT213	Unterkärnten
+AT	AT221	Graz
+AT	AT222	Liezen
+AT	AT223	Östliche Obersteiermark
+AT	AT224	Oststeiermark
+AT	AT225	West- und Südsteiermark
+AT	AT226	Westliche Obersteiermark
+AT	AT311	Innviertel
+AT	AT312	Linz-Wels
+AT	AT313	Mühlviertel
+AT	AT314	Steyr-Kirchdorf
+AT	AT315	Traunviertel
+AT	AT321	Lungau
+AT	AT322	Pinzgau-Pongau
+AT	AT323	Salzburg und Umgebung
+AT	AT331	Außerfern
+AT	AT332	Innsbruck
+AT	AT333	Osttirol
+AT	AT334	Tiroler Oberland
+AT	AT335	Tiroler Unterland
+AT	AT341	Bludenz-Bregenzer Wald
+AT	AT342	Rheintal-Bodenseegebiet
+AT	ATZZZ	Extra-Regio NUTS 3
+PL	PL213	Miasto Kraków
+PL	PL214	Krakowski
+PL	PL217	Tarnowski
+PL	PL218	Nowosądecki
+PL	PL219	Nowotarski
+PL	PL21A	Oświęcimski
+PL	PL224	Częstochowski
+PL	PL225	Bielski
+PL	PL227	Rybnicki
+PL	PL228	Bytomski
+PL	PL229	Gliwicki
+PL	PL22A	Katowicki
+PL	PL22B	Sosnowiecki
+PL	PL22C	Tyski
+PL	PL411	Pilski
+PL	PL414	Koniński
+PL	PL415	Miasto Poznań
+PL	PL416	Kaliski
+PL	PL417	Leszczyński
+PL	PL418	Poznański
+PL	PL424	Miasto Szczecin
+PL	PL426	Koszaliński
+PL	PL427	Szczecinecko-pyrzycki
+PL	PL428	Szczeciński
+PL	PL431	Gorzowski
+PL	PL432	Zielonogórski
+PL	PL514	Miasto Wrocław
+PL	PL515	Jeleniogórski
+PL	PL516	Legnicko-głogowski
+PL	PL517	Wałbrzyski
+PL	PL518	Wrocławski
+PL	PL523	Nyski
+PL	PL524	Opolski
+PL	PL613	Bydgosko-toruński
+PL	PL616	Grudziądzki
+PL	PL617	Inowrocławski
+PL	PL618	Świecki
+PL	PL619	Włocławski
+PL	PL621	Elbląski
+PL	PL622	Olsztyński
+PL	PL623	Ełcki
+PL	PL633	Trójmiejski
+PL	PL634	Gdański
+PL	PL636	Słupski
+PL	PL637	Chojnicki
+PL	PL638	Starogardzki
+PL	PL711	Miasto Łódź
+PL	PL712	Łódzki
+PL	PL713	Piotrkowski
+PL	PL714	Sieradzki
+PL	PL715	Skierniewicki
+PL	PL721	Kielecki
+PL	PL722	Sandomiersko-jędrzejowski
+PL	PL811	Bialski
+PL	PL812	Chełmsko-zamojski
+PL	PL814	Lubelski
+PL	PL815	Puławski
+PL	PL821	Krośnieński
+PL	PL822	Przemyski
+PL	PL823	Rzeszowski
+PL	PL824	Tarnobrzeski
+PL	PL841	Białostocki
+PL	PL842	Łomżyński
+PL	PL843	Suwalski
+PL	PL911	Miasto Warszawa
+PL	PL912	Warszawski wschodni
+PL	PL913	Warszawski zachodni
+PL	PL921	Radomski
+PL	PL922	Ciechanowski
+PL	PL923	Płocki
+PL	PL924	Ostrołęcki
+PL	PL925	Siedlecki
+PL	PL926	Żyrardowski
+PL	PLZZZ	Extra-Regio NUTS 3
+PT	PT111	Alto Minho
+PT	PT112	Cávado
+PT	PT119	Ave
+PT	PT11A	Área Metropolitana do Porto
+PT	PT11B	Alto Tâmega
+PT	PT11C	Tâmega e Sousa
+PT	PT11D	Douro
+PT	PT11E	Terras de Trás-os-Montes
+PT	PT150	Algarve
+PT	PT16B	Oeste
+PT	PT16D	Região de Aveiro
+PT	PT16E	Região de Coimbra
+PT	PT16F	Região de Leiria
+PT	PT16G	Viseu Dão Lafões
+PT	PT16H	Beira Baixa
+PT	PT16I	Médio Tejo
+PT	PT16J	Beiras e Serra da Estrela
+PT	PT170	Área Metropolitana de Lisboa
+PT	PT181	Alentejo Litoral
+PT	PT184	Baixo Alentejo
+PT	PT185	Lezíria do Tejo
+PT	PT186	Alto Alentejo
+PT	PT187	Alentejo Central
+PT	PT200	Região Autónoma dos Açores
+PT	PT300	Região Autónoma da Madeira
+PT	PTZZZ	Extra-Regio NUTS 3
+RO	RO111	Bihor
+RO	RO112	Bistriţa-Năsăud
+RO	RO113	Cluj
+RO	RO114	Maramureş
+RO	RO115	Satu Mare
+RO	RO116	Sălaj
+RO	RO121	Alba
+RO	RO122	Braşov
+RO	RO123	Covasna
+RO	RO124	Harghita
+RO	RO125	Mureş
+RO	RO126	Sibiu
+RO	RO211	Bacău
+RO	RO212	Botoşani
+RO	RO213	Iaşi
+RO	RO214	Neamţ
+RO	RO215	Suceava
+RO	RO216	Vaslui
+RO	RO221	Brăila
+RO	RO222	Buzău
+RO	RO223	Constanţa
+RO	RO224	Galaţi
+RO	RO225	Tulcea
+RO	RO226	Vrancea
+RO	RO311	Argeş
+RO	RO312	Călăraşi
+RO	RO313	Dâmboviţa
+RO	RO314	Giurgiu
+RO	RO315	Ialomiţa
+RO	RO316	Prahova
+RO	RO317	Teleorman
+RO	RO321	Bucureşti
+RO	RO322	Ilfov
+RO	RO411	Dolj
+RO	RO412	Gorj
+RO	RO413	Mehedinţi
+RO	RO414	Olt
+RO	RO415	Vâlcea
+RO	RO421	Arad
+RO	RO422	Caraş-Severin
+RO	RO423	Hunedoara
+RO	RO424	Timiş
+RO	ROZZZ	Extra-Regio NUTS 3
+SI	SI031	Pomurska
+SI	SI032	Podravska
+SI	SI033	Koroška
+SI	SI034	Savinjska
+SI	SI035	Zasavska
+SI	SI036	Posavska
+SI	SI037	Jugovzhodna Slovenija
+SI	SI038	Primorsko-notranjska
+SI	SI041	Osrednjeslovenska
+SI	SI042	Gorenjska
+SI	SI043	Goriška
+SI	SI044	Obalno-kraška
+SI	SIZZZ	Extra-Regio NUTS 3
+SK	SK010	Bratislavský kraj
+SK	SK021	Trnavský kraj
+SK	SK022	Trenčiansky kraj
+SK	SK023	Nitriansky kraj
+SK	SK031	Žilinský kraj
+SK	SK032	Banskobystrický kraj
+SK	SK041	Prešovský kraj
+SK	SK042	Košický kraj
+SK	SKZZZ	Extra-Regio NUTS 3
+FI	FI193	Keski-Suomi
+FI	FI194	Etelä-Pohjanmaa
+FI	FI195	Pohjanmaa
+FI	FI196	Satakunta
+FI	FI197	Pirkanmaa
+FI	FI1B1	Helsinki-Uusimaa
+FI	FI1C1	Varsinais-Suomi
+FI	FI1C2	Kanta-Häme
+FI	FI1C3	Päijät-Häme
+FI	FI1C4	Kymenlaakso
+FI	FI1C5	Etelä-Karjala
+FI	FI1D1	Etelä-Savo
+FI	FI1D2	Pohjois-Savo
+FI	FI1D3	Pohjois-Karjala
+FI	FI1D5	Keski-Pohjanmaa
+FI	FI1D7	Lappi
+FI	FI1D8	Kainuu
+FI	FI1D9	Pohjois-Pohjanmaa
+FI	FI200	Åland
+FI	FIZZZ	Extra-Regio NUTS 3
+SE	SE110	Stockholms län
+SE	SE121	Uppsala län
+SE	SE122	Södermanlands län
+SE	SE123	Östergötlands län
+SE	SE124	Örebro län
+SE	SE125	Västmanlands län
+SE	SE211	Jönköpings län
+SE	SE212	Kronobergs län
+SE	SE213	Kalmar län
+SE	SE214	Gotlands län
+SE	SE221	Blekinge län
+SE	SE224	Skåne län
+SE	SE231	Hallands län
+SE	SE232	Västra Götalands län
+SE	SE311	Värmlands län
+SE	SE312	Dalarnas län
+SE	SE313	Gävleborgs län
+SE	SE321	Västernorrlands län
+SE	SE322	Jämtlands län
+SE	SE331	Västerbottens län
+SE	SE332	Norrbottens län
+SE	SEZZZ	Extra-Regio NUTS 3
+UK	UKC11	Hartlepool and Stockton-on-Tees
+UK	UKC12	South Teesside
+UK	UKC13	Darlington
+UK	UKC14	Durham CC
+UK	UKC21	Northumberland
+UK	UKC22	Tyneside
+UK	UKC23	Sunderland
+UK	UKD11	West Cumbria
+UK	UKD12	East Cumbria
+UK	UKD33	Manchester
+UK	UKD34	Greater Manchester South West
+UK	UKD35	Greater Manchester South East
+UK	UKD36	Greater Manchester North West
+UK	UKD37	Greater Manchester North East
+UK	UKD41	Blackburn with Darwen
+UK	UKD42	Blackpool
+UK	UKD44	Lancaster and Wyre
+UK	UKD45	Mid Lancashire
+UK	UKD46	East Lancashire
+UK	UKD47	Chorley and West Lancashire
+UK	UKD61	Warrington
+UK	UKD62	Cheshire East
+UK	UKD63	Cheshire West and Chester
+UK	UKD71	East Merseyside
+UK	UKD72	Liverpool
+UK	UKD73	Sefton
+UK	UKD74	Wirral
+UK	UKE11	Kingston upon Hull, City of
+UK	UKE12	East Riding of Yorkshire
+UK	UKE13	North and North East Lincolnshire
+UK	UKE21	York
+UK	UKE22	North Yorkshire CC
+UK	UKE31	Barnsley, Doncaster and Rotherham
+UK	UKE32	Sheffield
+UK	UKE41	Bradford
+UK	UKE42	Leeds
+UK	UKE44	Calderdale and Kirklees
+UK	UKE45	Wakefield
+UK	UKF11	Derby
+UK	UKF12	East Derbyshire
+UK	UKF13	South and West Derbyshire
+UK	UKF14	Nottingham
+UK	UKF15	North Nottinghamshire
+UK	UKF16	South Nottinghamshire
+UK	UKF21	Leicester
+UK	UKF22	Leicestershire CC and Rutland
+UK	UKF24	West Northamptonshire
+UK	UKF25	North Northamptonshire
+UK	UKF30	Lincolnshire
+UK	UKG11	Herefordshire, County of
+UK	UKG12	Worcestershire
+UK	UKG13	Warwickshire
+UK	UKG21	Telford and Wrekin
+UK	UKG22	Shropshire CC
+UK	UKG23	Stoke-on-Trent
+UK	UKG24	Staffordshire CC
+UK	UKG31	Birmingham
+UK	UKG32	Solihull
+UK	UKG33	Coventry
+UK	UKG36	Dudley
+UK	UKG37	Sandwell
+UK	UKG38	Walsall
+UK	UKG39	Wolverhampton
+UK	UKH11	Peterborough
+UK	UKH12	Cambridgeshire CC
+UK	UKH14	Suffolk
+UK	UKH15	Norwich and East Norfolk
+UK	UKH16	North and West Norfolk
+UK	UKH17	Breckland and South Norfolk
+UK	UKH21	Luton
+UK	UKH23	Hertfordshire
+UK	UKH24	Bedford
+UK	UKH25	Central Bedfordshire
+UK	UKH31	Southend-on-Sea
+UK	UKH32	Thurrock
+UK	UKH34	Essex Haven Gateway
+UK	UKH35	West Essex
+UK	UKH36	Heart of Essex
+UK	UKH37	Essex Thames Gateway
+UK	UKI31	Camden and City of London
+UK	UKI32	Westminster
+UK	UKI33	Kensington & Chelsea and Hammersmith & Fulham
+UK	UKI34	Wandsworth
+UK	UKI41	Hackney and Newham
+UK	UKI42	Tower Hamlets
+UK	UKI43	Haringey and Islington
+UK	UKI44	Lewisham and Southwark
+UK	UKI45	Lambeth
+UK	UKI51	Bexley and Greenwich
+UK	UKI52	Barking & Dagenham and Havering
+UK	UKI53	Redbridge and Waltham Forest
+UK	UKI54	Enfield
+UK	UKI61	Bromley
+UK	UKI62	Croydon
+UK	UKI63	Merton, Kingston upon Thames and Sutton
+UK	UKI71	Barnet
+UK	UKI72	Brent
+UK	UKI73	Ealing
+UK	UKI74	Harrow and Hillingdon
+UK	UKI75	Hounslow and Richmond upon Thames
+UK	UKJ11	Berkshire
+UK	UKJ12	Milton Keynes
+UK	UKJ13	Buckinghamshire CC
+UK	UKJ14	Oxfordshire
+UK	UKJ21	Brighton and Hove
+UK	UKJ22	East Sussex CC
+UK	UKJ25	West Surrey
+UK	UKJ26	East Surrey
+UK	UKJ27	West Sussex (South West)
+UK	UKJ28	West Sussex (North East)
+UK	UKJ31	Portsmouth
+UK	UKJ32	Southampton
+UK	UKJ34	Isle of Wight
+UK	UKJ35	South Hampshire
+UK	UKJ36	Central Hampshire
+UK	UKJ37	North Hampshire
+UK	UKJ41	Medway
+UK	UKJ43	Kent Thames Gateway
+UK	UKJ44	East Kent
+UK	UKJ45	Mid Kent
+UK	UKJ46	West Kent
+UK	UKK11	Bristol, City of
+UK	UKK12	Bath and North East Somerset, North Somerset and South Gloucestershire
+UK	UKK13	Gloucestershire
+UK	UKK14	Swindon
+UK	UKK15	Wiltshire CC
+UK	UKK21	Bournemouth and Poole
+UK	UKK22	Dorset CC
+UK	UKK23	Somerset
+UK	UKK30	Cornwall and Isles of Scilly
+UK	UKK41	Plymouth
+UK	UKK42	Torbay
+UK	UKK43	Devon CC
+UK	UKL11	Isle of Anglesey
+UK	UKL12	Gwynedd
+UK	UKL13	Conwy and Denbighshire
+UK	UKL14	South West Wales
+UK	UKL15	Central Valleys
+UK	UKL16	Gwent Valleys
+UK	UKL17	Bridgend and Neath Port Talbot
+UK	UKL18	Swansea
+UK	UKL21	Monmouthshire and Newport
+UK	UKL22	Cardiff and Vale of Glamorgan
+UK	UKL23	Flintshire and Wrexham
+UK	UKL24	Powys
+UK	UKM50	Aberdeen City and Aberdeenshire
+UK	UKM61	Caithness & Sutherland and Ross & Cromarty
+UK	UKM62	Inverness & Nairn and Moray, Badenoch & Strathspey
+UK	UKM63	Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute
+UK	UKM64	Na h-Eileanan Siar (Western Isles)
+UK	UKM65	Orkney Islands
+UK	UKM66	Shetland Islands
+UK	UKM71	Angus and Dundee City
+UK	UKM72	Clackmannanshire and Fife
+UK	UKM73	East Lothian and Midlothian
+UK	UKM75	Edinburgh, City of
+UK	UKM76	Falkirk
+UK	UKM77	Perth & Kinross and Stirling
+UK	UKM78	West Lothian
+UK	UKM81	East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond
+UK	UKM82	Glasgow City
+UK	UKM83	Inverclyde, East Renfrewshire and Renfrewshire
+UK	UKM84	North Lanarkshire
+UK	UKM91	Scottish Borders
+UK	UKM92	Dumfries & Galloway
+UK	UKM93	East Ayrshire and North Ayrshire mainland
+UK	UKM94	South Ayrshire
+UK	UKM95	South Lanarkshire
+UK	UKN06	Belfast
+UK	UKN07	Armagh City, Banbridge and Craigavon
+UK	UKN08	Newry, Mourne and Down
+UK	UKN09	Ards and North Down
+UK	UKN10	Derry City and Strabane
+UK	UKN11	Mid Ulster
+UK	UKN12	Causeway Coast and Glens
+UK	UKN13	Antrim and Newtownabbey
+UK	UKN14	Lisburn and Castlereagh
+UK	UKN15	Mid and East Antrim
+UK	UKN16	Fermanagh and Omagh
+UK	UKZZZ	Extra-Regio NUTS 3
