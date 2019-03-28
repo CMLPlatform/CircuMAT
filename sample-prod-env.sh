@@ -1,4 +1,4 @@
-export DJANGO_SETTINGS_MODULE=ramasceneMasterProject.config.<e.g. production.py>
+export DJANGO_SETTINGS_MODULE=circumatMasterProject.config.<e.g. production.py>
 export DATASETS_VERSION=v3
 export DATASETS_DIR=<my/path/to/datasets>
 export SECRET_KEY=<your secret key>

@@ -1,5 +1,5 @@
 import pytest
-from ramasceneMasterProject import config
+from circumatMasterProject import config
 import os
 
 

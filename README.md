@@ -1,14 +1,13 @@
-# RaMa-Scene
+# CircuMat
 ---
-RaMa-Scene is a django 2.0 based web-application that allows for analyzing Environmentally Extended Input-Output (EEIO) tables. EXIOBASE v3.3 is used in this project. 
-Demo version: http://cml.liacs.nl:8080/ramascene/
+CircuMat is a modified (forked) version of Rama-Scene EIT Raw Materials project related to analyzing Environmentally Extended Input-Output (EEIO) tables. CircuMat focuses on NUTS2 level classification as opposed to Rama-Scene country level analysis tool.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](resources/docs/CONTRIBUTING.md)
 
 # Developers Guide
 ---
-http://rama-scene.readthedocs.io/en/latest/
+For more information on the tool architecture, please refer to Rama-Scene's documenation: http://rama-scene.readthedocs.io/en/latest/
 
 # Getting started
 ---
@@ -116,27 +115,6 @@ $ python3 manage.py runserver
 
 Access the app via the webrowser: http://127.0.0.1:8000/ramascene/
 
-### [Optional] enable debug logging
-
-To enable debug logging, open the ramasceneMasterProject/config/dev.py file.
-Uncomment the "logging for Django" section.
-
-### [Optional] run tests
-In case you want to run tests you can perform unit tests in the root folder:
-```
-$ python3 manage.py test -v2
-```
-
-For integration tests you need to start the celery workers first (explained above). 
-You can perform the integration test with the following command:
-```
-$ pytest -vs
-```
-
-If the test has succeeded, you�ll need to repopulate the database with the following command:
-```
-$ python3 manage.py populateHierarchies
-```
 
 ### Core dependencies
 ---
