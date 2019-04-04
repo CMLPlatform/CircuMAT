@@ -246,7 +246,7 @@ class App extends Component {
             'dimType': this.PERSPECTIVE_PRODUCTION,
             'vizType': this.VIZ_TREEMAP,
             'nodesSec': [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-            'nodesReg': [1],
+            'nodesReg': [66],
             'extn': [1],
             'year': [2011]
         };
