@@ -3,7 +3,9 @@ import json
 import numpy as np
 from circumat import productindexmanger as pim
 from circumat import querymanagement
-
+from django.conf import settings
+import pandas as pd
+import os
 log = logging.getLogger(__name__)
 
 
@@ -11,6 +13,9 @@ class Analyze:
     """
     This class contains the method for calculations
     """
+    # class variable
+    __prd_cnt = 200
+    __cntr_cnt = 49
 
     def __init__(self, product_calc_indices, country_calc_indices, indicator_calc_indices, querySelection, idx_units,
                  job_name, job_id, s_country_idx, Y_data, B_data, L_data):
@@ -25,6 +30,8 @@ class Analyze:
         self.Y_data = Y_data
         self.B_data = B_data
         self.L_data = L_data
+        self.global_id_nuts2 = querySelection["nodesReg"][0]
+        self.year = str(querySelection["year"])
 
     def route_one(self):
         """Perform calculations according to route one.
@@ -44,10 +51,11 @@ class Analyze:
         selected_c_prd_cnt = ids.get_selected_c_product_count()
 
         # Get data
-        Y = self.Y_data
         L = self.L_data
         B = self.B_data
-
+        print(self.country_calc_indices)
+        # implement function to return a new Y
+        Y = self.update_y()
         # Set-up final demand based on selected consuming countries
         # Select and aggregate countries/regions
         y = np.sum(Y[:, self.country_calc_indices], axis=1, keepdims=True)
@@ -309,3 +317,190 @@ class Analyze:
         data['rawResultData'] = result_as_names
         json_data = json.dumps(data)
         return json_data
+
+    def update_y(self):
+        regions = pd.read_excel(os.path.join(settings.DATASET_DIR, self.year,'eurostatdata', "circumat_regions.xlsx"))
+
+        # number of diferent parts in the final demand. THIS must be known
+        n_y = 1
+        # the sequence of the gross capital formation in Y THIS must be known (starting from 1)
+        n_gcf = 1
+        # the sequence of the exports  in Y THIS must be known  (starting from 1)
+        n_exports = 1
+
+        # number of countries in the original mrio
+        n_c = self.__cntr_cnt # number of countries in the original mrio
+        n_c = int(n_c)
+        n_s = self.__prd_cnt  # number of sectors (or products in the original mrio)
+        n_s = int(n_s)
+        n_r = 2  # this is always two, we will divide country in the exiobase into two parts
+
+        # find the region of interest =rof in the exiobase, i.e. the parent country of the region.
+        # this is according to the exiobase numbering
+        # here the exiobase starts from 1, parent id
+        rof = int(regions.iloc[int(np.where(regions.iloc[:, 2] == self.global_id_nuts2)[0]), 3])
+        # find the name of the country
+        name_rof = (regions.iloc[int(np.where(regions.iloc[:, 2] == rof)[0]), 0])
+
+        # find the  id  of the nuts2; the code of it
+        id_nuts2 = (regions.iloc[int(np.where(regions.iloc[:, 2] == self.global_id_nuts2)[0]), 1])
+        # find the label of the country; the code of it. that is the frst two letter of above
+        id_rof = id_nuts2[0:2]
+
+        # according to the country code, read the income data
+        reg_exp_shares_all = pd.read_csv(os.path.join(settings.DATASET_DIR, self.year, 'eurostatdata/Income/2011_income_'+ '%s' % id_rof + '_' + '%s' % name_rof + '_B5N_MIO_EUR.csv'), header=None, sep='\t')
+
+        # fill NAN values with a small number. *later it may be filled with the avarage value  of the existing values or manually corrected so that no NAN exists.
+        reg_exp_shares_all = reg_exp_shares_all.fillna(0.0001)
+        # turn reg_exp_shares_all of the country into another matrix the rest of the country  as region 1 and the selected nuts 2 as region 2
+        reg_exp_shares = np.zeros((n_y, n_r))
+        # first fınd the nuts 2
+        internal_id_nuts2 = ((np.where(reg_exp_shares_all.iloc[:, 0] == id_nuts2)[0])[0])
+        # write the nuts 2 income data into the second column, and scale it with the sum of all income in the country
+        reg_exp_shares[:, 1] = reg_exp_shares_all.iloc[internal_id_nuts2, 1] / np.sum(reg_exp_shares_all.iloc[:, 1],
+                                                                                      axis=0)
+        # then fll in the rest of the nation details i.e. all sum minus the nuts2 in the column 1
+        reg_exp_shares[:, 0] = (np.sum(reg_exp_shares_all.iloc[:, 1], axis=0) - reg_exp_shares_all.iloc[
+            internal_id_nuts2, 1]) / np.sum(reg_exp_shares_all.iloc[:, 1], axis=0)
+
+        # according to the country code, read the gross capital formation
+        gcf_exp_shares_all = pd.read_csv(os.path.join(settings.DATASET_DIR, self.year,
+                     'eurostatdata/Capital_Formation_By_Sector/2011_nama_10r_2gfcf_' + '%s' % id_rof + '_' + '%s' % name_rof + '_MIO_EUR.csv'),   sep = '\t')
+
+        # fill nan s with a small number *
+        gcf_exp_shares_all = gcf_exp_shares_all.fillna(0.0001)
+        # turn gcf_exp_shares_all of the country into another matrix the rest of the country  as region 1 and the selected nuts 2 as region 2
+        gcf_exp_shares = np.zeros((gcf_exp_shares_all.shape[1] - 1, n_r))
+        # first fınd the nuts 2
+
+        internal_id_nuts2 = ((np.where(gcf_exp_shares_all.iloc[:, 0] == id_nuts2)[0])[0])
+        # write the nuts 2 gcf data into the second column,
+        gcf_exp_shares[:, 1] = gcf_exp_shares_all.iloc[internal_id_nuts2, 1:gcf_exp_shares_all.shape[1]]
+
+        # then fll in the rest of the nation details i.e. all sum minus the nuts2
+
+
+        gcf_exp_shares[:, 0] = np.sum(gcf_exp_shares_all.iloc[:, 1:gcf_exp_shares_all.shape[1]],
+                                      axis=0) - gcf_exp_shares[:, 1]
+
+        # according to the country code, read the aggriculture employnment data
+        agg_emp_numbers_all = pd.read_csv(os.path.join(settings.DATASET_DIR, self.year,
+                     'eurostatdata/Agriculture_By_Sector/2011_agrraccts_' + '%s' % id_rof + '_' + '%s' % name_rof + '_PROD_BP.csv'),  sep = '\t')
+
+        # fill nan s with a small number *
+        agg_emp_numbers_all = agg_emp_numbers_all.fillna(0.0001)
+        # turn agg employment numbers_all of the country into another matrix the rest of the country  as region 1 and the selected nuts 2 as region 2
+        agg_emp_numbers = np.zeros((agg_emp_numbers_all.shape[1] - 1, n_r))
+        # first fınd the nuts 2
+        internal_id_nuts2 = ((np.where(agg_emp_numbers_all.iloc[:, 0] == id_nuts2)[0])[0])
+        # write the nuts 2 agg data into the second column,
+        agg_emp_numbers[:, 1] = agg_emp_numbers_all.iloc[internal_id_nuts2, 1:agg_emp_numbers_all.shape[1]]
+        # then fll in the rest of the nation details i.e. all sum minus the nuts2
+        agg_emp_numbers[:, 0] = np.sum(agg_emp_numbers_all.iloc[:, 1:agg_emp_numbers_all.shape[1]],
+                                       axis=0) - agg_emp_numbers[:, 1]
+
+        # according to the country code, read the sbs employnment data
+        sbs_emp_numbers_all = pd.read_csv(os.path.join(settings.DATASET_DIR, self.year,
+                     'eurostatdata/Employment_By_Sector/2011_SBS_' + '%s' % id_rof + '_' + '%s' % name_rof + '_V16110.csv'),sep = '\t')
+
+
+        # fill nan s with a small number *
+        sbs_emp_numbers_all = sbs_emp_numbers_all.fillna(0.0001)
+        # turn it into another matrix the rest of the country  as region 1 and the selected nuts 2 as region 2
+        sbs_emp_numbers = np.zeros((sbs_emp_numbers_all.shape[1] - 1, n_r))
+        # first fınd the nuts 2
+        internal_id_nuts2 = ((np.where(sbs_emp_numbers_all.iloc[:, 0] == id_nuts2)[0])[0])
+        # first fill the nuts 2 region details
+        sbs_emp_numbers[:, 1] = sbs_emp_numbers_all.iloc[internal_id_nuts2, 1:sbs_emp_numbers_all.shape[1]]
+        # then fll in the rest of the nation details i.e. all sum minus the nuts2
+        sbs_emp_numbers[:, 0] = np.sum(sbs_emp_numbers_all.iloc[:, 1:sbs_emp_numbers_all.shape[1]],
+                                       axis=0) - sbs_emp_numbers[:, 1]
+
+        # convert them to numpy arrays
+        sbs_emp_numbers = np.array(sbs_emp_numbers)
+        agg_emp_numbers = np.array(agg_emp_numbers)
+        reg_exp_shares = np.array(reg_exp_shares)
+        gcf_exp_shares = np.array(gcf_exp_shares)
+
+        # conversıon of the sectors ın eurostat to exıobase starts..
+        # for agriculture
+
+        conversion_matrix = pd.read_excel(os.path.join(settings.DATASET_DIR, self.year,
+                                 'eurostatdata/agg_MATCH.xlsx'), sheet_name='matrix', header=None)
+        conversion_matrix = np.array(conversion_matrix)
+        tmp = conversion_matrix.shape
+        ncols = tmp[1]
+        nrows = tmp[0]
+        # this should be NONZERO unless that is a parent sector that is already existing. otherwise data can be lost!
+        rowsum_conversion_matrix = np.sum(conversion_matrix, axis=1)
+        # multipply  the conversion matrix  qith employment numbers and divide withthe row sum of the conversion matrix
+        agg_emp_numbers_all_in_exiobase = (np.dot(np.transpose(agg_emp_numbers), conversion_matrix * np.reshape(
+            np.repeat(1 / (rowsum_conversion_matrix + +10 ** (-31)), ncols), [nrows, ncols])))
+        agg_emp_numbers_all_in_exiobase = np.transpose(agg_emp_numbers_all_in_exiobase)
+        # for sbs
+        conversion_matrix = pd.read_excel(os.path.join(settings.DATASET_DIR, self.year,
+                                                       'eurostatdata/SBS_MATCH.xlsx'), sheet_name='matrix', header=None)
+        conversion_matrix = np.array(conversion_matrix)
+        tmp = conversion_matrix.shape
+        nrows = tmp[0]
+        ncols = tmp[1]
+        # multipply with the conversion matrix and divide withthe crow sum of the conversion matrix
+        rowsum_conversion_matrix = np.sum(conversion_matrix,
+                                          axis=1)  # this should be NONZERO! BUT unless it is a parent sector!
+        sbs_emp_numbers_all_in_exiobase = (np.dot(np.transpose(sbs_emp_numbers), conversion_matrix * np.reshape(
+            np.repeat(1 / (rowsum_conversion_matrix + +10 ** (-31)), ncols), [nrows, ncols])))
+        sbs_emp_numbers_all_in_exiobase = np.transpose(sbs_emp_numbers_all_in_exiobase)
+        # for gcf
+
+        conversion_matrix = pd.read_excel(os.path.join(settings.DATASET_DIR, self.year,
+                                                       'eurostatdata/gfc_MATCH.xlsx'), sheet_name='matrix', header=None)
+
+        conversion_matrix = np.array(conversion_matrix)
+        tmp = conversion_matrix.shape
+        nrows = tmp[0]
+        ncols = tmp[1]
+        # multipply with the conversion matrix and divide withthe crow sum of the conversion matrix
+        rowsum_conversion_matrix = np.sum(conversion_matrix,
+                                          axis=1)  # this should be NONZERO! BUT unless it is a parent sector!
+        gcf_exp_shares_all_in_exiobase = (np.dot(np.transpose(gcf_exp_shares), conversion_matrix * np.reshape(
+            np.repeat(1 / (rowsum_conversion_matrix + +10 ** (-31)), ncols), [nrows, ncols])))
+        gcf_exp_shares_all_in_exiobase = np.transpose(gcf_exp_shares_all_in_exiobase)
+        # scale the  gcf such that the row sum is 1
+        tmp = (np.sum(gcf_exp_shares_all_in_exiobase, axis=1) + 10 ** (-31))
+        gcf_exp_shares_all_in_exiobase[:, 0] = gcf_exp_shares_all_in_exiobase[:, 0] / tmp
+        gcf_exp_shares_all_in_exiobase[:, 1] = gcf_exp_shares_all_in_exiobase[:, 1] / tmp
+
+        # the total number of the employment is the sum of sbs and agg
+        reg_emp_numbers = sbs_emp_numbers_all_in_exiobase + agg_emp_numbers_all_in_exiobase
+        # calculate the total  employment for each sector in whole country
+        tot_emp = np.dot(reg_emp_numbers, np.ones((n_r, 1)))
+        # calculate the employment shares in each region for each sector
+        # what is the ratio between (sector S workers in region R) and (total employment of sector S)
+        # it shows the share of that sector per region
+        emp_shares = np.multiply(reg_emp_numbers, np.reciprocal(tot_emp + 10 ** (-31)))
+
+        # find the rows and column indices of the country in the exiobase in python (as exiobase index starts from 1 subsract 1 from rof)
+        ycolumns_of_rof = np.array(range(rof * n_y - (n_y - 1) - 1, rof * n_y))
+        y_gcfcolumn_of_rof = rof * n_y - (n_y - 1) - 1 + (n_gcf - 1)
+        y_exportcolumn_of_rof = rof * n_y - (n_y - 1) - 1 + (n_exports - 1)
+
+
+        Y = self.Y_data
+        print('last part')
+
+        # division of the final demand according to the income
+        y_r1 = Y[:, ycolumns_of_rof] * np.transpose(np.reshape(np.array(reg_exp_shares[:, 0]), (n_y, 1)))
+        y_r2 = Y[:, ycolumns_of_rof] * np.transpose(np.reshape(np.array(reg_exp_shares[:, 1]), (n_y, 1)))
+        # division of the final demand (only the column for gcf) according to the gross capital formation
+        y_r1[:, n_gcf - 1] = Y[:, y_gcfcolumn_of_rof] * np.repeat(gcf_exp_shares_all_in_exiobase[:, 0], n_c)
+        y_r2[:, n_gcf - 1] = Y[:, y_gcfcolumn_of_rof] * np.repeat(gcf_exp_shares_all_in_exiobase[:, 1], n_c)
+        # division of the final demand (only the column for export) according to the output shares (employment numbers)
+        y_r1[:, n_exports - 1] = Y[:, y_exportcolumn_of_rof] * np.repeat(emp_shares[:, 0], n_c)
+        y_r2[:, n_exports - 1] = Y[:, y_exportcolumn_of_rof] * np.repeat(emp_shares[:, 1], n_c)
+
+        Y_updated=np.zeros((9800, 49))
+
+        Y_updated[:, rof - 1]=np.sum(y_r2,axis=1)
+        print(np.sum(y_r2,axis=1))
+
+        return Y_updated
