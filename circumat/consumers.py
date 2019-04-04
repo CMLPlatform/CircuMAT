@@ -33,6 +33,7 @@ class CircumatConsumer(JsonWebsocketConsumer):
                 event (dict): message from front-end
 
         """
+
         try:
             data = json.loads(event['text'])
             # if action message from front-end is inside payload
@@ -142,8 +143,10 @@ class CircumatConsumer(JsonWebsocketConsumer):
                 # prepare for Celery handler
                 product_calc_indices = \
                     querymanagement.get_leafs_product(query_selection["nodesSec"])
-                country_calc_indices = \
-                    querymanagement.get_leafs_country(query_selection["nodesReg"])
+
+                # in ramascene we get the local ids here
+                # however in circumat we want to get the parent local id of the country
+                country_to_use = querymanagement.get_parent_country(query_selection["nodesReg"])
 
                 # set offset for indicator/extension
                 indicator_calc_indices = \
@@ -152,7 +155,7 @@ class CircumatConsumer(JsonWebsocketConsumer):
                 idx_units = \
                     querymanagement.get_indicator_units(query_selection["extn"])
                 # querySelection ready for calculations
-                ready_query_selection.update({'nodesSec': product_calc_indices, 'nodesReg': country_calc_indices,
+                ready_query_selection.update({'nodesSec': product_calc_indices, 'nodesReg': country_to_use,
                                               'extn': indicator_calc_indices, 'idx_units': idx_units})
 
                 # call default handler

@@ -83,6 +83,9 @@ def execute_calc(job_name, job_id, channel_name, ready_query_selection, query_se
     country_calc_indices = querymanagement.convert_to_numpy(ready_query_selection["nodesReg"])
     indicator_calc_indices = querymanagement.convert_to_numpy(ready_query_selection["extn"])
     idx_units = ready_query_selection["idx_units"]
+
+    global_id_nuts2 = query_selection["nodesReg"]
+
     # retrieve standard matrix
     B = querymanagement.get_numpy_objects(query_selection["year"], "B")
     # set constant for country selling product ("total")

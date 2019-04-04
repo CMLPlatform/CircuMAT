@@ -479,3 +479,24 @@ def get_numpy_objects(year, object_name):
     location = os.path.join(settings.DATASET_DIR, '') + os.path.join(str(year), '')
     object = np.load(location + os.path.join(os.path.join(object_name + str('_') + settings.DATASET_VERSION) + ".npy"))
     return object
+
+
+def get_parent_country(nuts2_global_ids):
+    """    Returns the parent id of a given nuts2 global id
+
+        Uses the database/model to fetch parent countries.
+
+        Args:
+            nuts2_global_ids (list): A list of user selected nuts2 global ids
+
+        Returns:
+            list: complete list of  parent ids
+    """
+    country_calc_indices = []
+    for id in nuts2_global_ids:
+        parent_identifier = Country.objects.values_list('parent_id', flat=True).get(global_id=id)
+        Country.objects.values_list('local_id', flat=True).get(global_id=parent_identifier)
+        country_calc_indices.append(parent_identifier)
+    return country_calc_indices
+
+
