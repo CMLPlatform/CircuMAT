@@ -84,8 +84,6 @@ def execute_calc(job_name, job_id, channel_name, ready_query_selection, query_se
     indicator_calc_indices = querymanagement.convert_to_numpy(ready_query_selection["extn"])
     idx_units = ready_query_selection["idx_units"]
 
-    global_id_nuts2 = query_selection["nodesReg"]
-
     # retrieve standard matrix
     B = querymanagement.get_numpy_objects(query_selection["year"], "B")
     # set constant for country selling product ("total")
@@ -93,49 +91,11 @@ def execute_calc(job_name, job_id, channel_name, ready_query_selection, query_se
     try:
         # selection state No 2:  - country of consumption - multiple select
         if query_selection["vizType"] == "GeoMap" and query_selection["dimType"] == "Consumption":
-            # if there are model_details
-            if "model_details" in query_selection:
-                Y_data = querymanagement.get_numpy_objects(query_selection["year"], "Y")
-
-                model = Modelling(ready_query_selection, Y_data, query_selection["load_A"],
-                                  query_selection["year"], query_selection["model_details"])
-                Y, L = model.apply_model()
-            else:
-                Y = querymanagement.get_numpy_objects(query_selection["year"], "Y")
-                L = querymanagement.get_numpy_objects(query_selection["year"], "L")
-            # instantiate Analyze class
-            p2 = Analyze(product_calc_indices, country_calc_indices, indicator_calc_indices, query_selection, idx_units,
-                         job_name, job_id, s_country_idx, Y, B, L)
-            # invoke method for route 2 calculations
-            json_data = p2.route_two()
-            # Change task status to completed
-            job_update(job_id)
-            handle_complete(job_id, channel_name, execute_calc.request.id)
-            # save the json result to the celery result database
-            return json_data
+            raise NotImplemented()
 
         # selection state No 3: - country where emission takes place - multiple select
         elif query_selection["vizType"] == "GeoMap" and query_selection["dimType"] == "Production":
-            # if there are model_details
-            if "model_details" in query_selection:
-                Y_data = querymanagement.get_numpy_objects(query_selection["year"], "Y")
-
-                model = Modelling(ready_query_selection, Y_data, query_selection["load_A"],
-                                  query_selection["year"], query_selection["model_details"])
-                Y, L = model.apply_model()
-            else:
-                Y = querymanagement.get_numpy_objects(query_selection["year"], "Y")
-                L = querymanagement.get_numpy_objects(query_selection["year"], "L")
-            # instantiate Analyze class
-            p3 = Analyze(product_calc_indices, country_calc_indices, indicator_calc_indices, query_selection, idx_units,
-                         job_name, job_id, s_country_idx, Y, B, L)
-            # invoke method for route 3 calculations
-            json_data = p3.route_three()
-            # Change task status to completed
-            job_update(job_id)
-            handle_complete(job_id, channel_name, execute_calc.request.id)
-            # save the json result to the celery result database
-            return json_data
+            raise NotImplemented()
 
         # selection state No 1: - consumed products - multiple select
         elif query_selection["vizType"] == "TreeMap" and query_selection["dimType"] == "Consumption":
