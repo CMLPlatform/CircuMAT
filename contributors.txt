@@ -1,4 +1,6 @@
 Back-end developer: Sidney Niccolson (CML)
 Front-end developer: Bart Daniels (VITO)
-IO calculations: Arjan de Koning (CML)
-Project manager and modelling: Franco Donati (CML)
+IO calculations: Arjan de Koning & Hale Cetinay (CML)
+IO modelling: Franco Donati (CML)
+Eurostat data: Elmer Rietveld (TNO)
+Project manager: Arnold Tukker (CML)
