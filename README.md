@@ -24,7 +24,7 @@ https://fdonaticml.stackstorage.com/s/HpghqxdxgW70MLt
 
 ### Clone the project 
 ``` 
-git clone https://SidneyNiccolson@bitbucket.org/CML-IE/rama-scene.git 
+$ git clone https://SidneyNiccolson@bitbucket.org/SidneyNiccolson/circumat.git
 ```
 
 ### Create a virtual environment (python3.5 or higher) and install the app requirements (make sure you have python-dev installed via apt-get)
@@ -64,7 +64,7 @@ Check the status to make sure everything is running:
 
 ### Set the following environment variables (see sample-dev-env.sh):
 ```
-export DJANGO_SETTINGS_MODULE=ramasceneMasterProject.config.dev
+export DJANGO_SETTINGS_MODULE=circumatMasterProject.config.dev
 export DATASETS_VERSION=[version downloaded e.g. v3]
 export DATASETS_DIR=my/path/to/datasets
 export OPENBLAS_NUM_THREADS=<adjust according to how many cores you want to use>
@@ -101,11 +101,11 @@ $ ./node_modules/.bin/webpack --config dev-webpack.config.js
 ### Start Celery
 Start the default module to enable handling of analytical calculations:
 ```
-$ celery -A ramasceneMasterProject worker -l info  --concurrency 1 --queue calc_default -n worker1.%h
+$ celery -A circumatMasterProject worker -l info  --concurrency 1 --queue calc_default -n worker1.%h
 ```
 Start the modelling module to enable handling of modelling calculations:
 ```
-$ celery -A ramasceneMasterProject worker -l info  --concurrency 1 --queue modelling -n worker2.%h
+$ celery -A circumatMasterProject worker -l info  --concurrency 1 --queue modelling -n worker2.%h
 ```
 
 ### Start the development server
@@ -113,7 +113,7 @@ $ celery -A ramasceneMasterProject worker -l info  --concurrency 1 --queue model
 $ python3 manage.py runserver
 ```
 
-Access the app via the webrowser: http://127.0.0.1:8000/ramascene/
+Access the app via the webbrowser: http://127.0.0.1:8000/circumat/
 
 
 ### Core dependencies
