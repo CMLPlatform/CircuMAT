@@ -496,10 +496,12 @@ def get_parent_country(nuts2_global_ids):
     country_calc_indices = []
     for id in nuts2_global_ids:
         parent_identifier = Country.objects.values_list('parent_id', flat=True).get(global_id=id)
-        parent_identifier = clean_single_leafs(parent_identifier, OFFSET)
-        country_calc_indices.append(parent_identifier)
+        parent_local_id = Country.objects.values_list('local_id', flat=True).get(global_id=parent_identifier)
+        parent_local_id = clean_single_leafs(parent_local_id, OFFSET)
+        country_calc_indices.append(parent_local_id)
     # flatten lists
     country_calc_indices = [item for sublist in country_calc_indices for item in sublist]
+
     return country_calc_indices
 
 
