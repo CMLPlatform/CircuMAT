@@ -458,7 +458,7 @@ class App extends Component {
                   <Navbar.Header>
                       <Navbar.Brand>
                           {/*<Image src="../static/rama-logo-big.svgg"/>*/}
-                          <a href="../"> {<Image src="../static/rama-logo-big.svg"/>}</a>
+                          CircuMAT
                       </Navbar.Brand>
                        <Navbar.Toggle />
                   </Navbar.Header>
@@ -698,52 +698,14 @@ class App extends Component {
                             </Panel.Heading>
                             <Panel.Collapse>
                                 <Panel.Body>
-                                    <h5>Tutorials</h5>
-                                    <ul>
-                                        <li><a href="https://www.youtube.com/watch?v=hrrLnxjRv6g">User guide</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=3-LxNo5giBw">Exercise</a></li>
-                                    </ul>
-                                    <h5>Manual</h5>
-                                    <ul>
-                                        <li><a href="../static/RaMaScene_platform_manual.pdf">Download PDF</a></li>
-                                    </ul>
-                                    <h5>Lessons on Circular Economy assessment</h5>
-                                    <ul>
-                                        <li><a href="https://youtu.be/ySLqCFfy3n0">Intro to Circular Economy</a></li>
-                                        <li><a href="https://youtu.be/hQPQdzGwAhw">Micro-level assessment - LCA</a></li>
-                                        <li><a href="https://youtu.be/VcTa8Ln9pJw">Meso-level assessment - SFA</a></li>
-                                        <li><a href="https://youtu.be/g-ZiHKnHwZc">Macro-level assessment - EEIO</a></li>
-                                    </ul>
-                                    <h5>Lessons on Critical Materials (Courtesy of SusCritMat)</h5>
-                                    <ul>
-                                        <li><a href="https://youtu.be/76AuaNaY9jY">Scenarios</a></li>
-                                        <li><a href="https://youtu.be/BFBqiPjjCr8">Supply risk factors</a></li>
-                                        <li><a href="https://youtu.be/DWhsKr6OMP4">Criticality (Interview)</a></li>
-                                    </ul>
-                                    <h5>Raw Materials Information System</h5>
-                                    <ul>
-                                        <li><a href="http://rmis.jrc.ec.europa.eu/">Policy & Legislation</a></li>
-                                        <li><a href="http://rmis.jrc.ec.europa.eu/">Terminology & Library</a></li>
-                                        <li><a href="http://rmis.jrc.ec.europa.eu/">Critical Raw Materials (CRM)</a></li>
-                                        <li><a href="http://rmis.jrc.ec.europa.eu/">Raw Materials Monitoring & Indicators</a></li>
-                                        <li><a href="http://rmis.jrc.ec.europa.eu/">Secondary Raw Materials & Circular Economy</a></li>
-                                        <li><a href="http://rmis.jrc.ec.europa.eu/">Industry & Innovation</a></li>
-                                        <li><a href="http://rmis.jrc.ec.europa.eu/">Raw Materials Knowledge Gateway</a></li>
-                                    </ul>
+
+
                                     <h5>Other resources</h5>
                                     <ul>
                                         <li><a href="https://www.exiobase.eu/">EXIOBASE</a></li>
                                         <li><a href="https://cml.liacs.nl/exiovisuals/">EXIOVISUALS</a></li>
-                                        <li><a href="https://atlas.media.mit.edu/en/visualize/tree_map/hs92/export/nga/all/show/2016/">Observatory of Economic Complexity</a></li>
-                                        <li><a href="https://ielab.info/">Industrial Ecology Virtual Laboratory</a></li>
-                                        <li><a href="http://tool.globalcalculator.org">The Global Calculator</a></li>
-                                        <li><a href="https://ejatlas.org/">Environmental Justice Atlas</a></li>
-                                        <li><a href="https://trase.earth/?lang=en">TRASE</a></li>
-                                        <li><a href="http://www.ecolizer.be/">Ecolizer</a></li>
-                                        <li><a href="https://www.environmentalfootprints.org/infographics#">Environmental Footprint Explorer</a></li>
-                                        <li><a href="https://resourcetrade.earth/">Resource Trade</a></li>
-                                        <li><a href="https://resourcewatch.org/data/explore">Resource Watch</a></li>
-                                        <li><a href="http://data.footprintnetwork.org/">Data Footprint Network</a></li>
+                                        <li><a href="https://ramascene.eu">Rama-Scene</a></li>
+
                                     </ul>
                                 </Panel.Body>
                             </Panel.Collapse>
