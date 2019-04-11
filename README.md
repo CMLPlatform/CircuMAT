@@ -88,7 +88,7 @@ $ python3 manage.py migrate
 $ python3 manage.py populateHierarchies
 ```
 
-### Prepare static resources
+### Prepare static resources (npm version 4.6.1 or higher)
 ```
 $ npm install
 ```
