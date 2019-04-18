@@ -10,6 +10,7 @@ class FilterableSingleSelectDropdownTree extends Component {
         super(props);
 
         this.state = {disabled: props.disabled, data: props.data, value: props.value, placeholder: props.placeholder, callback: props.onChange};
+
     }
 
     componentWillReceiveProps(nextProps) {

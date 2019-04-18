@@ -512,6 +512,7 @@ class App extends Component {
                                             </ButtonGroup>
                                         </Col>
                                     </Row>
+                                    {/*
                                     <Row>
                                         <Col>
                                             <div>Visualization</div>
@@ -525,6 +526,7 @@ class App extends Component {
                                             </ButtonGroup>
                                         </Col>
                                     </Row>
+                                  */}
                                     {(selectedVisualizationOption == this.VIZ_GEOMAP) &&
                                     <Row>
                                         <Col>
@@ -543,6 +545,7 @@ class App extends Component {
                                         </Col>
                                     </Row>
                                     }
+                                    {/*
                                     <Row>
                                         <Col>
                                             <div>Year</div>
@@ -552,6 +555,7 @@ class App extends Component {
                                             />
                                         </Col>
                                     </Row>
+                                  */}
                                     <Row>
                                         {/*<Col sm={6} md={6} lg={6}>*/}
                                         <Col>
@@ -719,7 +723,6 @@ class App extends Component {
                             <Panel.Collapse>
                                 <Panel.Body>
                                     <Image src="../static/partners.png" responsive />
-                                    <Image src="../static/EIT_EU_logos/RM-Academy-Logo_300px.png" responsive />
                                     <Image src="../static/EIT_EU_logos/EU-Flag-2020_100px.png" responsive />
                                 </Panel.Body>
                             </Panel.Collapse>

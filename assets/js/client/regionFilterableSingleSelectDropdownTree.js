@@ -39,9 +39,14 @@ class RegionFilterableSingleSelectDropdownTree extends FilterableSingleSelectDro
         // result = {data, errors, meta}
         var data = [];
         for (var region of result.data) {
-            data.push({id: region.global_id, pId: region.parent_id, value: region.global_id.toString(), label: region.name});
+            // update selectables (only level 3 is allowed)
+            var disabled = true;
+            if (region.level === 3) {
+              disabled = false;
+            }
+            data.push({id: region.global_id, pId: region.parent_id, value: region.global_id.toString(), label: region.name, disabled: disabled});
         }
-        this.setState({data: data, placeholder: "select region"});
+        this.setState({data: data, placeholder: "select a single NUTS2 region."});
     }
 
     getLabel(value) {
