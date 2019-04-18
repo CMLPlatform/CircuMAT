@@ -1,0 +1,30 @@
+name	code	global_id	parent_id	local_id	level
+EU NUTS2	ALL_EU_NUTS2	1	0	1	1
+Austria	AT	2	1	1	2
+Belgium	BE	3	1	2	2
+Bulgaria	BG	4	1	3	2
+Cyprus	CY	5	1	4	2
+Czech Republic	CZ	6	1	5	2
+Germany	DE	7	1	6	2
+Denmark	DK	8	1	7	2
+Estonia	EE	9	1	8	2
+Spain	ES	10	1	9	2
+Finland	FI	11	1	10	2
+France	FR	12	1	11	2
+Greece	EL	13	1	12	2
+Croatia	HR	14	1	13	2
+Hungary	HU	15	1	14	2
+Ireland	IE	16	1	15	2
+Italy	IT	17	1	16	2
+Lithuania	LT	18	1	17	2
+Luxembourg	LU	19	1	18	2
+Latvia	LV	20	1	19	2
+Malta	MT	21	1	20	2
+Netherlands	NL	22	1	21	2
+Poland	PL	23	1	22	2
+Portugal	PT	24	1	23	2
+Romania	RO	25	1	24	2
+Sweden	SE	26	1	25	2
+Slovenia	SI	27	1	26	2
+Slovakia	SK	28	1	27	2
+United Kingdom	UK	29	1	28	2
