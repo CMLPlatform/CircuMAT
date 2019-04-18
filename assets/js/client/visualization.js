@@ -8,7 +8,6 @@ class Visualization extends Component {
 
     constructor(props) {
         super(props);
-
         this.DETAIL_TOTAL = 'total';
         this.DETAIL_CONTINENT = 'continent';
         this.DETAIL_COUNTRY = 'country';
@@ -94,6 +93,7 @@ class Visualization extends Component {
                             }
                         },
                         data: props.data,
+                        colorScale: 'value',
                         downloadButton: {type: "png"},
                         groupBy: 'id',
                         size: d => d.value
@@ -186,6 +186,7 @@ class Visualization extends Component {
                             }
                         },
                         data: nextProps.data,
+                        colorScale: 'value',
                         downloadButton: {type: "png"},
                         groupBy: 'id',
                         size: d => d.value

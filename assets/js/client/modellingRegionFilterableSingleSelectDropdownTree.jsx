@@ -2,7 +2,7 @@
 import Papa from 'papaparse';
 import FilterableSingleSelectDropdownTree from './filterableSingleSelectDropdownTree';
 
-class RegionFilterableSingleSelectDropdownTree extends FilterableSingleSelectDropdownTree {
+class ModellingRegionFilterableSingleSelectDropdownTree extends FilterableSingleSelectDropdownTree {
 
     constructor(props) {
         super(props);
@@ -12,7 +12,7 @@ class RegionFilterableSingleSelectDropdownTree extends FilterableSingleSelectDro
 
     componentWillMount() {
         //https://www.papaparse.com/docs#config
-        Papa.parse('../static/circumat_regions.csv', {
+        Papa.parse('../static/modelling_circumat_regions.csv', {
             delimiter: '\t',
             // newline
             // quoteChar
@@ -41,12 +41,12 @@ class RegionFilterableSingleSelectDropdownTree extends FilterableSingleSelectDro
         for (var region of result.data) {
             // update selectables (only level 3 is allowed)
             var disabled = true;
-            if (region.level === 3) {
+            if (region.level === 2) {
               disabled = false;
             }
             data.push({id: region.global_id, pId: region.parent_id, value: region.global_id.toString(), label: region.name, disabled: disabled});
         }
-        this.setState({data: data, placeholder: "select a single region."});
+        this.setState({data: data, placeholder: "select a single country."});
     }
 
     getLabel(value) {
@@ -57,4 +57,4 @@ class RegionFilterableSingleSelectDropdownTree extends FilterableSingleSelectDro
     }
 }
 
-export default RegionFilterableSingleSelectDropdownTree;
+export default ModellingRegionFilterableSingleSelectDropdownTree;

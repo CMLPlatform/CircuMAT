@@ -58,7 +58,7 @@ class App extends Component {
             selectedPerspectiveOption: this.PERSPECTIVE_PRODUCTION,
             selectedVisualizationOption: this.VIZ_TREEMAP,
             selectedVisualizationDetailOption: this.VIZDETAIL_COUNTRY,
-            selectedYearOption: [],
+            selectedYearOption: [2011],
             selectedProductOptions: [],
             selectedRegionOptions: [],
             selectedIndicatorOptions: [],
@@ -559,7 +559,7 @@ class App extends Component {
                                     <Row>
                                         {/*<Col sm={6} md={6} lg={6}>*/}
                                         <Col>
-                                            <div>{this.state.selectMultiRegion ? 'select multiple regions' : 'select a single region'}</div>
+                                            <div>{this.state.selectMultiRegion ? 'select multiple regions' : 'select a single NUTS2 region'}</div>
                                             {!this.state.selectMultiRegion &&
                                                 <RegionFilterableSingleSelectDropdownTree disabled={this.state.busy || this.state.jobs.length == this.MAX_JOB_COUNT}
                                                                                           onChange={this.handleRegionChange.bind(this)}

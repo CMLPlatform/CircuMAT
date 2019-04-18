@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {Button, Col, FormControl, Glyphicon, OverlayTrigger, Popover, Row, Well} from 'react-bootstrap';
 import ProductFilterableSingleSelectDropdownTree from './productFilterableSingleSelectDropdownTree';
 import ConsumerFilterableSingleSelectDropdownTree from './consumerFilterableSingleSelectDropdownTree';
-import RegionFilterableSingleSelectDropdownTree from './regionFilterableSingleSelectDropdownTree';
+import ModellingRegionFilterableSingleSelectDropdownTree from './modellingRegionFilterableSingleSelectDropdownTree';
 import PropTypes from 'prop-types';
 
 var shortid = require('shortid');
@@ -76,7 +76,7 @@ class ScenarioModel extends Component {
                     <Col>
                         <div>Originating from<CustomTooltip tooltip={origin_helptext} id="origin-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
                         {/*TODO how should the country list look like ?*/}
-                        <RegionFilterableSingleSelectDropdownTree onChange={this.handleOriginChange.bind(this)}
+                        <ModellingRegionFilterableSingleSelectDropdownTree onChange={this.handleOriginChange.bind(this)}
                                                                   value={this.state.selectedOriginOption}
                                                                   ref={this.setOriginRef}
                         />
@@ -86,7 +86,7 @@ class ScenarioModel extends Component {
                     <Col>
                         <div>Consumed where<CustomTooltip tooltip={destination_helptext} id="destination-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
                         {/*TODO how should the country list look like ?*/}
-                        <RegionFilterableSingleSelectDropdownTree onChange={this.handleDestinationChange.bind(this)}
+                        <ModellingRegionFilterableSingleSelectDropdownTree onChange={this.handleDestinationChange.bind(this)}
                                                                   value={this.state.selectedDestinationOption}
                                                                   ref={this.setDestRef}
                         />
