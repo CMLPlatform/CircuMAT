@@ -75,7 +75,7 @@ def get_leafs_modelled_product(product_global_ids):
 def get_leafs_country(country_global_ids):
     """    Returns the leaf nodes of a given global id
 
-        Uses the database/model to fetch leaf nodes.
+        Uses the database/model to fetch leaf nodes. MODIFIED for CIRCUMAT
 
         Args:
             country_global_ids (list): A list of user selected country global ids
@@ -87,17 +87,11 @@ def get_leafs_country(country_global_ids):
     country_calc_indices = []
     # It's always a list even if it only has a single element
     for id in country_global_ids:
-        # perform identification,
-        if identify_country(id) == "LEAF":
-            # perform retrieval
-            leaf = (Country.objects.values_list('local_id', flat=True).get(global_id=id))
-            leaf = clean_single_leafs(leaf, OFFSET)
-            country_calc_indices.append(leaf)
-        elif identify_country(id) == "AGG" or identify_country(id) == "TOTAL":
-            # perform retrieval
-            my_local_leafs = (Country.objects.values_list('leaf_children_local', flat=True).get(global_id=id))
-            leafs = clean_local_leafs(my_local_leafs)
-            country_calc_indices.append(leafs)
+        # perform retrieval
+        leaf = (Country.objects.values_list('local_id', flat=True).get(global_id=id))
+        leaf = clean_single_leafs(leaf, OFFSET)
+        country_calc_indices.append(leaf)
+
     # flatten list
     country_calc_indices = [item for sublist in country_calc_indices for item in sublist]
     return country_calc_indices

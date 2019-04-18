@@ -105,7 +105,7 @@ class CircumatConsumer(JsonWebsocketConsumer):
                         # if the identifier also returns others, we need to load in A instead of default L matrix
                         if identifier != "FINALCONSUMPTION":
                             # explicitly append
-                            load_A.append(True)
+                            raise NotImplementedError()
                         else:
                             load_A.append(False)
 
@@ -147,7 +147,7 @@ class CircumatConsumer(JsonWebsocketConsumer):
                 # in ramascene we get the local ids here
                 # however in circumat we want to get the parent local id of the country
                 country_to_use = querymanagement.get_parent_country(query_selection["nodesReg"])
-                print(country_to_use)
+
                 # set offset for indicator/extension
                 indicator_calc_indices = \
                     querymanagement.clean_indicators(query_selection["extn"])

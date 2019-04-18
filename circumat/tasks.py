@@ -91,11 +91,11 @@ def execute_calc(job_name, job_id, channel_name, ready_query_selection, query_se
     try:
         # selection state No 2:  - country of consumption - multiple select
         if query_selection["vizType"] == "GeoMap" and query_selection["dimType"] == "Consumption":
-            raise NotImplemented()
+            raise NotImplementedError()
 
         # selection state No 3: - country where emission takes place - multiple select
         elif query_selection["vizType"] == "GeoMap" and query_selection["dimType"] == "Production":
-            raise NotImplemented()
+            raise NotImplementedError()
 
         # selection state No 1: - consumed products - multiple select
         elif query_selection["vizType"] == "TreeMap" and query_selection["dimType"] == "Consumption":
@@ -153,7 +153,6 @@ def execute_calc(job_name, job_id, channel_name, ready_query_selection, query_se
         job.status = "Failed"
         async_send(channel_name, job)
         log.debug("Failed job_name=%s", e)
-        print("failed at:" + str(e))
 
 
 def handle_complete(job_id, channel_name, celery_id):

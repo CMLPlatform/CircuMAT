@@ -53,7 +53,6 @@ class Analyze:
         # Get data
         L = self.L_data
         B = self.B_data
-        print(self.country_calc_indices, " ??")
         # implement function to return a new Y
         Y = self.update_y()
         # Set-up final demand based on selected consuming countries
@@ -65,7 +64,6 @@ class Analyze:
         # Consumed products not selected are skipped.
         X = np.array([np.multiply(y[idx], L[:, idx]) for idx in full_c_product_idx])
         X = np.transpose(X)
-        print(full_c_product_idx)
         # Select those sectors and regions from B and X
         # that are of interest to the user - single selection only
         X = X[full_p_product_idx, :]
@@ -287,7 +285,6 @@ class Analyze:
         b = B[self.indicator_calc_indices, :]
         (row_cnt, col_cnt) = np.shape(b)
         M = np.array([np.multiply(x[prd_idx, 0], b[:, prd_idx]) for prd_idx in full_p_product_idx])
-        print(full_p_product_idx)
         M = np.transpose(M)
 
         M=M*(emp_shares[self.product_calc_indices,1])
@@ -341,7 +338,6 @@ class Analyze:
         # this is according to the exiobase numbering
         # here the exiobase starts from 1, parent id
         rof = self.country_calc_indices[0] + OFFSET
-        print(rof, " rof")
         # find the name of the country
         name_rof = (regions.iloc[int(np.where(regions.iloc[:, 2] == (rof + OFFSET))[0]), 0])
 
@@ -503,8 +499,7 @@ class Analyze:
         Y_updated=np.zeros((9800, 49))
 
         Y_updated[:, rof - 1]=np.sum(y_r2,axis=1)
-        print('toto')
-        print(rof)
+
         return Y_updated
 
 
@@ -530,7 +525,6 @@ class Analyze:
         # this is according to the exiobase numbering
         # here the exiobase starts from 1, parent id
         rof = self.country_calc_indices[0] + OFFSET
-        print(rof, " rof")
         # find the name of the country
         name_rof = (regions.iloc[int(np.where(regions.iloc[:, 2] == (rof + OFFSET))[0]), 0])
 
