@@ -16,7 +16,6 @@ class Modelling:
         self.load_A = load_A
         self.year = year
         self.model_details = model_details
-        self.tester = 1
 
     def apply_model(self):
         # copy Y to prevent any race conditions
