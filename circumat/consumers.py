@@ -91,12 +91,11 @@ class CircumatConsumer(JsonWebsocketConsumer):
                         calc_ready_product = querymanagement.get_leafs_product(intervention["product"])
                         calc_ready_origin_reg = querymanagement.get_leafs_country(intervention["originReg"])
                         calc_ready_consumed_reg = querymanagement.get_leafs_country(intervention["consumedReg"])
-                        calc_ready_consumed_by_products = querymanagement.get_leafs_modelled_product(
-                            intervention["consumedBy"])
+
                         origin_regions.append(calc_ready_origin_reg)
                         consumed_regions.append(calc_ready_consumed_reg)
                         products.append(calc_ready_product)
-                        consumed_by_products.append(calc_ready_consumed_by_products)
+
                         tech_changes.append(tech_change)
                         # as optimisation step check if there is any modelling query that needs the A matrix
                         identifier = querymanagement.identify_modelling_product(intervention["consumedBy"][0])
@@ -107,6 +106,9 @@ class CircumatConsumer(JsonWebsocketConsumer):
                             # explicitly append
                             raise NotImplementedError()
                         else:
+                            # adjustment for Circumat -> use the global id directly for modelling final demand
+                            calc_ready_consumed_by_products = intervention["consumedBy"]
+                            consumed_by_products.append(calc_ready_consumed_by_products)
                             load_A.append(False)
 
                     info_query_selection.update(

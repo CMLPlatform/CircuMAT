@@ -38,6 +38,7 @@ class Modelling:
         tech_changes = self.unpack(self.ready_model_details.items(), 'techChange')
         identifiers = self.unpack(self.ready_model_details.items(), 'identifiers')
 
+
         # loop over any of the unpacked datastructures as their length are the same
         for intervention_idx, value in enumerate(products):
             product = value
@@ -50,6 +51,8 @@ class Modelling:
             calc_ready_origin_reg = querymanagement.convert_to_numpy(origin_reg[intervention_idx])
             calc_ready_consumed_reg = querymanagement.convert_to_numpy(consumed_reg[intervention_idx])
             calc_ready_consumed_by = querymanagement.convert_to_numpy(consumed_by[intervention_idx])
+            print(calc_ready_consumed_by)
+            
             tech_change = tech_changes[intervention_idx]
 
             # consuming_cat = [0, 1, 10, 76, 199] # mock up for testing
