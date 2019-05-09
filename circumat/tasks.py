@@ -63,13 +63,10 @@ def default_handler(job_name, job_id, channel_name, ready_query_selection, query
         query_selection (dict): the original query_selection used for aggregations at later stage
 
     """
-    # 1: allocate to queue according to model_details 2: first invoke the calculations, 3: second send ws message complete
-    if "model_details" in query_selection:
-        execute_calc.apply_async((job_name, job_id, channel_name, ready_query_selection, query_selection)
-                                 , queue='modelling')
-    else:
-        execute_calc.apply_async((job_name, job_id, channel_name, ready_query_selection, query_selection)
-                                 , queue='calc_default')
+    # 1: first invoke the calculations, 2: second send ws message complete
+
+    execute_calc.apply_async((job_name, job_id, channel_name, ready_query_selection, query_selection))
+
 
 
 @shared_task

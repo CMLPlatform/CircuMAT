@@ -99,13 +99,9 @@ $ ./node_modules/.bin/webpack --config dev-webpack.config.js
 ```
 
 ### Start Celery
-Start the default module to enable handling of analytical calculations:
+Start the celery module to enable handling of calculations:
 ```
-$ celery -A circumatMasterProject worker -l info  --concurrency 1 --queue calc_default -n worker1.%h
-```
-Start the modelling module to enable handling of modelling calculations:
-```
-$ celery -A circumatMasterProject worker -l info  --concurrency 1 --queue modelling -n worker2.%h
+$ celery -A circumatMasterProject worker -l info  --concurrency 1 
 ```
 
 ### Start the development server
