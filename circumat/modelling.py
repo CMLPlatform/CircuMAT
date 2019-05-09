@@ -16,6 +16,7 @@ class Modelling:
         self.load_A = load_A
         self.year = year
         self.model_details = model_details
+        self.tester = 1
 
     def apply_model(self):
         # copy Y to prevent any race conditions
@@ -38,7 +39,6 @@ class Modelling:
         tech_changes = self.unpack(self.ready_model_details.items(), 'techChange')
         identifiers = self.unpack(self.ready_model_details.items(), 'identifiers')
 
-
         # loop over any of the unpacked datastructures as their length are the same
         for intervention_idx, value in enumerate(products):
             product = value
@@ -50,14 +50,11 @@ class Modelling:
             calc_ready_product = querymanagement.convert_to_numpy(product)
             calc_ready_origin_reg = querymanagement.convert_to_numpy(origin_reg[intervention_idx])
             calc_ready_consumed_reg = querymanagement.convert_to_numpy(consumed_reg[intervention_idx])
-            calc_ready_consumed_by = querymanagement.convert_to_numpy(consumed_by[intervention_idx])
-            print(calc_ready_consumed_by)
-
+            calc_ready_consumed_by = consumed_by[intervention_idx]
             tech_change = tech_changes[intervention_idx]
 
             # consuming_cat = [0, 1, 10, 76, 199] # mock up for testing
             if identifiers[intervention_idx] == "FINALCONSUMPTION":  # needs to be adapted to take ids
-
                 # identify local coordinates
                 ids = pim.ProductIndexManager(calc_ready_product,
                                               calc_ready_origin_reg,
@@ -66,11 +63,8 @@ class Modelling:
                                               )
                 rows = ids.get_consumed_product_ids()
                 columns = calc_ready_consumed_reg
-
-                self.Y = self.model_final_demand(self.Y, rows, columns, tech_change)
-
+                self.Y = self.model_final_demand(self.Y, rows, columns, tech_change, calc_ready_consumed_by[0])
             else:  # needs to be adapted to take ids
-
                 ids = pim.ProductIndexManager(calc_ready_product,
                                               calc_ready_origin_reg,
                                               calc_ready_consumed_by,
@@ -96,12 +90,23 @@ class Modelling:
         return self.Y, self.L
 
     # noinspection PyMethodMayBeStatic
-    def model_final_demand(self, Y, rows, columns, tech_change):
+    def model_final_demand(self, Y, rows, columns, tech_change,user_selection_for_final_demand_division):
         """
         It allows for modification of values within final demand
         for scenario building
         """
-        Y[np.ix_(rows, columns)] = Y[np.ix_(rows, columns)] * (1 - -float(tech_change[0]) * 1e-2)
+        n_y = 7  # this is the number of different parts in the ny
+        if user_selection_for_final_demand_division==1:
+            # if user selection for the final demand division is all, that is represented by 1
+            new_set_of_columns = np.arange(n_y * columns, n_y * (columns + 1))
+            Y[np.ix_(rows, new_set_of_columns)] = Y[np.ix_(rows, new_set_of_columns)] * (1 - -float(tech_change[0]) * 1e-2)
+        else:
+            # else if user selection for the final demand division is for instance household demand that is 0 and so on...
+            #thus there is an offset of -2
+            # return just a single column for that country for that division
+            new_set_of_columns = np.arange(n_y * columns + user_selection_for_final_demand_division-2, n_y * (columns + 1), n_y)
+            Y[np.ix_(rows, new_set_of_columns)] = Y[np.ix_(rows, new_set_of_columns)] * (1 - -float(tech_change[0]) * 1e-2)
+        # and continue for the rest of division selections
         return Y
 
     # noinspection PyMethodMayBeStatic

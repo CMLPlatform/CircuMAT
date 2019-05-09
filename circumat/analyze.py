@@ -268,10 +268,9 @@ class Analyze:
         Y = self.Y_data
         L = self.L_data
         B = self.B_data
-
+        # here, you  Y is updated as it should be summed up for all countries and for all sub categories
         # Set-up final demand. Select countries
-        # and set non-selected consumed product categories to zero
-        y = np.sum(Y[:, c_country_idx], axis=1, keepdims=True)  # select all countries/regions
+        y = np.sum(Y, axis=1, keepdims=True)  # select all countries/regions
         # Calculate total output needed to satisfy
         # selected final demand of countries
         x = np.dot(L, y)
@@ -320,12 +319,12 @@ class Analyze:
         OFFSET = 1
         regions = pd.read_excel(os.path.join(settings.DATASET_DIR, self.year,'eurostatdata', "circumat_regions.xlsx"))
 
-        # number of diferent parts in the final demand. THIS must be known
-        n_y = 1
+        # number of different parts in the final demand. THIS must be known
+        n_y = 7
         # the sequence of the gross capital formation in Y THIS must be known (starting from 1)
         n_gcf = 1
         # the sequence of the exports  in Y THIS must be known  (starting from 1)
-        n_exports = 1
+        n_exports = 7
 
         # number of countries in the original mrio
         n_c = self.__cntr_cnt # number of countries in the original mrio
@@ -507,7 +506,7 @@ class Analyze:
         OFFSET = 1
         regions = pd.read_excel(os.path.join(settings.DATASET_DIR, self.year,'eurostatdata', "circumat_regions.xlsx"))
 
-        # number of diferent parts in the final demand. THIS must be known
+        # number of different parts in the final demand. THIS must be known
         n_y = 1
         # the sequence of the gross capital formation in Y THIS must be known (starting from 1)
         n_gcf = 1
