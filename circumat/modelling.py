@@ -2,7 +2,7 @@ import numpy as np
 from circumat import productindexmanger as pim
 from circumat import querymanagement
 
-
+ 
 class Modelling:
     """
     This class contains the methods for modeling
