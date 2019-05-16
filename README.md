@@ -13,14 +13,14 @@ For more information on the tool architecture, please refer to Rama-Scene's docu
 ---
 ### Retrieve the raw datasets
 
- 
-* EXIOBASE-Rama-Scene (v3 - unmodified version of EXIOBASE): 
 
-https://fdonaticml.stackstorage.com/s/1wYNXkJXkIWqXGW
+* EXIOBASE-Rama-Scene (v4 - modified version including secondary materials + CircuMat Eurostat data): 
 
-* EXIOBASE-Rama-Scene (v4 - modified version including secondary materials): 
+https://surfdrive.surf.nl/files/index.php/s/bEVnoyJUeYMUiyr
 
-https://fdonaticml.stackstorage.com/s/HpghqxdxgW70MLt
+pass: circumat
+
+Download the circumat_v4_clean.zip folder.
 
 ### Clone the project 
 ``` 
@@ -66,7 +66,7 @@ Check the status to make sure everything is running:
 ```
 export DJANGO_SETTINGS_MODULE=circumatMasterProject.config.dev
 export DATASETS_VERSION=[version downloaded e.g. v3]
-export DATASETS_DIR=my/path/to/datasets
+export DATASETS_DIR=my/path/to/datasets (make sure that inside this folder is a folder containing the year 2011)
 export OPENBLAS_NUM_THREADS=<adjust according to how many cores you want to use>
 ```
 If you are on Linux and using the OpenBlas library for Numpy. 
