@@ -51,7 +51,7 @@ class CircumatConsumer(JsonWebsocketConsumer):
 
                 info_query_selection = query_selection.copy()
                 ready_query_selection = query_selection.copy()
-
+                print(data["action"])
                 if data["action"] == "model":
                     model_details = data["model_details"]
                     # update the original year selected with a .1 so we can differentiate with model year
@@ -72,15 +72,13 @@ class CircumatConsumer(JsonWebsocketConsumer):
                     # update the year of the query selection to a model year (2011.1)
                     for intervention in model_details:
                         # for each modeling change retrieve the details (global ids)
-                        name_origin_reg = \
-                            querymanagement.get_names_country(intervention["originReg"])
+
                         name_consumed_reg = \
                             querymanagement.get_names_country(intervention["consumedReg"])
                         name_product = \
                             querymanagement.get_names_product(intervention["product"])
                         name_consumed_by_products = \
                             querymanagement.get_modelled_names_product(intervention["consumedBy"])
-                        names_origin_regions.append(name_origin_reg)
                         names_consumed_regions.append(name_consumed_reg)
                         names_products.append(name_product)
                         names_consumed_by_products.append(name_consumed_by_products)
@@ -89,10 +87,9 @@ class CircumatConsumer(JsonWebsocketConsumer):
 
                         # get calculation ready indices explicitly
                         calc_ready_product = querymanagement.get_leafs_product(intervention["product"])
-                        calc_ready_origin_reg = querymanagement.get_leafs_country(intervention["originReg"])
+
                         calc_ready_consumed_reg = querymanagement.get_leafs_country(intervention["consumedReg"])
 
-                        origin_regions.append(calc_ready_origin_reg)
                         consumed_regions.append(calc_ready_consumed_reg)
                         products.append(calc_ready_product)
 
@@ -112,11 +109,11 @@ class CircumatConsumer(JsonWebsocketConsumer):
                             load_A.append(False)
 
                     info_query_selection.update(
-                        {'originReg': names_origin_regions, 'consumedReg': names_consumed_regions
+                        {'consumedReg': names_consumed_regions
                             , 'product': names_products, 'techChange': tech_changes,
                          'year': model_year, 'consumedBy': names_consumed_by_products})
 
-                    ready_query_selection.update({'originReg': origin_regions, 'consumedReg': consumed_regions
+                    ready_query_selection.update({'consumedReg': consumed_regions
                                                      , 'product': products, 'techChange': tech_changes,
                                                   'year': year, 'consumedBy': consumed_by_products, 'identifiers':
                                                       identifiers})

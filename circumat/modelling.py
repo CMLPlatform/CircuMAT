@@ -33,7 +33,6 @@ class Modelling:
         # unpack data structures
         products = self.unpack(self.ready_model_details.items(), 'product')
         consumed_by = self.unpack(self.ready_model_details.items(), 'consumedBy')
-        origin_reg = self.unpack(self.ready_model_details.items(), 'originReg')
         consumed_reg = self.unpack(self.ready_model_details.items(), 'consumedReg')
         tech_changes = self.unpack(self.ready_model_details.items(), 'techChange')
         identifiers = self.unpack(self.ready_model_details.items(), 'identifiers')
@@ -44,10 +43,12 @@ class Modelling:
 
             product_idx = np.arange(0, 200)
             country_idx = np.arange(0, 49)
-
+            print(" called")
             # convert to numpy arrays explicitly
             calc_ready_product = querymanagement.convert_to_numpy(product)
-            calc_ready_origin_reg = querymanagement.convert_to_numpy(origin_reg[intervention_idx])
+            #calc_ready_origin_reg = querymanagement.convert_to_numpy(origin_reg[intervention_idx])
+            # overwrite origin reg variable with the full country set for circumat
+            calc_ready_origin_reg = np.arange(0,49)
             calc_ready_consumed_reg = querymanagement.convert_to_numpy(consumed_reg[intervention_idx])
             calc_ready_consumed_by = consumed_by[intervention_idx]
             tech_change = tech_changes[intervention_idx]
