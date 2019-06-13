@@ -109,7 +109,6 @@
                         details on the relationships between economic actors (e.g. industries and final consumers) and
                         the
                         environmental pressures they exert as a result of their activities. <br>
-                        <a href="https://rama-scene.readthedocs.io/en/latest/calculations.html">Read more</a>
                     </p>
                 </div>
             </div>
@@ -148,14 +147,7 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Production and consumption views<br></h4>
-                            <p class="mb-0 text-white-50">Explore environmental and economic impact resulting from
-                                the production or consumption of goods and services. The *Production* view allows for
-                                the
-                                investigation of impacts in the production of specific product categories while in the
-                                *Final Consumption* view impacts are assessed throughout the entire supply-chain of a
-                                consumed
-                                product category.<br>
-                                <a href="https://rama-scene.readthedocs.io/en/latest/calculations.html">Read more</a>
+                            <p class="mb-0 text-white-50">You can analyse the environmental and economic impacts resulting from the production or the consumption of goods and services. The  production  view analyses the impacts of the production of specific product categories while   the   consumption view analyses  throughout the entire supply-chain of a consumed product category.<br>
                             </p>
                             <hr class="d-none d-lg-block mb-0 mr-0">
                         </div>
@@ -174,7 +166,6 @@
                             <p class="text-white-50 mb-0">Create final consumption scenarios by applying sets of relative
                         changes to
                         final demand. The changes are applied in sequence and results are recalculated.<br>
-                        <a href="https://rama-scene.readthedocs.io/en/latest/modelling.html">Read more</a>
                     </p>
                             <hr class="d-none d-lg-block mb-0 ml-0">
                         </div>git a
@@ -190,9 +181,12 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Split view</h4>
-                            <p class="mb-0 text-white-50">Compare historic data with modelled scenarios.<br>
-                                Or compare different selections of product or NUTS2 regions.<br><br>
+                            <h4 class="text-white">Assumptions</h4>
+                            <p class="mb-0 text-white-50">Regional employment numbers in NUTS 2 level in NACE sectors are used to disaggregate the economic outputs of the sectors in EXIOBASE. (In other words,  the output of a sector is a linear function of the number of people working in that sector.)
+Regional income data, gross capital formation and employment data  are used to disaggregate the final demand.
+National accounts are the base-lines for the intensities.
+Cross hauling is not allowed while the disaggregation into subnational values (in other words, if the region is exporter, it is not an importer; and vice versa.)
+Final IO table is left unbalanced. RAS algorithm can be implemented for re-balancing.<br><br>
                             </p>
                             <hr class="d-none d-lg-block mb-0 ml-0">
                         </div>
