@@ -37,10 +37,6 @@ class ScenarioModel extends Component {
         this.setConsumerRef = component => {
             this.consumerCompRef = component;
         };
-        this.originCompRef = null;
-        this.setOriginRef = component => {
-            this.originCompRef = component;
-        };
         this.destCompRef = null;
         this.setDestRef = component => {
             this.destCompRef = component;
@@ -56,29 +52,10 @@ class ScenarioModel extends Component {
             <React.Fragment>
                 <Row>
                     <Col>
-                        <div>product<CustomTooltip tooltip={product_model_helptext} id="product-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
+                        <div>Product<CustomTooltip tooltip={product_model_helptext} id="product-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
                         <ProductFilterableSingleSelectDropdownTree onChange={this.handleProductChange.bind(this)}
                                                                    value={this.state.selectedProductOption}
                                                                    ref={this.setProductRef}
-                        />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div>Consumed by<CustomTooltip tooltip={consumer_helptext} id="consumer-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
-                        <ConsumerFilterableSingleSelectDropdownTree onChange={this.handleConsumerChange.bind(this)}
-                                                                    value={this.state.selectedConsumerOption}
-                                                                    ref={this.setConsumerRef}
-                        />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div>Originating from<CustomTooltip tooltip={origin_helptext} id="origin-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
-                        {/*TODO how should the country list look like ?*/}
-                        <ModellingRegionFilterableSingleSelectDropdownTree onChange={this.handleOriginChange.bind(this)}
-                                                                  value={this.state.selectedOriginOption}
-                                                                  ref={this.setOriginRef}
                         />
                     </Col>
                 </Row>
@@ -94,7 +71,28 @@ class ScenarioModel extends Component {
                 </Row>
                 <Row>
                     <Col>
-                        <div>Technical Change Coefficient<CustomTooltip tooltip={coefficient_helptext} id="coefficient-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
+                        <div>Consumed by<CustomTooltip tooltip={consumer_helptext} id="consumer-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
+                        <ConsumerFilterableSingleSelectDropdownTree onChange={this.handleConsumerChange.bind(this)}
+                                                                    value={this.state.selectedConsumerOption}
+                                                                    ref={this.setConsumerRef}
+                        />
+                    </Col>
+                </Row>
+                {/*
+                <Row>
+                    <Col>
+                        <div>Originating from<CustomTooltip tooltip={origin_helptext} id="origin-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
+                        <ModellingRegionFilterableSingleSelectDropdownTree onChange={this.handleOriginChange.bind(this)}
+                                                                  value={this.state.selectedOriginOption}
+                                                                  ref={this.setOriginRef}
+                        />
+                    </Col>
+                </Row>
+                */}
+
+                <Row>
+                    <Col>
+                        <div>The amount of the change in final consumption (%)<CustomTooltip tooltip={coefficient_helptext} id="coefficient-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip></div>
                         <div className="input-group">
                             <FormControl type="number" placeholder="0" value={this.state.coefficient} onChange={this.handleCoefficientChange.bind(this)}/>
                             <span className="input-group-addon">%</span>
@@ -103,7 +101,7 @@ class ScenarioModel extends Component {
                 </Row>
                 <Row>
                     <Col lg={6}>
-                        <Button onClick={this.handleAddClick.bind(this)} bsStyle="success" disabled={this.state.selectedProductOption === undefined || this.state.selectedConsumerOption === undefined || this.state.selectedOriginOption === undefined || this.state.selectedDestinationOption === undefined || this.state.coefficient === undefined}>Add change</Button>
+                        <Button onClick={this.handleAddClick.bind(this)} bsStyle="success" disabled={this.state.selectedProductOption === undefined || this.state.selectedConsumerOption === undefined || this.state.selectedDestinationOption === undefined || this.state.coefficient === undefined}>Add change</Button>
                     </Col>
                     <Col lg={6}>
                         <Button onClick={this.handleRemoveClick.bind(this)} bsStyle="success" disabled={this.state.model_details.length == 0}>Remove last</Button>
@@ -118,7 +116,6 @@ class ScenarioModel extends Component {
                                     {index + 1})&nbsp;
                                     {this.productCompRef.getLabel(model.product)}&raquo;
                                     {this.consumerCompRef.getLabel(model.consumedBy)}&raquo;
-                                    {this.originCompRef.getLabel(model.originReg)}&raquo;
                                     {this.destCompRef.getLabel(model.consumedReg)}&raquo;
                                     {model.techChange}%
                                 </div>)
@@ -156,11 +153,7 @@ class ScenarioModel extends Component {
         });
     }
 
-    handleOriginChange(value) {
-        this.setState({
-            selectedOriginOption: value
-        });
-    }
+
 
     handleDestinationChange(value) {
         this.setState({
@@ -185,11 +178,6 @@ class ScenarioModel extends Component {
         } else {
             product = this.state.selectedProductOption.map(x => parseInt(x));
         }
-        if (!Array.isArray(this.state.selectedOriginOption)) {
-            origin = [parseInt(this.state.selectedOriginOption)];
-        } else {
-            origin = this.state.selectedOriginOption.map(x => parseInt(x));
-        }
         if (!Array.isArray(this.state.selectedDestinationOption)) {
             destination = [parseInt(this.state.selectedDestinationOption)];
         } else {
@@ -203,7 +191,6 @@ class ScenarioModel extends Component {
 
         const model_detail = {
             'product': product,
-            'originReg': origin,
             'consumedBy': consumer,
             'consumedReg': destination,
             'techChange': [this.state.coefficient]
@@ -239,9 +226,6 @@ class ScenarioModel extends Component {
         return this.consumerCompRef.getLabel(value);
     }
 
-    getOrigLabel(value) {
-        return this.originCompRef.getLabel(value);
-    }
 
     getDestLabel(value) {
         return this.destCompRef.getLabel(value);

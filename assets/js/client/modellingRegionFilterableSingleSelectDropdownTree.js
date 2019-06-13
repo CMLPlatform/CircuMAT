@@ -46,7 +46,7 @@ class ModellingRegionFilterableSingleSelectDropdownTree extends FilterableSingle
             }
             data.push({id: region.global_id, pId: region.parent_id, value: region.global_id.toString(), label: region.name, disabled: disabled});
         }
-        this.setState({data: data, placeholder: "select a single country."});
+        this.setState({data: data, placeholder: "select a single country"});
     }
 
     getLabel(value) {

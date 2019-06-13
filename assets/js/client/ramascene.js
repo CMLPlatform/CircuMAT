@@ -297,7 +297,6 @@ class App extends Component {
                 new_model_details.push({
                     product: this.scenarioCompRef.getProductLabel(model_detail.product[0]),
                     consumedBy: this.scenarioCompRef.getConsumerLabel(model_detail.consumedBy[0]),
-                    originReg: this.scenarioCompRef.getOrigLabel(model_detail.originReg[0]),
                     consumedReg: this.scenarioCompRef.getDestLabel(model_detail.consumedReg[0]),
                     techChange: model_detail.techChange[0]
                 });
@@ -480,9 +479,6 @@ class App extends Component {
                   <NavItem eventKey={4} href="../#contact">
                     Contact
                   </NavItem>
-                  <NavItem eventKey={5} href="https://www.jotform3.leidenuniv.nl/CMLformJweb/rama-scene-feedback">
-                    Feedback
-                  </NavItem>
                   </Nav>
                   </Navbar.Collapse>
               </Navbar>
@@ -505,10 +501,10 @@ class App extends Component {
                                             <ButtonGroup>
                                                 <Button onClick={this.handleProductionClicked.bind(this)}
                                                         active={selectedPerspectiveOption == this.PERSPECTIVE_PRODUCTION}
-                                                        disabled={this.state.busy || this.state.jobs.length == this.MAX_JOB_COUNT}>Production</Button>
+                                                        disabled={this.state.busy || this.state.jobs.length == this.MAX_JOB_COUNT}>Hotspot Analysis </Button>
                                                 <Button onClick={this.handleConsumptionClicked.bind(this)}
                                                         active={selectedPerspectiveOption == this.PERSPECTIVE_CONSUMPTION}
-                                                        disabled={this.state.busy || this.state.jobs.length == this.MAX_JOB_COUNT}>Final Consumption</Button>
+                                                        disabled={this.state.busy || this.state.jobs.length == this.MAX_JOB_COUNT}>Contribution Analysis</Button>
                                             </ButtonGroup>
                                         </Col>
                                     </Row>
@@ -614,7 +610,7 @@ class App extends Component {
                         <Panel defaultExpanded>
                             <Panel.Heading>
                                 <Panel.Title toggle>
-                                    Scenario Modelling
+                                    Scenario modelling
                                 </Panel.Title><CustomTooltip tooltip={modelling_menu_helptext} id="product-tooltip"><Glyphicon glyph="question-sign"/></CustomTooltip>
                             </Panel.Heading>
                             <Panel.Collapse>

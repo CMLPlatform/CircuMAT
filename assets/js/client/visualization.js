@@ -36,6 +36,7 @@ class Visualization extends Component {
 
         const key = Object.keys(props.unit)[0];
         var unit = key + ' ' + props.unit[key];
+        var unit2 = props.unit[key]
 
         switch (props.type) {
             case 'geo':
@@ -43,6 +44,7 @@ class Visualization extends Component {
                     type: props.type,
                     sum: sum,
                     unit: unit,
+                    unit2: unit2,
                     query: props.query,
                     model_details: props.model_details,
                     is_modelling_result: props.is_modelling_result,
@@ -79,6 +81,7 @@ class Visualization extends Component {
                     type: props.type,
                     sum: sum,
                     unit: unit,
+                    unit2: unit2,
                     query: props.query,
                     model_details: props.model_details,
                     is_modelling_result: props.is_modelling_result,
@@ -137,6 +140,7 @@ class Visualization extends Component {
                     type: nextProps.type,
                     sum: sum,
                     unit: unit,
+                    unit2: unit2,
                     query: nextProps.query,
                     model_details: nextProps.model_details,
                     is_modelling_result: nextProps.is_modelling_result,
@@ -172,6 +176,7 @@ class Visualization extends Component {
                     type: nextProps.type,
                     sum: sum,
                     unit: unit,
+                    unit2: unit2,
                     query: nextProps.query,
                     model_details: nextProps.model_details,
                     is_modelling_result: nextProps.is_modelling_result,
@@ -214,7 +219,7 @@ class Visualization extends Component {
         return (<div>
             <div className="visualization-panel">{visualization}</div>
             <Label bsStyle={this.state.is_modelling_result ? 'info' : 'success'}>{this.state.is_modelling_result ? 'Scenario Modelling Result' : 'Analysis Result'}</Label>
-            <Label>{'Sum = ' + format('e')(this.state.sum) + ' (' + this.state.unit + ')'}</Label>
+            <Label>{'Sum = ' + format('e')(this.state.sum) + ' ' +this.state.unit2}</Label>
             <div className="table-responsive">
                 <Table bordered condensed>
                     <thead>
@@ -225,7 +230,7 @@ class Visualization extends Component {
                     <tbody>
                     <tr>
                         <td>Perspective</td>
-                        <td colSpan='4'>{this.state.query.dimType}</td>
+                        <td colSpan='4'>{this.state.query.dimType === 'Consumption' ? 'Consumption View (Contribution Analysis)' : 'Production View (Hotspot Analysis)'}</td>
                     </tr>
                     <tr>
                         <td>{this.state.is_modelling_result ? 'Scenario ' : 'Year'}</td>
@@ -251,16 +256,14 @@ class Visualization extends Component {
                         <tr>
                             <th className="col-xs-3">Product</th>
                             <th className="col-xs-3">Consumed by</th>
-                            <th className="col-xs-2">Originating From</th>
                             <th className="col-xs-2">Consumed Where</th>
-                            <th className="col-xs-2">Technical Change Coefficient</th>
+                            <th className="col-xs-2">Final Demand Change Coefficient</th>
                         </tr>
                         { this.state.model_details.map(function(model_detail, index) {
                             return (
                                 <tr className="active" key={'model_detail-' + index}>
                                     <td>{model_detail.product}</td>
                                     <td>{model_detail.consumedBy}</td>
-                                    <td>{model_detail.originReg}</td>
                                     <td>{model_detail.consumedReg}</td>
                                     <td>{model_detail.techChange}</td>
                                 </tr>

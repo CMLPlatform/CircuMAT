@@ -210,7 +210,6 @@ class AnalysisJob extends Component {
                 new_model_details.push({
                     'Product': this.context.scenarioCompRef.getProductLabel(model_detail.product[0]),
                     'Consumed by': this.context.scenarioCompRef.getConsumerLabel(model_detail.consumedBy[0]),
-                    'Originating from': this.context.scenarioCompRef.getOrigLabel(model_detail.originReg[0]),
                     'Consumed where': this.context.scenarioCompRef.getDestLabel(model_detail.consumedReg[0]),
                     'Technical Change Coefficient': model_detail.techChange[0]
                 });
@@ -299,7 +298,7 @@ class AnalysisJob extends Component {
                 <td>{this.canModel() && <Button onClick={this.startModelling.bind(this)} title={"Model"} disabled={this.state.busy}>M</Button>}
                     {this.canCompare() && <Button onClick={this.retrieveRawResult.bind(this, true)} title={"Compare"}>C</Button>}
                     {this.canVisualize() && <Button onClick={this.retrieveRawResult.bind(this, false)} title={"View"}><Glyphicon glyph="eye-open"/></Button>}
-                    {this.canDownload() && <CSVLink headers={headers} data={this.state.csv_data} separator={";"} filename={"rama-scene.csv"} className="btn btn-default" style={{color: 'inherit'}}><Glyphicon glyph="download" style={{cursor: 'pointer'}} title={"Download RAW result data"}/></CSVLink>}
+                    {this.canDownload() && <CSVLink headers={headers} data={this.state.csv_data} separator={";"} filename={"circumat.csv"} className="btn btn-default" style={{color: 'inherit'}}><Glyphicon glyph="download" style={{cursor: 'pointer'}} title={"Download RAW result data"}/></CSVLink>}
                     {this.canDestroy() && <Button onClick={this.destroy.bind(this)} title={"Delete"}><Glyphicon glyph="trash"/></Button>}</td>
             </tr>
         );
