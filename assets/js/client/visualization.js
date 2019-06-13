@@ -133,6 +133,7 @@ class Visualization extends Component {
 
         const key = Object.keys(nextProps.unit)[0];
         var unit = key + ' ' + nextProps.unit[key];
+        var unit2 = nextProps.unit[key]
 
         switch (nextProps.type) {
             case 'geo':
