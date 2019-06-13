@@ -43,7 +43,7 @@ class Modelling:
 
             product_idx = np.arange(0, 200)
             country_idx = np.arange(0, 49)
-            print(" called")
+
             # convert to numpy arrays explicitly
             calc_ready_product = querymanagement.convert_to_numpy(product)
             #calc_ready_origin_reg = querymanagement.convert_to_numpy(origin_reg[intervention_idx])

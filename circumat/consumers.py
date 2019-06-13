@@ -51,7 +51,6 @@ class CircumatConsumer(JsonWebsocketConsumer):
 
                 info_query_selection = query_selection.copy()
                 ready_query_selection = query_selection.copy()
-                print(data["action"])
                 if data["action"] == "model":
                     model_details = data["model_details"]
                     # update the original year selected with a .1 so we can differentiate with model year
