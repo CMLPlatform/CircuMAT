@@ -45,6 +45,13 @@ SBS_INDIC_POS = 2 # position of output values, in most cases its 0 except for th
 NACE_SBS_FILE = "../input_data/SBS_codes_new.csv"
 NACE_LEVEL = 3 # level of depth to try to fetch info
 
+####### POPULATION SETTINGS
+POP_DATASET_NAME = "tgs00096"
+POP_UNIT = "NR"
+POP_PART_URL = "http://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/"+POP_DATASET_NAME+"?precision=1&unit="+POP_UNIT+\
+                "&time="+TIME+"&age=TOTAL"+"&sex=T"
+
+
 ####### AGRICULTURE SETTINGS
 AGRI_DATASET_NAME = "agr_r_accts"
 AGRI_UNIT = "MIO_EUR"
@@ -68,7 +75,8 @@ OPTIONS = {1: "Income of households by NUTS 2 regions[nama_10r_2hhinc]["+TIME+"]
                                                                        TIME+"]["+""+SBS_INDIC_SB+"]",
            3: "Agriculture data by NUTS 2 regions and NACE Rev. 2 " "(from 2008 onwards) [agr_r_accts]["+
             TIME+"]["+""+INDIC_AG+"]", 4: "Gross fixed capital formation by NUTS 2 regions and NACE Rev. 2" " [nama_10r_2gfcf]["+
-            TIME+"]["+""+CAP_CURRENCY+"]"}
+            TIME+"]["+""+CAP_CURRENCY+"]", 5: "Population on 1 January by NUTS 2 region" + "[" + POP_DATASET_NAME +"]"
+           +"["+TIME+"]"+"["+POP_UNIT +"]"}
 
 
 def get_nace(file):
@@ -126,7 +134,7 @@ def generate_url_sbs(ct_name, nuts2_map, first_part_url):
             return None
 
 
-def retrieve_json_income(url):
+def retrieve_json_income_or_population(url):
     response = requests.get(url)
     if response.status_code == 200:
         # this is a JSON API
@@ -386,7 +394,7 @@ if __name__ == '__main__':
             url = generate_url(ct_name, nuts2_map, INCOME_PART_URL)
             if url is not None:
                 print("***Retrieving data from:"+ct_name +"***")
-                ds_idx, ds_unit, data, status = retrieve_json_income(url)
+                ds_idx, ds_unit, data, status = retrieve_json_income_or_population(url)
                 if ds_idx is None and ds_unit is None and data is None:
                     print("failed to retrieve country (see error.txt): ", ct_name)
                     failed_output(file_name, status, "income")
@@ -408,5 +416,26 @@ if __name__ == '__main__':
     if selection_key == 4:
         for ct_name in nuts2_map:
             run_pipeline(ct_name, NACE_CAP_FILE, CAP_PART_URL, CAP_CURRENCY, "&nace_r2=", False, CAP_DATASET_NAME, "CAP")
-
+    if selection_key == 5:
+        for ct_name in nuts2_map:
+            # sleep to let the API rest a bit
+            count = 0
+            while count < 5:
+                count = count + 1
+                print("Sleeping...:", count)
+                time.sleep(1)
+            file_name = TIME + "_population_" + ct_name + "_" + POP_UNIT
+            url = generate_url(ct_name, nuts2_map, POP_PART_URL)
+            if url is not None:
+                print("***Retrieving data from:" + ct_name + "***")
+                ds_idx, ds_unit, data, status = retrieve_json_income_or_population(url)
+                if ds_idx is None and ds_unit is None and data is None:
+                    print("failed to retrieve country (see error.txt): ", ct_name)
+                    failed_output(file_name, status, "population")
+                else:
+                    print("***Data retrieved of: " + ct_name + " ***")
+                    ds_idx = swap(ds_idx)
+                    ds_idx, ds_data = order(ds_idx, data)
+                    export(ds_idx, ds_unit, ds_data, file_name)
+                    print("***Data written to file: " + file_name + " as csv.***")
 
