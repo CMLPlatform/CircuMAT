@@ -698,8 +698,22 @@ class App extends Component {
                             </Panel.Heading>
                             <Panel.Collapse>
                                 <Panel.Body>
-
-
+                                    <h5>Manual</h5>
+                                    <ul>
+                                    <li><a  href="../static/CIRCUMAT_PLATFORM_USER_GUIDE.pdf">Manual</a></li>
+                                    </ul>
+                                    <h5>CircuMat Data</h5>
+                                    <ul>
+                                    <li><a  href="https://surfdrive.surf.nl/files/index.php/s/bEVnoyJUeYMUiyr">CircuMat data (password:circumat)</a></li>
+                                    </ul>
+                                    <h5>Additional Tools</h5>
+                                    <ul>
+                                    <li><a href="../online-tools">Additional Tools</a></li>
+                                    </ul>
+                                    <h5>Additonal databases</h5>
+                                    <ul>
+                                    <li><a href="../online-databases">Additional Databases</a></li>
+                                    </ul>
                                     <h5>Other resources</h5>
                                     <ul>
                                         <li><a href="https://www.exiobase.eu/">EXIOBASE</a></li>
