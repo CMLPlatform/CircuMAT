@@ -20,6 +20,8 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.homePage, name='homePage'),
+    url(r'^$', views.home_page, name='homePage'),
+    url(r'^online-tools/$', views.online_tools, name='onlineTools'),
+    url(r'^online-databases/$', views.online_databases, name='onlineDatabases'),
     url(r'^', include('circumat.urls')),
 ]
