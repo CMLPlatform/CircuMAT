@@ -469,7 +469,7 @@ class Analyze:
         gcf_exp_shares_all_in_exiobase[:, 1] = gcf_exp_shares_all_in_exiobase[:, 1] / tmp
 
         # the total number of the employment is the sum of sbs and agg
-        reg_emp_numbers = sbs_emp_numbers_all_in_exiobase + agg_emp_numbers_all_in_exiobase
+        reg_emp_numbers = sbs_emp_numbers_all_in_exiobase + agg_emp_numbers_all_in_exiobase + 0.001
         # calculate the total  employment for each sector in whole country
         tot_emp = np.dot(reg_emp_numbers, np.ones((n_r, 1)))
         # calculate the employment shares in each region for each sector
@@ -656,7 +656,7 @@ class Analyze:
         gcf_exp_shares_all_in_exiobase[:, 1] = gcf_exp_shares_all_in_exiobase[:, 1] / tmp
 
         # the total number of the employment is the sum of sbs and agg
-        reg_emp_numbers = sbs_emp_numbers_all_in_exiobase + agg_emp_numbers_all_in_exiobase
+        reg_emp_numbers = sbs_emp_numbers_all_in_exiobase + agg_emp_numbers_all_in_exiobase + 0.001
         # calculate the total  employment for each sector in whole country
         tot_emp = np.dot(reg_emp_numbers, np.ones((n_r, 1)))
         # calculate the employment shares in each region for each sector
