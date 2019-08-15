@@ -66,8 +66,9 @@
     <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
             <h1 class="mx-auto my-0 text-uppercase" >CircuMat</h1>
-            <h2 class="text-white-50 mx-auto mt-2 mb-5" style="background-color:black;">A blended learning toolbox that helps actors related to
-                city regions to identify the local material and goods flows.
+            <h2 class="text-white-50 mx-auto mt-2 mb-5" style="background-color:black;">CIRCUMAT project aims to helps actors related to
+                cities or city regions in Europe to identify the characteristics of the regions, their consumption and
+                production activities and their relation to the environmental and economic indicators.
             </h2><br><br>
             <a href="circumat" class="btn btn-primary js-scroll-trigger">Open tool</a>
         </div>
@@ -80,11 +81,30 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2 class="text-white mb-4">Project</h2>
-                <p class="text-white-50">CircuMat is a blended learning toolbox that helps actors related to cities, city regions
-                    industrial parks to identify the local material and goods flows in order to assess in a simple way
-                    the possibility and potential for ‘circular’ actions such as closed-loop materials metabolism.
-                    CircuMat is a modified (forked) version of Rama-Scene EIT Raw Materials project.
-                    CircuMat focuses on NUTS2 level classification as opposed to Rama-Scene country level analysis tool.<br>
+                <p class="text-white-50">The topic of the year or the topic of the upcoming many years,
+                    is circular economy. It is great a concept. It aims to minimize waste and tries to
+                    maximize the make out of our resources.   Circular economy is also very broad concept.
+                    Many things can fall under its umbrella. This is good for academia as it stimulates the
+                    research. On the other hand, when it comes to practice, the concept can get difficult.
+                    The practitioners or authorities who need to come up with policies or road maps can struggle
+                    to capture the essence of the concept or make targets. So, one can ask the question “ How can
+                    we kick start the circular economy agenda in our region?”.
+                </p>
+                    <p class="text-white-50">
+                    This challenge was the starting point of CIRCUMAT project. With our project, we want to create a link between
+                    the circular economy and the practitioners so that they can kick start their agenda and/or
+                    we can ease their decision making. The project consists of four phases and deliverables,
+                    including an online calculation tool -REAT- that performs environmentally extended input
+                    output analysis in the subnational regions (NUTS 2) of Europe. REAT is a modified (forked)
+                    version of Rama-Scene EIT Raw Materials project. REAT focuses on NUTS2 level classification
+                    as opposed to Rama-Scene country level analysis tool. More information about the Rama-Scene
+                    project can be found in the other resources tab.
+                    </p>
+                    <p class="text-white-50">
+                    CIRCUMAT introduces the fundamentals of environmental and economic analyses to the
+                    regional practitioners and gives them the eye openers to better understand their region,
+                    the sectors in order to assess the priority and the potential for ‘circular’ policies.
+                    <br>
                 <img src="{% static 'EIT_EU_logos/EU-Flag-2020-White_100px.png' %}" style="width: 60%; height: 15%">
                 </p>
             </div>
@@ -103,12 +123,15 @@
             </div>
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
-                    <h4>Environmentally Extended Input-Output (EEIO)</h4>
-                    <p class="text-black-50 mb-0">EEIO is a linear economic and environmental accounting model which
-                        provides
-                        details on the relationships between economic actors (e.g. industries and final consumers) and
-                        the
-                        environmental pressures they exert as a result of their activities. <br>
+                    <h4>What does “Regional Environmental and Economic Assessment Tool” (REAT) of CIRCUMAT do?</h4>
+                    <p class="text-black-50 mb-0">
+                        REAT performs economic and environmental calculations according to the
+                        Leontief model in the NUT2 regions of Europe. REAT does three main analyses:
+                        the hot spot analysis to identify the key sectors where selected environmental or
+                        economic indicators mostly occur,  the contribution analysis  to understand the whole
+                        supply chain and the key consumption items that contribute to the total value of the
+                        selected indicator and finally the scenario analysis that the users can simulate the
+                        effects of circular consumption on the selected indicators by modifying the final consumption values.
                     </p>
                 </div>
             </div>
@@ -121,15 +144,37 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Data</h4>
-                            <p class="mb-0 text-white-50">The database behind the platform is EXIOBASE V3.3.sm (2011)
-                                in
-                                Industry Technology Assumption (ITA) and product-by-product format. 200 products including
-                                secondary raw materials, 281 regions (NUTS 2016)
-                                and 10 characterised impact indicators are available for selection to allow for complex
-                                multi-variate analysis.
+                            <h4 class="text-white">Where can I find the data used in REAT?</h4>
+                            <p class="mb-0 text-white-50">
+                                The data behind the CIRCUMAT tool of REAT is available and can be downloaded from
+                                <a href="https://surfdrive.surf.nl/files/index.php/s/bEVnoyJUeYMUiyr/authenticate">here</a>
+                                (password:circumat).
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                The data for REAT is from two main sources: from EXIOBASE –
+                                A Multi-Regional Environmentally Extended Input
+                                Output databases and from EUROSTAT-
+                                The statistical office of the European Union.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                EXIOBASE can be downloaded   <a href="https://www.exiobase.eu/">here</a>
+                                . The year 2011 of EXIOBASE, product by product monetary
+                                    input output table is used for calculations.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                            From <a href="https://ec.europa.eu/eurostat">EUROSTAT</a>, in the NUTS2 level detail, income values,
+                                gross capital formation, agriculture and sectoral employment numbers are
+                                collected for the NUTS2 regions in Europe for the year 2011 and used to
+                                regionalize the national values.
+                            </p>
+                            <p class="mb-0 text-white-50">
+
+                                In order to download bulk data from EUROSTAT (over 250 regions), python code is constructed and this code is available
+                                <a href="https://bitbucket.org/CML-IE/circumat/src/master/python_ini/devScripts/">here</a>.
+                                The data collected from EUROSTAT in the regional scale for 2011 includes
+                                blank entries where data are not present. Thus, to approximate these missing
+                                data, we used the national averages or data deducted from the adjacent years if available.
                                 <br>
-                                <a href="http://exiobase.eu/">Read more</a>
                             </p>
                             <hr class="d-none d-lg-block mb-0 ml-0">
                         </div>
@@ -146,8 +191,21 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">Production and consumption views<br></h4>
-                            <p class="mb-0 text-white-50">You can analyse the environmental and economic impacts resulting from the production or the consumption of goods and services. The  production  view analyses the impacts of the production of specific product categories while   the   consumption view analyses  throughout the entire supply-chain of a consumed product category.<br>
+                            <h4 class="text-white">REAT can perform three main analytical calculations<br></h4>
+                            <p class="mb-0 text-white-50">
+                               <u>HOTSPOT ANALYSIS BY REAT</u>
+                                <br>
+                                The production view (Hotspot Analysis) calculates the economic and environmental indicators of specific manufacturing activity(s) in the region. The hotspot analysis identifies the key sectors where the selected indicator mostly occurs.
+                                <br>
+                                <u> Contribution Analysis by REAT</u>
+                                <br>
+                                The consumption view (Contribution Analysis) calculates the impacts generated along the entire supply chain for the final demand of specific manufacturing activity(s) in the region. Contribution analysis identifies the key consumption items that contribute to the selected indicator.
+                                <br>
+                                <u>Scenario Analysis by REAT</u>
+                                <br>
+                                The scenario analysis defines a scenario to calculate the effects of changes in the final demand.  The scenario analysis can identify the effects of circular consumption in the region on the environmental and economic indicators.
+
+                                <br>
                             </p>
                             <hr class="d-none d-lg-block mb-0 mr-0">
                         </div>
@@ -162,11 +220,21 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Modelling</h4>
-                            <p class="text-white-50 mb-0">Create final consumption scenarios by applying sets of relative
-                        changes to
-                        final demand. The changes are applied in sequence and results are recalculated.<br>
-                    </p>
+                            <h4 class="text-white">What is a NUTS2 region?</h4>
+                            <p class="text-white-50 mb-0">
+                                NUTS classification is a single, coherent system for dividing up the EU's territory in
+                                order to produce regional statistics for the Community.
+                                <a href="https://ec.europa.eu/eurostat/web/nuts/nuts-maps-.pdf-">NUTS2 maps</a>
+                            </p>
+                            <p class="text-white-50 mb-0">
+                                Additionally many information and useful codes, including the shape files, can be downloaded from
+                                <a href="https://tbed.org/eudemo/index.php?function=search&tablename=nuts2_vw">here</a>
+                            </p>
+                             <p class="text-white-50 mb-0">
+                                The list of the NUTS2 regions covered in the REAT can be downloaded from
+                                    <a href="https://bitbucket.org/CML-IE/circumat/src/master/static_assets/circumat_regions.csv">here</a>
+                                 .For the user selected NUT2 region, the REAT can perform three main analytical calculations.<br>
+                            </p>
                             <hr class="d-none d-lg-block mb-0 ml-0">
                         </div>git a
                     </div>
@@ -181,12 +249,34 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Assumptions</h4>
-                            <p class="mb-0 text-white-50">Regional employment numbers in NUTS 2 level in NACE sectors are used to disaggregate the economic outputs of the sectors in EXIOBASE. (In other words,  the output of a sector is a linear function of the number of people working in that sector.)
-Regional income data, gross capital formation and employment data  are used to disaggregate the final demand.
-National accounts are the base-lines for the intensities.
-Cross hauling is not allowed while the disaggregation into subnational values (in other words, if the region is exporter, it is not an importer; and vice versa.)
-Final IO table is left unbalanced. RAS algorithm can be implemented for re-balancing.<br><br>
+                            <h4 class="text-white">Assumptions behind REAT</h4>
+                            <p class="mb-0 text-white-50">The regionalization of the national input output tables in
+                                REAT includes several assumptions, including
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                The sectoral concordance: The data from EUROSTAT in NACE sectors are matched by the
+                                sectors in EXIOBASE using
+                                predetermined concordance matrices.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                The regional output values: Regional employment numbers are used to approximate the
+                                regional economic outputs and
+                                value added of the sectors.
+                                The consumption values: Regional income, gross capital formation and employment data
+                                are used to approximate the
+                                regional final demand of the sectors.
+                            <p class="mb-0 text-white-50">
+                                The missing sources: National accounts or averages are taken as the base-lines whenever
+                                data are missing.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                No cross hauling: Cross hauling is not allowed during the regionalization, in other
+                                words, if the region is exporter,
+                                it is not an importer; and vice versa.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                Unbalances IO tables: Final IO table is not neccesarily balanced. Interested users
+                                can use RAS algorithm to re-balance the IO tables.<br><br>
                             </p>
                             <hr class="d-none d-lg-block mb-0 ml-0">
                         </div>
@@ -210,13 +300,19 @@ Final IO table is left unbalanced. RAS algorithm can be implemented for re-balan
             <div class="col-lg-8 mx-auto">
                 <h2 class="text-white mb-4">Resources</h2>
                 <p class="text-white-50">
-                    <a style="color:white;" href="../static/CIRCUMAT_PLATFORM_USER_GUIDE.pdf">Manual</a>
+                    <a style="color:white;" href="../static/CIRCUMAT_PLATFORM_USER_GUIDE.pdf">Online calculation tool (REAT Manual)</a>
                     <br>
                     <a style="color:white;" href="https://surfdrive.surf.nl/files/index.php/s/bEVnoyJUeYMUiyr">CircuMat data (password:circumat)</a>
                     <br>
-                    <a style="color:white;" href="online-tools">Additional Tools</a>
+                    <a style="color:white;" href="project-summary">CircuMat Project Summary</a>
                     <br>
-                    <a style="color:white;" href="online-databases">Additional Databases</a>
+                    <a style="color:white;" href="circular-economy">Circular Economy</a>
+                    <br>
+                    <a style="color:white;" href="academic-papers">Academic Papers</a>
+                    <br>
+                    <a style="color:white;" href="online-tools">Additional analytical & co-creation tools</a>
+                    <br>
+                    <a style="color:white;" href="online-databases">Additional national & regional databases</a>
                 </p>
             </div>
         </div>
@@ -241,7 +337,7 @@ Final IO table is left unbalanced. RAS algorithm can be implemented for re-balan
                             Prof. Arnold Tukker: Tukker@cml.leidenuniv.nl
                         </div>
                         <div class="small text-white-50">
-                            Dr. H. Cetinay Iyicil: h.cetinay.iyicil@cml.leidenuniv.nl
+                            Dr. Hale Cetinay Iyicil: h.cetinay.iyicil@cml.leidenuniv.nl
                         </div>
                         <div class="small text-white-50">
                             Sidney Niccolson: s.i.niccolson@cml.leidenuniv.nl
