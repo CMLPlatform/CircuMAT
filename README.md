@@ -24,7 +24,7 @@ Download the circumat_v4_clean.zip folder.
 
 ### Clone the project 
 ``` 
-$ git clone https://SidneyNiccolson@bitbucket.org/SidneyNiccolson/circumat.git
+$ git clone https://SidneyNiccolson@bitbucket.org/CML-IE/circumat.git
 ```
 
 ### Create a virtual environment (python3.5 or higher) and install the app requirements (make sure you have python-dev installed via apt-get)
