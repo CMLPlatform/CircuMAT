@@ -322,7 +322,7 @@ class Analyze:
         # number of different parts in the final demand. THIS must be known
         n_y = 7
         # the sequence of the gross capital formation in Y THIS must be known (starting from 1)
-        n_gcf = 1
+        n_gcf = 4
         # the sequence of the exports  in Y THIS must be known  (starting from 1)
         n_exports = 7
 
@@ -498,6 +498,8 @@ class Analyze:
         Y_updated=np.zeros((9800, 49))
 
         Y_updated[:, rof - 1]=np.sum(y_r2,axis=1)
+        if sbs_emp_numbers_all.shape[0]==1: #if there is a single region
+            Y_updated[:, rof - 1]=np.sum(y_r1+y_r2,axis=1) #just take the sum
 
         return Y_updated
 
@@ -664,5 +666,6 @@ class Analyze:
         # it shows the share of that sector per region
         emp_shares = np.multiply(reg_emp_numbers, np.reciprocal(tot_emp + 10 ** (-31)))
 
-
+        if sbs_emp_numbers_all.shape[0]==1:
+            emp_shares=np.ones((200,2))
         return emp_shares
