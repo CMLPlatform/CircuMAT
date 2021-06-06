@@ -22,6 +22,7 @@ module.exports = env => {
             filename: '[name]-[hash].js'
         },
 
+        
         plugins: [
             //where to store meta-data about the bundle
             new BundleTracker({path: __dirname, filename: './webpack-stats.json'}),
@@ -29,7 +30,7 @@ module.exports = env => {
                 filename: 'style.css',
                 disable: false,
                 allChunks: true
-
+                
             }),
             new webpack.DefinePlugin({
                 'process.env': {
@@ -37,20 +38,20 @@ module.exports = env => {
                 }
             }),
             /* PRODUCTION SETTINGS -> change above to production value if needed
-             new UglifyJsPlugin(),
-             */
-
-
-            new webpack.DefinePlugin({
-                'WEBSOCKET_URL': '"' + process.env.WS_PROTOCOL + '://' + process.env.WS_HOST + '/ws/ramascene/"',
-                'AJAX_URL': '"' + process.env.PROTOCOL + '://' + process.env.HOST + '/ajaxhandling/"'
-                // 'WEBSOCKET_URL': '"ws://ramascene.local/ws/ramascene/"',
-                // 'AJAX_URL': '"http://ramascene.local/ajaxhandling/"'
-                // 'WEBSOCKET_URL': '"ws://cml.liacs.nl:8080/ws/ramascene/"',
-                // 'AJAX_URL': '"http://cml.liacs.nl:8080/ajaxhandling/"'
+            new UglifyJsPlugin(),
+            */
+           
+           
+           new webpack.DefinePlugin({
+               'WEBSOCKET_URL': '"' + process.env.WS_PROTOCOL + '://' + process.env.WS_HOST + '/ws/ramascene/"',
+               'AJAX_URL': '"' + process.env.PROTOCOL + '://' + process.env.HOST + '/ajaxhandling/"'
+               // 'WEBSOCKET_URL': '"ws://ramascene.local/ws/ramascene/"',
+               // 'AJAX_URL': '"http://ramascene.local/ajaxhandling/"'
+               // 'WEBSOCKET_URL': '"ws://cml.liacs.nl:8080/ws/ramascene/"',
+               // 'AJAX_URL': '"http://cml.liacs.nl:8080/ajaxhandling/"'
             })
         ],
-
+        
         module: {
             loaders: [
                 {
@@ -77,10 +78,10 @@ module.exports = env => {
                 }
             ]
         },
-
+        
         resolve: {
             //where to look for modules
-
+            
             extensions: ['.js', '.jsx', '.css']
         }
     }

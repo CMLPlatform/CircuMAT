@@ -52,12 +52,12 @@ $ sudo apt install redis-server
 
 Then enable and start the RabbitMQ service:
 
-``$ systemctl enable rabbitmq-server``
+``$ sudo systemctl enable rabbitmq-server``
 
-``$ systemctl start rabbitmq-server``
+``$ sudo systemctl start rabbitmq-server``
 
 Check the status to make sure everything is running:
-``$ systemctl status rabbitmq-server``
+``$ sudo systemctl status rabbitmq-server``
 
 
 > Note: Perform all next steps in the virtualenv and in the rootfolder of the project

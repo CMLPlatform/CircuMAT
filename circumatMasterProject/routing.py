@@ -7,7 +7,7 @@ channel_routing = ProtocolTypeRouter({
 
     "websocket": AuthMiddlewareStack(
         URLRouter([
-            path('circumat/', CircumatConsumer),
+            path('circumat/', CircumatConsumer.as_asgi()),
 
         ]),
     ),

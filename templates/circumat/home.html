@@ -2,7 +2,7 @@
 
 
 {% load render_bundle from webpack_loader %}
-
+{% render_bundle 'app' %}
 
 {% load static %}
 {% block title %}CircuMat{% endblock %}
@@ -14,16 +14,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.js"></script>
+<script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.js"></script>
 
 {# https://github.com/JedWatson/react-select/issues/2454 #}
-{#
-<link rel="stylesheet" href="https://unpkg.com/react-select/dist/react-select.css">#}
-<link rel="stylesheet" href="https://unpkg.com/react-select@1.2.1/dist/react-select.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-select/1.3.0/react-select.css">
 
 
 <style type="text/css">
-   body { background: #1e2d0f !important;   } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+   body { background: #ffff !important;   } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
 
 </style>
 
