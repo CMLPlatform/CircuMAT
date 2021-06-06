@@ -45,7 +45,7 @@ imagesize==1.2.0
 incremental==21.3.0
 iniconfig==1.1.1
 ipaddr==2.2.0
-Jinja2==3.0.1
+Jinja2==2.11.3
 kombu==4.6.11
 lockfile==0.12.2
 MarkupSafe==2.0.1
