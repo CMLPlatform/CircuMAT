@@ -1,0 +1,37 @@
+# Secret key file 
+SECRET_KEY.txt
+
+# cache
+__pycache__
+
+# python environment
+venv
+
+# data 
+*.db
+*.sqlite3
+*.csv
+*.pdf
+*.xlsx
+*.npy
+data/data/*.json
+*.zip
+
+# migration files
+migrations
+
+# vscode
+.vscode
+
+
+# Diaggregation and labels scripts
+labels/NUTS2
+
+# Data preparation 
+data
+
+# Old scripts
+old
+to_delete.txt
+logs
+db.sqlite*
