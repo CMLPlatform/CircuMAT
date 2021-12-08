@@ -1,0 +1,19 @@
+{
+  "status": "done",
+  "assets": {
+    "style.css": {
+      "name": "style.css",
+      "path": "/home/franco/Documents/CircuMAT/assets/bundles/style.css"
+    },
+    "main-bc974bbd808a39559372.js": {
+      "name": "main-bc974bbd808a39559372.js",
+      "path": "/home/franco/Documents/CircuMAT/assets/bundles/main-bc974bbd808a39559372.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "style.css",
+      "main-bc974bbd808a39559372.js"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{% extends 'circumatMasterProject/baseHome.html' %}
+
+
+{% load render_bundle from webpack_loader %}
+{% render_bundle 'app' %}
+
+{% load static %}
+{% block title %}CircuMat{% endblock %}
+
+
+{% block speciality %}
+<!--js-cookie for storing cookie information of trees
+-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.js"></script>
+
+{# https://github.com/JedWatson/react-select/issues/2454 #}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-select/1.3.0/react-select.css">
+
+
+<style type="text/css">
+   body { background: #ffff !important;   } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+</style>
+
+
+{% endblock %}
+
+
+<!-- Add code to initialize the product tree when the document is loaded: -->
+
+
+{% block content %}
+
+
+<br>
+
+<div id="container">
+
+    {% render_bundle 'main' %}
+
+
+</div>
+
+
+{% endblock %}
