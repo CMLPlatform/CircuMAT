@@ -5,7 +5,7 @@ SECRET_KEY.txt
 __pycache__
 
 # python environment
-venv
+*venv
 
 # data 
 *.db
