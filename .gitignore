@@ -10,12 +10,13 @@ __pycache__
 # data 
 *.db
 *.sqlite3
-*.csv
+# *.csv
 *.pdf
 *.xlsx
 *.npy
 data/data/*.json
 *.zip
+db.sqlite*
 
 # migration files
 migrations
@@ -29,9 +30,11 @@ labels/NUTS2
 
 # Data preparation 
 data
+python_ini
+package-lock.json
 
 # Old scripts
 old
 to_delete.txt
 logs
-db.sqlite*
+node_modules/

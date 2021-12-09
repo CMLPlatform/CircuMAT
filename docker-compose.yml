@@ -1,23 +1,17 @@
 version: "3"
 
 services:
-  web:
-    build: .
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:\app
     environment:
       - DJANGO_SETTINGS_MODULE=circumatMasterProject.config.dev
       - DATASETS_VERSION=v4
       - DATASETS_DIR=data/
       - OPENBLAS_NUM_THREADS=3
-    command: bash -c "python3 manage.py makemigrations &&
-             python3 manage.py migrate &&
-             npm install &&
-             systemctl enable rabbitmq-server &&
-             systemctl start rabbitmq-server &&
-             ./node_modules/.bin/webpack --config dev-webpack.config.js &&
-             python3 manage.py runserver 0.0.0.0:8000"
-             #  python3 manage.py populateHierarchies &&
-            #  celery -A circumatMasterProject worker -l info  --concurrency 1
-    volumes:
-      - .:/app/
-    ports:
-      - "8000:8000"
+    command: python manage.py runserver 

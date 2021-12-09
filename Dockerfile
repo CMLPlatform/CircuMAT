@@ -1,33 +1,21 @@
 # pull the official base image
-FROM ubuntu
-
+FROM python:3
 
 RUN mkdir /app
-
-ENV DEBIAN_FRONTEND=noninteractive
-
-RUN apt-get update && apt-get install -y \
-    nodejs \
-    python3-pip \
-    npm \
-    redis-server \
-    erlang \
-    rabbitmq-server \
-    systemctl
 
 # set work directory
 WORKDIR /app
 
 # set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1duco
+ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # install dependencies
+# RUN pip install --upgrade pip 
 COPY ./requirements.txt /app
-RUN pip install --upgrade pip && \
-    pip install -r /app/requirements.txt 
-
-
+RUN pip install -r requirements.txt
 # add project
-COPY . /app
+ADD . /app
 
+
+ 

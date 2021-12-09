@@ -3,17 +3,17 @@
   "assets": {
     "style.css": {
       "name": "style.css",
-      "path": "/home/franco/Documents/CircuMAT/assets/bundles/style.css"
+      "path": "/app/assets/bundles/style.css"
     },
-    "main-bc974bbd808a39559372.js": {
-      "name": "main-bc974bbd808a39559372.js",
-      "path": "/home/franco/Documents/CircuMAT/assets/bundles/main-bc974bbd808a39559372.js"
+    "main-6e4345f46a6c6e11bb21.js": {
+      "name": "main-6e4345f46a6c6e11bb21.js",
+      "path": "/app/assets/bundles/main-6e4345f46a6c6e11bb21.js"
     }
   },
   "chunks": {
     "main": [
       "style.css",
-      "main-bc974bbd808a39559372.js"
+      "main-6e4345f46a6c6e11bb21.js"
     ]
   }
 }
