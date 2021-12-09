@@ -1,29 +1,33 @@
 # pull the official base image
-FROM python:3.8-alpine
+FROM ubuntu
 
-RUN mkdir /usr/src/app
 
-# Set environmental variables
-RUN export DJANGO_SETTINGS_MODULE=config/circumatMasterProject.config.dev
-RUN export DATASETS_VERSION=v4
-RUN export DATASETS_DIR=data/
-RUN export OPENBLAS_NUM_THREADS=3
+RUN mkdir /app
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    nodejs \
+    python3-pip \
+    npm \
+    redis-server \
+    erlang \
+    rabbitmq-server \
+    systemctl
 
 # set work directory
-WORKDIR /usr/src/app/backend
+WORKDIR /app
 
 # set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONDONTWRITEBYTECODE 1duco
 ENV PYTHONUNBUFFERED 1
 
 # install dependencies
-RUN pip install --upgrade pip 
-COPY ./requirements.txt /usr/src/app
-RUN pip install -r requirements.txt
+COPY ./requirements.txt /app
+RUN pip install --upgrade pip && \
+    pip install -r /app/requirements.txt 
+
 
 # add project
-ADD . /usr/src/app/backend
-
-
-
+COPY . /app
 

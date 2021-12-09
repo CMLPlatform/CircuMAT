@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='circumatMasterProject',
-      version='1.0.0',
+      version='3.0.0',
       description='Application to analyse regional scenarios builts in EEIO EXIOBASE v4',
       author='Franco Donati, Leiden University CML',
       author_email='f.donati@cml.leidenuniv.nl',
